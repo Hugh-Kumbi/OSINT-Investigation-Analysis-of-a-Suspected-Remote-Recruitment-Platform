@@ -2,8 +2,8 @@
 
 | Evidence ID | Type | Description | Status |
 |-------------|------|-------------|--------|
-| [EV-001]() | Job Advertisement | Occupation Oasis job listing  | Collected |
-| [EV-002]() | Chat              | Initial recruiter contact     | Collected |
+| [EV-001-4](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-4.png) | Job Advertisement | Occupation Oasis job listing  | Collected |
+| [EV-002-1]() | Chat              | Initial recruiter contact     | Collected |
 | [EV-003]() | Chat              | Job explanation               | Collected |
 | [EV-004]() | Chat              | Salary discussion             | Collected |
 | [EV-005]() | Chat              | Registration instructions     | Collected |
