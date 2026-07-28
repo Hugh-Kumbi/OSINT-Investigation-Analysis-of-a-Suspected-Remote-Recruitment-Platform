@@ -3,13 +3,13 @@
 | Evidence ID | Type | Description | Status |
 |-------------|------|-------------|--------|
 | [EV-001-4](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-4.png) | Job Advertisement | Occupation Oasis job listing  | Collected |
-| [EV-002-1]() | Chat              | Initial recruiter contact     | Collected |
-| [EV-003]() | Chat              | Job explanation               | Collected |
+| [EV-002-1](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-002-1.png) | Chat              | Initial recruiter contact     | Collected |
+| [EV-003-1](), [EV-003-2](), [EV-003-3](), [EV-003-4](), [EV-003-5](), [EV-003-6](), [EV-003-7](), [EV-003-8](), [EV-003-9](), [EV-003-10](), [EV-003-11](), [EV-003-12](), [EV-003-13](), [EV-003-14](), [EV-003-15](), [EV-003-16](), [EV-003-17](), [EV-003-18]() | Chat              | Job explanation               | Collected |
 | [EV-004]() | Chat              | Salary discussion             | Collected |
 | [EV-005]() | Chat              | Registration instructions     | Collected |
 | [EV-006]() | Screenshot        | Registration page             | Collected |
 | [EV-007]() | Screenshot        | Store information page        | Collected |
-| [EV-008]() | Screenshot        | Identity verification request | Collected |
+| [EV-008]() | Screenshot        | Identity verification request | Collected |  
 | [EV-009]() | URL               | Registration website          | Collected |
 | [EV-010]() | Invite Code       | Registration invitation code  | Collected |
 
