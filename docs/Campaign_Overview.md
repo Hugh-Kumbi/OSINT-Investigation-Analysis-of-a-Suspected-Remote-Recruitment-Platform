@@ -257,18 +257,17 @@ No conclusions regarding malicious intent or fraudulent activity are presented i
 
 # Related Documents
 
-- Methodology.md
-- Investigation_Timeline.md
-- domain_analysis.md
-- infrastructure.md
-- Social_Engineering_Analysis.md
-- Findings.md
+- [Methodology.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/docs/Methodology.md)
+- [Investigation_Timeline.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/docs/Investigation_Timeline.md)
+- [Domain_Analysis.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/Domain_Analysis.md)
+- [Infrastructure.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/Infrastructure.md)
+- [Social_Engineering_Analysis.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/docs/Social_Engineering_Analysis.md)
+- [Findings.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/docs/Findings.md)
 
 ---
 
 ## Document Information
 
-**Document Version:**  1.0  
 **Last Updated:**      August 2026  
 **Analyst:**           Hugh Chanetsa  
 **Project Status:**    ✅ COMPLETE        
