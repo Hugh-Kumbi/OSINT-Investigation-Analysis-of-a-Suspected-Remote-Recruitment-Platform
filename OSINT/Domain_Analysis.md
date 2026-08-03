@@ -117,7 +117,7 @@ These observations are factual descriptions of the investigation and should not 
 
 | Evidence ID | Description |
 |-------------|-------------|
-| [EV-001]()      | Occupation Oasis job advertisement            |
+| [EV-001-01](), [EV-001-01](), [EV-001-01]() | Occupation Oasis job advertisement            |
 | [EV-002]()      | Recruiter communication                       |
 | [EV-009]()      | linkroles.my registration URL                 |
 | [EV-012]()      | Google Safe Browsing warning                  |
@@ -140,10 +140,10 @@ The findings are supported by:
 
 # Related Documents
 
-- [DNS_Analysis.md]()
-- [Infrastructure.md]()
-- [Reputation.md]()
-- [Infrastructure_Evolution.md]()
+- [DNS_Analysis.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/DNS_Analysis.md)
+- [Infrastructure.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/Infrastructure.md)
+- [Reputation.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/Reputation.md)
+- [Infrastructure_Evolution.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/Infrastructure_Evolution.md)
 
 ---
 
