@@ -2,79 +2,148 @@
 
 **Case ID:** OSINT-2026-001
 
+**Investigation Title:** Analysis of a Suspected Multi-Domain Remote Recruitment Platform
+
 ---
 
 # Objective
 
-Determine the ownership, registration history, and characteristics of the domains observed during the investigation.
+Identify, document, and compare the internet domains observed during the recruitment workflow.
+
+This analysis focuses on domain registration, ownership characteristics, infrastructure relationships, and observed operational roles.
 
 ---
 
-# Domains Identified
+# Executive Summary
 
-| Domain | Purpose | Status |
-|--------|---------|--------|
-| occupationoasis.com    | Job advertisement platform        | Observed |
-| linkroles.my           | Registration & task portal        | Observed |
-| unitelmatch.top        | Registration & task portal        | Observed |
+During the investigation, three primary domains were identified.
 
----
+Each served a distinct purpose within the observed recruitment workflow.
 
-# Investigation Checklist
+| Domain | Observed Role | Investigation Status |
+|--------|---------------|----------------------|
+| occupationoasis.com | Remote job advertisement platform                                    | Investigated        |
+| linkroles.my        | Initial onboarding and registration portal                           | Investigated        |
+| unitelmatch.top     | Replacement operational platform introduced during the investigation | Under Investigation |
 
-## WHOIS
+The analyst observed a transition from one operational platform to another after the initial registration portal became problematic.
 
-- [✓] Registrar
-- [✓] Registration Date
-- [✓] Expiration Date
-- [X] Registrant
-- [✓] Registrant Country
-- [✓] WHOIS Privacy Enabled
+The reason for this transition has not been independently verified.
 
 ---
 
-## DNS
+# Domain Inventory
 
-- [✓] A Record
-- [✓] AAAA Record
-- [x] MX Records
-- [x] TXT Records
-- [x] NS Records
+## Domain 1
 
----
+### occupationoasis.com
 
-## SSL Certificate
+**Observed Purpose**
 
-- [✓] Certificate Issuer
-- [✓] Valid From
-- [✓] Valid Until
-- [x] Subject Alternative Names
+Remote recruitment website where the analyst initially applied for employment.
 
 ---
 
-## Hosting
+## Domain 2
 
-- [✓] IP Address
-- [✓] ASN
-- [✓] Hosting Provider
-- [x] CDN
-- [✓] Reverse IP
+### linkroles.my
+
+**Observed Purpose**
+
+Platform used during the initial onboarding process.
+
+The recruiter instructed the analyst to register an account using this domain.
 
 ---
 
-# Observations
+## Domain 3
 
-No conclusions have been reached.
+### unitelmatch.top
 
-Domain analysis is currently in progress.
+**Observed Purpose**
+
+Platform introduced later in the investigation after issues were encountered with the original onboarding portal.
+
+The recruiter instructed the analyst to continue using this domain.
+
+---
+
+# Infrastructure Evolution
+
+Observed workflow:
+
+```
+
+OccupationOasis.com
+
+↓
+
+Recruiter Contact
+
+↓
+
+linkroles.my
+
+↓
+
+Google Safe Browsing Warning Observed
+
+↓
+
+Recruiter directs analyst
+
+↓
+
+unitelmatch.top
+
+```
+
+---
+
+# Technical Observations
+
+At the time of writing:
+
+- Three independent domains have been identified.
+- Multiple platforms were used throughout the recruitment workflow.
+- The operational platform changed during the investigation.
+- Additional infrastructure analysis is ongoing.
+
+These observations are factual descriptions of the investigation and should not be interpreted as evidence of malicious activity without additional corroborating evidence.
 
 ---
 
 # Evidence
 
-| Evidence | Description |
-|----------|-------------|
-| [EV-009-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-009-01.png) | Registration URL |
+| Evidence ID | Description |
+|-------------|-------------|
+| [EV-001]()      | Occupation Oasis job advertisement            |
+| [EV-002]()      | Recruiter communication                       |
+| [EV-009]()      | linkroles.my registration URL                 |
+| [EV-012]()      | Google Safe Browsing warning                  |
+| [EV-013]()      | Recruiter message introducing unitelmatch.top |
+
+---
+
+# Confidence Assessment
+
+**Confidence:** High
+
+The findings are supported by:
+
+- Recruiter communications
+- Screenshots
+- Browser observations
+- URLs collected during the investigation
+
+---
+
+# Related Documents
+
+- [DNS_Analysis.md]()
+- [Infrastructure.md]()
+- [Reputation.md]()
+- [Infrastructure_Evolution.md]()
 
 ---
 
