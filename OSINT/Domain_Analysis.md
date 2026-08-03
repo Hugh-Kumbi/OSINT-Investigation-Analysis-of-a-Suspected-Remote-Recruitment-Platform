@@ -117,7 +117,7 @@ These observations are factual descriptions of the investigation and should not 
 
 | Evidence ID | Description |
 |-------------|-------------|
-| [EV-001-01](), [EV-001-01](), [EV-001-01]() | Occupation Oasis job advertisement            |
+| [EV-001-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-01.png), [EV-001-02](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-02.png), [EV-001-03](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-03.png), [EV-001-04](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-04.png) | Occupation Oasis job advertisement            |
 | [EV-002]()      | Recruiter communication                       |
 | [EV-009]()      | linkroles.my registration URL                 |
 | [EV-012]()      | Google Safe Browsing warning                  |
