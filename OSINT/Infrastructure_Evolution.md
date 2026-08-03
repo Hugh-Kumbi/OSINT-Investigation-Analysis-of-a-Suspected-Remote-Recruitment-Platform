@@ -87,9 +87,9 @@ The reason for the infrastructure change has not been independently verified.
 | Evidence ID | Description |
 |-------------|-------------|
 | [EV-002-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-002-01.png) | Recruiter communication |
-| [EV-009]() | Initial registration platform |
-| [EV-012]() | Google Safe Browsing warning |
-| [EV-013]() | Replacement platform communicated by recruiter |
+| [EV-009-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-009-01.png) | Initial registration platform |
+| [EV-012-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-012-01.png) | Google Safe Browsing warning |
+| [EV-013-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-013-01.png) | Replacement platform communicated by recruiter |
 
 ---
 

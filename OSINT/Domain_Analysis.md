@@ -149,7 +149,7 @@ The findings are supported by:
 
 ## Document Information
 
-**Document Version:**  1.0  
+**Document Version:**  2.0  
 **Last Updated:**      August 2026  
 **Analyst:**           Hugh Chanetsa  
 **Project Status:**    ✅ COMPLETE        
