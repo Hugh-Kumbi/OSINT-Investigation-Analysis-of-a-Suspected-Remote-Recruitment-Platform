@@ -259,9 +259,9 @@ These observations describe the certificate ecosystem and do not, by themselves,
 
 | Evidence ID | Description |
 |-------------|-------------|
-| EV-019 | Certificate Transparency results – occupationoasis.com |
-| EV-020 | Certificate Transparency results – linkroles.my        |
-| EV-021 | Certificate Transparency results – unitelmatch.top     |
+| [EV-019-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-019-01.png) | Certificate Transparency results – occupationoasis.com |
+| [EV-020-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-020-01.png) | Certificate Transparency results – linkroles.my        |
+| [EV-021-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-021-01.png) | Certificate Transparency results – unitelmatch.top     |
 
 ---
 
