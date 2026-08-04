@@ -31,4 +31,4 @@ Evidence should not be modified after collection. Any redactions must be documen
 **Project Status:**    ✅ COMPLETE        
 **Assessment Type:**   OSINT Investigation       
 **GitHub:**            https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform     
-**Classification:**    Educational Cybersecurity Investigation Documentation
+**Classification:**    Open Source Intelligence (OSINT) / Cyber Threat Intelligence (CTI)

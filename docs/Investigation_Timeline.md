@@ -366,4 +366,3 @@ The timeline documents observed events only and does not attribute intent beyond
 **Project Status:**    ✅ COMPLETE        
 **Assessment Type:**   OSINT Investigation       
 **GitHub:**            https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform     
-**Classification:**    Educational Cybersecurity Investigation Documentation
