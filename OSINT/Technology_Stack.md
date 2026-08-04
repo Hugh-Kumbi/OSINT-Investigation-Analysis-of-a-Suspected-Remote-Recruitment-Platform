@@ -240,24 +240,24 @@ These observations are documented as part of the operational workflow and are no
 # Confidence Assessment
 
 | Finding | Confidence |
-|----------|------------|
-| Amazon infrastructure observed for occupationoasis.com | High |
-| Cloudflare infrastructure observed for linkroles.my | High |
-| Cloudflare infrastructure observed for unitelmatch.top | High |
-| No identifiable CMS observed | Medium |
-| Cryptocurrency-related activity observed during training | High |
-| Coincheck interface observed during training | High |
+|---------|------------|
+| Amazon infrastructure observed for occupationoasis.com   | High   |
+| Cloudflare infrastructure observed for linkroles.my      | High   |
+| Cloudflare infrastructure observed for unitelmatch.top   | High   |
+| No identifiable CMS observed                             | Medium |
+| Cryptocurrency-related activity observed during training | High   |
+| Coincheck interface observed during training             | High   |
 
 ---
 
 # Related Documents
 
-- domain_analysis.md
-- dns_analysis.md
-- certificate_analysis.md
-- infrastructure.md
-- Social_Engineering_Analysis.md
-- Findings.md
+- [Domain_Analysis.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/Domain_Analysis.md)
+- [DNS_Analysis.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/DNS_Analysis.md)
+- [Certificate_Analysis.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/Certificate_Analysis.md)
+- [Infrastructure.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/Infrastructure.md)
+- [Social_Engineering_Analysis.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/docs/Social_Engineering_Analysis.md)
+- [Findings.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/docs/Findings.md)
 
 ---
 
