@@ -25,7 +25,7 @@ Dates and times are presented using the best available evidence. Where exact tim
 # Timeline
 
 | Event ID | Date / Time | Event | Evidence |
-|----------|-------------|--------|----------|
+|----------|-------------|-------|----------|
 | EVT-001 | July 2026 | Remote position identified on Occupation Oasis | EV-001 |
 | EVT-002 | July 2026 | Application submitted | EV-001 |
 | EVT-003 | Shortly after application | Recruiter initiated contact | EV-002 |
