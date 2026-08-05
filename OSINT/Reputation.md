@@ -110,7 +110,7 @@ No independent conclusion regarding the underlying reason for the warning is mad
 
 The observed browser warning represents a notable reputation signal because it directly influenced the operational workflow.
 
-The recruiter responded by directing the investigator to an alternative domain after the warning appeared.
+The recruiter responded by directing the analyst to an alternative domain after the warning appeared.
 
 This observation is documented factually without attributing intent.
 
@@ -176,7 +176,7 @@ The analyst observed the following workflow:
 
 2. The onboarding process was conducted through `linkroles.my`.
 
-3. After Google displayed a browser warning for `linkroles.my`, the recruiter instructed the investigator to continue using `unitelmatch.top`.
+3. After Google displayed a browser warning for `linkroles.my`, the recruiter instructed the analyst to continue using `unitelmatch.top`.
 
 This sequence was directly observed during the investigation.
 
@@ -204,7 +204,7 @@ The following observations are supported by collected evidence:
 
 1. A Google browser warning was observed for `linkroles.my`.
 
-2. Following the warning, the recruiter directed the investigator to `unitelmatch.top`.
+2. Following the warning, the recruiter directed the analyst to `unitelmatch.top`.
 
 3. No comparable browser warning was observed for `occupationoasis.com`.
 
@@ -230,7 +230,7 @@ The following observations are supported by collected evidence:
 | Finding | Confidence |
 |---------|------------|
 | Google browser warning observed for linkroles.my                    | High |
-| Recruiter redirected investigator to unitelmatch.top                | High |
+| Recruiter redirected analyst to unitelmatch.top                | High |
 | No browser warning observed for occupationoasis.com                 | High |
 | No browser warning observed for unitelmatch.top during collection   | High |
 | Reputation observations accurately reflect the investigation period | High |
@@ -252,7 +252,7 @@ The following observations are supported by collected evidence:
 
 ## Document Information
 
-**Last Updated:**      July 2026  
+**Last Updated:**      August 2026  
 **Analyst:**           Hugh Chanetsa  
 **Assessment Type:**   OSINT Investigation       
 **GitHub:**            https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform     

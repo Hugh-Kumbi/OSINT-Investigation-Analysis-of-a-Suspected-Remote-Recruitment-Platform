@@ -241,7 +241,7 @@ Testing authenticated functionality was outside the scope of this investigation.
 
 During the recruiter-led onboarding session, cryptocurrency-related activity was observed.
 
-The investigator observed screenshots within a conversation labelled **"Customer Support"** that appeared to show cryptocurrency transfer confirmations.
+The analyst observed screenshots within a conversation labelled **"Customer Support"** that appeared to show cryptocurrency transfer confirmations.
 
 The investigation documents only the presence of these screenshots and does not independently verify the transactions.
 
@@ -251,7 +251,7 @@ The investigation documents only the presence of these screenshots and does not 
 
 During the training session, the recruiter appeared to access a Coincheck account while demonstrating the workflow.
 
-The investigator observed the interface but did not interact with the account.
+The analyst observed the interface but did not interact with the account.
 
 The observation documents the apparent use of Coincheck during the onboarding process and does not establish ownership of the account or the purpose of the transactions.
 
@@ -334,7 +334,7 @@ While `unitelmatch.top` exposed a Vue.js application and Cloudflare Browser Insi
 
 ## Operational Workflow
 
-During recruiter-led onboarding, the investigator additionally observed:
+During recruiter-led onboarding, the analyst additionally observed:
 
 - Cryptocurrency-related activity
 - Apparent use of Coincheck
@@ -406,7 +406,7 @@ These observations describe technologies visible during the investigation and sh
 
 ## Document Information
 
-**Last Updated:**      July 2026  
+**Last Updated:**      August 2026  
 **Analyst:**           Hugh Chanetsa  
 **Assessment Type:**   OSINT Investigation       
 **GitHub:**            https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform     
