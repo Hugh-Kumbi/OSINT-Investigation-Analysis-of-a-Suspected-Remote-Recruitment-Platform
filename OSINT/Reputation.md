@@ -16,7 +16,7 @@
 
 This document evaluates the publicly observable reputation of the domains identified during the investigation.
 
-Reputation data was collected from publicly available security services, search engines, browser security mechanisms, and investigator observations.
+Reputation data was collected from publicly available security services, search engines, browser security mechanisms, and analyst observations.
 
 The objective is to document externally observable trust indicators without drawing conclusions beyond the available evidence.
 
@@ -41,8 +41,8 @@ The following reputation sources were consulted where applicable:
 - Search engine results
 - URL reputation services
 - Community reputation
-- VirusTotal (if available)
-- URLScan (if available)
+- VirusTotal
+- URLScan
 
 No active interaction with the domains beyond normal browser access was performed.
 
@@ -92,15 +92,15 @@ The domain was publicly accessible during the investigation.
 
 During the investigation, Google displayed a browser security warning indicating that the website was considered potentially dangerous.
 
-Following this warning, the recruiter directed the investigator to a different domain (`unitelmatch.top`) to continue the onboarding process.
+Following this warning, the recruiter directed the analyst to a different domain (`unitelmatch.top`) to continue the onboarding process.
 
-This sequence of events was directly observed by the investigator.
+This sequence of events was directly observed by the analyst.
 
 ---
 
 ## Public Reputation
 
-The investigator observed a browser-based warning associated with the domain.
+The analyst observed a browser-based warning associated with the domain.
 
 No independent conclusion regarding the underlying reason for the warning is made in this report.
 
@@ -150,27 +150,27 @@ No additional public reputation indicators were identified.
 
 | Date | Observation |
 |------|-------------|
-| Recruitment | Investigator directed to occupationoasis.com |
-| During onboarding | Investigator redirected to linkroles.my |
-| Browser warning observed | Google displayed a dangerous site warning for linkroles.my |
-| Following warning | Recruiter directed investigator to unitelmatch.top |
+| Recruitment              | Analyst applied for remote role on occupationoasis.com                    |
+| During onboarding        | Analyst redirected to linkroles.my                                        |
+| Browser warning observed | Google displayed a dangerous site warning for linkroles.my                |
+| Following warning        | Recruiter directed analyst to unitelmatch.top                             |
 
 ---
 
 # Comparative Reputation Assessment
 
 | Feature | occupationoasis.com | linkroles.my | unitelmatch.top |
-|----------|---------------------|--------------|-----------------|
-| Browser Warning Observed | No | Yes | No |
-| Search Visibility | Yes | Yes | Yes |
-| Operationally Used | Initial recruitment | Initial onboarding | Replacement onboarding platform |
-| Reputation Observation | Neutral | Browser warning observed | Neutral |
+|---------|---------------------|--------------|-----------------|
+| Browser Warning Observed | No                  | Yes                      | No                              |
+| Search Visibility        | Yes                 | Yes                      | Yes                             |
+| Operationally Used       | Initial recruitment | Initial onboarding       | Replacement onboarding platform |
+| Reputation Observation   | Neutral             | Browser warning observed | Neutral                         |
 
 ---
 
 # Operational Observations
 
-The investigator observed the following workflow:
+The analyst observed the following workflow:
 
 1. Initial contact occurred through the recruitment website.
 
@@ -190,7 +190,7 @@ The collected evidence indicates differing observable reputation profiles across
 
 `occupationoasis.com` did not generate browser security warnings during the investigation.
 
-`linkroles.my` generated a Google browser warning that interrupted the onboarding process. Following this event, the recruiter immediately instructed the investigator to migrate to `unitelmatch.top`.
+`linkroles.my` generated a Google browser warning that interrupted the onboarding process. Following this event, the recruiter immediately instructed the analyst to migrate to `unitelmatch.top`.
 
 `unitelmatch.top` did not generate comparable browser warnings during the observation period.
 
@@ -218,10 +218,10 @@ The following observations are supported by collected evidence:
 
 | Evidence ID | Description |
 |-------------|-------------|
-| [EV-035-01]() | Browser warning for linkroles.my                              |
-| [EV-036-01]() | Recruiter instructions directing migration to unitelmatch.top |
-| [EV-037-01]() | Browser observations during investigation                     |
-| [EV-038-01]() | Search engine observations                                    |
+| [EV-037-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-037-01.png) | Browser warning for linkroles.my                              |
+| [EV-038-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-038-01.png) | Recruiter instructions directing migration to unitelmatch.top |
+| [EV-039-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-039-01.png) | Browser observations during investigation                     |
+| [EV-040-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-040-01.png) | Search engine observations                                    |
 
 ---
 
