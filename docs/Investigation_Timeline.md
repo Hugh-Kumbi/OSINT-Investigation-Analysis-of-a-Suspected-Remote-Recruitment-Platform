@@ -334,7 +334,7 @@ Expanded Technical Investigation
 | EV-011 | WHOIS records                         |
 | [EV-012-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-012-01.png) | Google Safe Browsing warning          |
 | [EV-013-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-013-01.png) | unitelmatch.top introduction          |
-| EV-014 | OSINT findings for replacement domain |
+| [EV-014]() | OSINT findings for replacement domain |
 
 ---
 
@@ -363,6 +363,5 @@ The timeline documents observed events only and does not attribute intent beyond
 
 **Last Updated:**      August 2026  
 **Analyst:**           Hugh Chanetsa  
-**Project Status:**    ✅ COMPLETE        
 **Assessment Type:**   OSINT Investigation       
 **GitHub:**            https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform     
