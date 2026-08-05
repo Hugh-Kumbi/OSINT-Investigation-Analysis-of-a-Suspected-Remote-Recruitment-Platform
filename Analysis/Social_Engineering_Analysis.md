@@ -88,11 +88,11 @@ The recruiter maintained a friendly and conversational tone throughout the inter
 
 Examples included:
 
-- greetings
-- checking availability
-- asking about employment status
-- discussing salary expectations
-- scheduling future conversations
+- Greetings
+- Checking availability
+- Asking about employment status
+- Discussing salary expectations
+- Scheduling future conversations
 
 ### Assessment
 
@@ -108,19 +108,19 @@ The progression resembled a structured recruitment process rather than an immedi
 
 The recruiter presented the opportunity as:
 
-- remote work
-- flexible hours
-- online store management
-- simple daily tasks
-- commission-based earnings
-- weekly income potential
+- Remote work
+- Flexible hours
+- Online store management
+- Simple daily tasks
+- Commission-based earnings
+- Weekly income potential
 
 The recruiter emphasized:
 
-- low technical difficulty
-- minimal workload
-- attractive compensation
-- freedom to work from anywhere
+- Low technical difficulty
+- Minimal workload
+- Attractive compensation
+- Freedom to work from anywhere
 
 ### Assessment
 
@@ -138,11 +138,11 @@ Rather than requesting extensive information immediately, the recruiter introduc
 
 Examples included:
 
-- continuing the conversation
-- scheduling a training session
-- registering an account
-- completing store information
-- submitting onboarding details
+- Continuing the conversation
+- Scheduling a training session
+- Registering an account
+- Completing store information
+- Submitting onboarding details
 
 ### Assessment
 
@@ -160,12 +160,12 @@ The recruiter remained actively involved during onboarding.
 
 Instructions were provided step-by-step, including:
 
-- account registration
-- accessing the platform
-- navigating interfaces
-- completing forms
-- submitting information
-- waiting for platform approval
+- Account registration
+- Accessing the platform
+- Navigating interfaces
+- Completing forms
+- Submitting information
+- Waiting for platform approval
 
 ### Assessment
 
@@ -201,10 +201,10 @@ The investigation documents only the sequence of events and does not infer the r
 
 During the training session the analyst observed:
 
-- cryptocurrency-related screenshots
-- Coincheck interface
-- conversations labelled "Customer Support"
-- apparent cryptocurrency transfer confirmations
+- Cryptocurrency-related screenshots
+- OKX Wallet interface
+- Conversations labelled "Customer Support"
+- Apparent cryptocurrency transfer confirmations
 
 The recruiter explained that earnings would be generated through order processing and commissions.
 
@@ -226,10 +226,10 @@ The recruiter presented themselves as representing an established recruitment pr
 
 Indicators included:
 
-- structured onboarding
-- scheduled training
-- procedural instructions
-- platform demonstrations
+- Structured onboarding
+- Scheduled training
+- Procedural instructions
+- Platform demonstrations
 
 ---
 
@@ -237,11 +237,11 @@ Indicators included:
 
 Legitimacy was reinforced through:
 
-- professionally presented websites
-- recruitment terminology
-- training sessions
-- customer support interfaces
-- operational explanations
+- Professionally presented websites
+- Recruitment terminology
+- Training sessions
+- Customer support interfaces
+- Operational explanations
 
 ---
 
@@ -253,10 +253,10 @@ Each completed task increased engagement with the workflow.
 
 Examples include:
 
-- continuing conversations
-- scheduling meetings
-- creating accounts
-- completing platform registration
+- Continuing conversations
+- Scheduling meetings
+- Creating accounts
+- Completing platform registration
 
 ---
 
@@ -264,10 +264,10 @@ Examples include:
 
 The recruiter repeatedly emphasized:
 
-- remote work
-- flexible schedule
-- simple tasks
-- minimal technical requirements
+- Remote work
+- Flexible schedule
+- Simple tasks
+- Minimal technical requirements
 
 These messages reduced perceived barriers to participation.
 
@@ -279,10 +279,10 @@ The recruiter consistently highlighted potential earnings.
 
 Examples included:
 
-- weekly income
-- commission percentages
-- daily base salary
-- bonuses
+- Weekly income
+- Commission percentages
+- Daily base salary
+- Bonuses
 
 Income expectations were introduced before the analyst had independently verified the business model.
 
@@ -294,11 +294,11 @@ Rather than allowing independent exploration of the platform, the recruiter dire
 
 Examples include:
 
-- where to click
-- when to register
-- when to wait
-- when to submit information
-- when to migrate to another platform
+- Where to click
+- When to register
+- When to wait
+- When to submit information
+- When to migrate to another platform
 
 ---
 
@@ -306,13 +306,13 @@ Examples include:
 
 Observed characteristics included:
 
-- polite language
-- rapid responses
-- structured conversation
-- sequential instructions
-- continuous engagement
-- minimal technical discussion
-- emphasis on simplicity
+- Polite language
+- Rapid responses
+- Structured conversation
+- Sequential instructions
+- Continuous engagement
+- Minimal technical discussion
+- Emphasis on simplicity
 
 ---
 
@@ -400,7 +400,7 @@ The following observations are directly supported by collected evidence:
 | [EV-004-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-01.png), [EV-004-02](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-02.png), [EV-004-03](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-03.png), [EV-004-04](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-04.png), [EV-004-05](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-05.png), [EV-004-06](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-06.png) | Salary discussion                      |
 | [EV-005-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-005-01.png), [EV-005-02](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-005-02.png), [EV-005-03](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-005-03.png), [EV-005-04](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-005-04.png), [EV-005-05](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-005-05.png), [EV-005-06](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-005-06.png), [EV-005-07](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-005-07.png) | Onboarding instructions                |
 | [EV-012-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-012-01.png), [EV-012-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-013-01.png) | Browser warning and platform migration |
-| [EV-042-01]() | Training session observations                                  |
+| [EV-042-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-01.png), [EV-042-02](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-02.png), [EV-042-03](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-03.png), [EV-042-04](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-04.png), [EV-042-05](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-05.png), [EV-042-06](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-06.png), [EV-042-07](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-07.png), [EV-042-08](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-08.png), [EV-042-09](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-09.png), [EV-042-10](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-10.png), [EV-042-11](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-11.png), [EV-042-12](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-12.png), [EV-042-13](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-13.png), [EV-042-14](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-14.png), [EV-042-15](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-15.png), [EV-042-16](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-16.png), [EV-042-17](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-17.png), [EV-042-18](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-18.png), [EV-042-19](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-19.png), [EV-042-20](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-20.png), [EV-042-21](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-21.png), [EV-042-22](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-042-22.png) | Training session observations                                  |
 | [EV-036-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-036-01.png), [EV-036-02](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-036-02.png), [EV-036-03](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-036-03.png) | OKX Wallet observations and Cryptocurrency-related screenshots |
 
 ---
