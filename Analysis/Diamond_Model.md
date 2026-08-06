@@ -368,15 +368,15 @@ Confidence: **High**
 # Event Timeline within the Diamond Model
 
 | Stage | Diamond Vertex |
-|--------|----------------|
-| Job application | Victim |
-| Recruiter contact | Adversary |
-| Recruitment website | Infrastructure |
-| Guided onboarding | Capability |
-| Browser warning | Infrastructure |
-| Domain migration | Infrastructure |
-| Training session | Capability |
-| Cryptocurrency observations | Capability |
+|-------|----------------|
+| Job application             | Victim         |
+| Recruiter contact           | Adversary      |
+| Recruitment website         | Infrastructure |
+| Guided onboarding           | Capability     |
+| Browser warning             | Infrastructure |
+| Domain migration            | Infrastructure |
+| Training session            | Capability     |
+| Cryptocurrency observations | Capability     |
 
 ---
 
@@ -438,14 +438,14 @@ This assessment reflects only the evidence collected during the investigation.
 
 | Evidence ID | Description |
 |-------------|-------------|
-| EV-052 | Recruiter communications |
-| EV-053 | Domain analysis |
-| EV-054 | Infrastructure analysis |
-| EV-055 | Technology stack analysis |
-| EV-056 | Social engineering observations |
-| EV-057 | Browser warning and domain migration |
-| EV-058 | OKX Wallet observations |
-| EV-059 | Cryptocurrency screenshots |
+| [EV-052]() | Recruiter communications             |
+| [EV-053]() | Domain analysis                      |
+| [EV-054]() | Infrastructure analysis              |
+| [EV-055]() | Technology stack analysis            |
+| [EV-056]() | Social engineering observations      |
+| [EV-057]() | Browser warning and domain migration |
+| [EV-058]() | OKX Wallet observations              |
+| [EV-059]() | Cryptocurrency screenshots           |
 
 ---
 
@@ -453,10 +453,10 @@ This assessment reflects only the evidence collected during the investigation.
 
 | Diamond Vertex | Confidence |
 |----------------|------------|
-| Adversary | Medium |
-| Infrastructure | High |
-| Capability | High |
-| Victim | High |
+| Adversary      | Medium     |
+| Infrastructure | High       |
+| Capability     | High       |
+| Victim         | High       |
 
 ---
 
