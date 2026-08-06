@@ -77,7 +77,7 @@ Capability ◄──────────────┼───────
 
 ## Observations
 
-The investigation identified an individual acting as a recruiter who initiated communication after the investigator submitted a legitimate job application.
+The investigation identified an individual acting as a recruiter who initiated communication after the analyst submitted a legitimate job application.
 
 Observed behaviors included:
 
@@ -168,7 +168,7 @@ Observed providers:
 
 ## Operational Transition
 
-The recruiter instructed the investigator to migrate from:
+The recruiter instructed the analyst to migrate from:
 
 `linkroles.my`
 
@@ -231,14 +231,14 @@ Observed techniques included:
 
 ## Financial Workflow
 
-During onboarding, the investigator observed:
+During onboarding, the analyst observed:
 
-- Coincheck
+- OKX Wallet
 - Cryptocurrency-related screenshots
 - Commission-based explanations
 - Daily settlement descriptions
 
-The investigator did not participate in financial transactions.
+The analyst did not participate in financial transactions.
 
 ---
 
@@ -266,7 +266,7 @@ Observed capabilities are supported by technical analysis and recruiter interact
 
 ## Target Profile
 
-The investigator was targeted after applying for a remote employment opportunity.
+The analyst was targeted after applying for a remote employment opportunity.
 
 The campaign specifically addressed individuals seeking:
 
@@ -292,7 +292,7 @@ The communication progressed gradually through:
 
 ## Required Actions
 
-The investigator was instructed to:
+The analyst was instructed to:
 
 - Register accounts
 - Complete onboarding forms
@@ -301,9 +301,9 @@ The investigator was instructed to:
 
 ---
 
-## Investigator Actions
+## Analyst Actions
 
-During the investigation, the investigator:
+During the investigation, the analyst:
 
 - Collected evidence
 - Documented observations
@@ -327,7 +327,7 @@ Victim interactions were directly observed and documented.
 
 Observed relationship:
 
-The recruiter directed the investigator through multiple domains and online platforms during onboarding.
+The recruiter directed the analyst through multiple domains and online platforms during onboarding.
 
 Confidence: **High**
 
@@ -357,7 +357,7 @@ Confidence: **High**
 
 Observed relationship:
 
-The investigator engaged only to document and observe the recruitment workflow.
+The analyst engaged only to document and observe the recruitment workflow.
 
 No financial participation occurred.
 
@@ -430,7 +430,7 @@ This assessment reflects only the evidence collected during the investigation.
 
 5. Cryptocurrency-related activity formed part of the demonstrated workflow.
 
-6. The investigator remained in an observational role and did not participate in financial transactions.
+6. The analyst remained in an observational role and did not participate in financial transactions.
 
 ---
 
@@ -444,7 +444,7 @@ This assessment reflects only the evidence collected during the investigation.
 | EV-055 | Technology stack analysis |
 | EV-056 | Social engineering observations |
 | EV-057 | Browser warning and domain migration |
-| EV-058 | Coincheck observations |
+| EV-058 | OKX Wallet observations |
 | EV-059 | Cryptocurrency screenshots |
 
 ---
