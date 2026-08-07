@@ -51,16 +51,16 @@ Only gaps identified during the investigation are included.
 
 | ID | Category | Priority |
 |----|----------|----------|
-| IG-001 | Threat Actor Identity | High |
-| IG-002 | Organizational Structure | High |
-| IG-003 | Infrastructure Attribution | High |
-| IG-004 | Hosting Origin Behind Cloudflare | High |
-| IG-005 | Backend Platform Architecture | Medium |
-| IG-006 | Cryptocurrency Wallets | High |
-| IG-007 | Payment Processing Workflow | Medium |
-| IG-008 | Victim Scale | Medium |
-| IG-009 | Geographic Distribution | Medium |
-| IG-010 | Additional Campaign Infrastructure | High |
+| IG-001 | Threat Actor Identity              | High   |
+| IG-002 | Organizational Structure           | High   |
+| IG-003 | Infrastructure Attribution         | High   |
+| IG-004 | Hosting Origin Behind Cloudflare   | High   |
+| IG-005 | Backend Platform Architecture      | Medium |
+| IG-006 | Cryptocurrency Wallets             | High   |
+| IG-007 | Payment Processing Workflow        | Medium |
+| IG-008 | Victim Scale                       | Medium |
+| IG-009 | Geographic Distribution            | Medium |
+| IG-010 | Additional Campaign Infrastructure | High   |
 
 ---
 
@@ -68,7 +68,7 @@ Only gaps identified during the investigation are included.
 
 ## Description
 
-The recruiter interacted with the investigator throughout the engagement; however, no reliable information was collected to determine the individual's true identity.
+The recruiter interacted with the analyst throughout the engagement; however, no reliable information was collected to determine the individual's true identity.
 
 ## Why It Matters
 
@@ -387,13 +387,13 @@ Addressing these gaps would significantly improve confidence in future analytica
 
 | Evidence ID | Description |
 |-------------|-------------|
-| EV-073 | Recruiter communications |
-| EV-074 | WHOIS analysis |
-| EV-075 | DNS analysis |
-| EV-076 | Infrastructure analysis |
-| EV-077 | Technology stack analysis |
+| EV-073 | Recruiter communications        |
+| EV-074 | WHOIS analysis                  |
+| EV-075 | DNS analysis                    |
+| EV-076 | Infrastructure analysis         |
+| EV-077 | Technology stack analysis       |
 | EV-078 | Social engineering observations |
-| EV-079 | Cryptocurrency observations |
+| EV-079 | Cryptocurrency observations     |
 
 ---
 
@@ -401,13 +401,13 @@ Addressing these gaps would significantly improve confidence in future analytica
 
 | Category | Confidence |
 |----------|------------|
-| Infrastructure Analysis | High |
-| Technology Identification | High |
+| Infrastructure Analysis     | High |
+| Technology Identification   | High |
 | Social Engineering Analysis | High |
-| Threat Actor Attribution | Low |
-| Cryptocurrency Attribution | Low |
-| Campaign Scale | Low |
-| Geographic Targeting | Low |
+| Threat Actor Attribution    | Low  |
+| Cryptocurrency Attribution  | Low  |
+| Campaign Scale              | Low  |
+| Geographic Targeting        | Low  |
 
 ---
 
