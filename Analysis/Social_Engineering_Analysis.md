@@ -33,7 +33,7 @@ The analysis covers:
 - Platform migration
 - Requests made during onboarding
 - Financial onboarding observations
-- Psychological influence techniques
+- Psychological influence techniques 
 
 ---
 
