@@ -323,3 +323,11 @@ The resulting intelligence should be viewed as an evidence-based assessment rath
 - Detection_Opportunities.md
 - Intelligence_Gaps.md
 - Lessons_Learned.md
+---
+
+## Document Information
+
+**Last Updated:**      August 2026  
+**Analyst:**           Hugh Chanetsa  
+**Assessment Type:**   OSINT Investigation       
+**GitHub:**            https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform     
