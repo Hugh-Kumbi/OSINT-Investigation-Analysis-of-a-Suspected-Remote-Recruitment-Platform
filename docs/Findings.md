@@ -1,0 +1,325 @@
+# Findings
+
+**Case ID:** OSINT-2026-001
+
+**Investigation Title:** Analysis of a Suspected Multi-Domain Remote Recruitment Platform
+
+**Classification:** Cyber Threat Intelligence (CTI)
+
+**Status:** Investigation Complete
+
+**Version:** 1.0
+
+---
+
+# Executive Summary
+
+This investigation examined a remote recruitment workflow involving three publicly accessible domains:
+
+- occupationoasis.com
+- linkroles.my
+- unitelmatch.top
+
+The investigation combined Open Source Intelligence (OSINT), technical infrastructure analysis, behavioral analysis, and threat intelligence methodologies to document the observed campaign.
+
+Evidence indicates a structured recruitment process involving recruiter-led onboarding, multiple web platforms, gradual user engagement, and the introduction of cryptocurrency-related activity during training.
+
+No malware, exploit activity, credential theft, or technical compromise was observed during the investigation.
+
+The findings therefore focus on social engineering, operational workflow, and infrastructure rather than post-compromise activity.
+
+---
+
+# Investigation Objectives
+
+The investigation sought to:
+
+- Document the recruitment workflow.
+- Identify the technical infrastructure supporting the observed platforms.
+- Analyze recruiter behavior and onboarding techniques.
+- Map observed behaviors to established threat intelligence frameworks.
+- Produce actionable intelligence for defenders and researchers.
+
+---
+
+# Summary of Investigation
+
+The investigation began after the investigator applied for a remote employment opportunity through **occupationoasis.com**.
+
+Following the application:
+
+- A recruiter initiated contact.
+- A structured conversation established rapport and discussed employment expectations.
+- The investigator was introduced to an e-commerce dropshipping business model.
+- The recruiter guided the investigator through platform registration.
+- The onboarding process initially took place on **linkroles.my**.
+- After a browser security warning, the recruiter directed the investigator to continue onboarding on **unitelmatch.top**.
+- During training, cryptocurrency-related interfaces and Coincheck activity were observed.
+
+Throughout the investigation, the investigator remained in an observational role, avoided financial participation, and did not provide sensitive personal information.
+
+---
+
+# Key Findings
+
+## Finding 1 — Multi-Domain Operational Workflow
+
+Three domains were observed supporting different stages of the recruitment process.
+
+The transition between domains suggests operational flexibility and the ability to continue onboarding despite browser security warnings.
+
+**Confidence:** High
+
+---
+
+## Finding 2 — Legitimate Cloud Infrastructure
+
+The observed platforms relied on widely used cloud services including:
+
+- Amazon Web Services
+- Amazon CloudFront
+- Cloudflare
+
+These services are legitimate technologies and should not be interpreted as malicious indicators in isolation.
+
+**Confidence:** High
+
+---
+
+## Finding 3 — Structured Recruiter-Led Onboarding
+
+The recruiter maintained continuous communication throughout the investigation.
+
+Observed behaviors included:
+
+- scheduling conversations
+- explaining the business model
+- providing step-by-step instructions
+- assisting with platform navigation
+- directing migration to an alternative platform
+
+This structured guidance reduced uncertainty and encouraged continued participation.
+
+**Confidence:** High
+
+---
+
+## Finding 4 — Progressive Social Engineering
+
+The onboarding workflow relied on incremental engagement rather than immediate requests for financial participation.
+
+The recruiter gradually introduced:
+
+- employment discussion
+- salary expectations
+- platform registration
+- onboarding tasks
+- cryptocurrency-related concepts
+
+This progression aligns with commonly observed staged social engineering techniques.
+
+**Confidence:** High
+
+---
+
+## Finding 5 — Browser Warning and Platform Migration
+
+During onboarding, Google displayed a browser warning for **linkroles.my**.
+
+The recruiter immediately instructed the investigator to continue using **unitelmatch.top**.
+
+This transition demonstrates operational continuity despite disruption.
+
+The investigation documents the sequence of events but does not attribute a specific cause for the migration.
+
+**Confidence:** High
+
+---
+
+## Finding 6 — Cryptocurrency in the Operational Workflow
+
+During training, the investigator observed:
+
+- Coincheck
+- Cryptocurrency-related screenshots
+- Apparent cryptocurrency transfer confirmations
+- Customer support conversations referencing cryptocurrency
+
+No cryptocurrency transactions were initiated by the investigator.
+
+No wallet addresses or blockchain identifiers were collected.
+
+**Confidence:** High
+
+---
+
+## Finding 7 — No Technical Compromise Observed
+
+The investigation found no evidence of:
+
+- malware
+- phishing attachments
+- exploit delivery
+- credential theft
+- persistence mechanisms
+- command-and-control activity
+- privilege escalation
+- lateral movement
+
+The observed workflow relied primarily on user interaction rather than technical exploitation.
+
+**Confidence:** High
+
+---
+
+# Supporting Evidence
+
+The findings are supported by:
+
+- Recruiter communications
+- Platform screenshots
+- DNS analysis
+- WHOIS analysis
+- Certificate Transparency records
+- Infrastructure analysis
+- Technology fingerprinting
+- Browser observations
+- Cryptocurrency observations
+- Timeline reconstruction
+
+---
+
+# Threat Intelligence Assessment
+
+The investigation identified characteristics consistent with a coordinated recruitment workflow involving:
+
+- Multiple operational domains
+- Structured recruiter interaction
+- Guided onboarding
+- Domain migration
+- Cloud-hosted infrastructure
+- Cryptocurrency-related operational elements
+
+The evidence supports an assessment that the campaign relied primarily on persuasion and user interaction.
+
+No evidence was collected demonstrating malware deployment or exploitation of software vulnerabilities.
+
+---
+
+# MITRE ATT&CK Summary
+
+Observed behaviors primarily aligned with the early stages of the ATT&CK lifecycle, including:
+
+| Tactic | Observed |
+|---------|----------|
+| Resource Development | Yes |
+| Initial Access | Yes |
+| User Execution | Yes |
+| Credential Access | Limited evidence |
+| Persistence | Limited evidence |
+| Privilege Escalation | Not observed |
+| Defense Evasion | Not observed |
+| Lateral Movement | Not observed |
+| Collection | Not observed |
+| Exfiltration | Not observed |
+| Command and Control | Not observed |
+
+---
+
+# Diamond Model Summary
+
+The investigation identified evidence across all four Diamond Model vertices:
+
+| Vertex | Assessment |
+|----------|------------|
+| Adversary | Recruiter-led onboarding observed; true identity unknown |
+| Infrastructure | Multiple domains hosted using AWS and Cloudflare |
+| Capability | Structured onboarding, social engineering, cryptocurrency workflow |
+| Victim | Remote job seeker engaged through a legitimate job application |
+
+---
+
+# Detection Opportunities
+
+The investigation identified several defensive opportunities, including:
+
+- Monitoring access to newly registered domains.
+- Correlating browser security warnings with subsequent domain access.
+- Detecting transitions between multiple related domains.
+- Monitoring recruitment workflows involving cryptocurrency services.
+- Using behavioral analytics instead of relying solely on static indicators.
+
+---
+
+# Intelligence Gaps
+
+Several important questions remain unanswered, including:
+
+- True identity of the recruiter.
+- Organizational structure.
+- Backend platform architecture.
+- Cryptocurrency wallet addresses.
+- Campaign scale.
+- Geographic targeting.
+- Additional infrastructure.
+- Payment processing implementation.
+
+These gaps should be considered opportunities for future investigation rather than deficiencies in the current analysis.
+
+---
+
+# Overall Assessment
+
+Based on the evidence collected, the investigation documented a coordinated recruitment workflow supported by multiple publicly accessible domains and legitimate cloud infrastructure.
+
+The campaign relied primarily on structured social engineering techniques, gradual user engagement, and recruiter-guided onboarding.
+
+Although cryptocurrency-related activity formed part of the observed workflow, no financial participation occurred during the investigation.
+
+Likewise, no technical compromise, malware delivery, or exploitation activity was observed.
+
+The assessment is therefore limited to the behaviors and infrastructure directly supported by collected evidence.
+
+---
+
+# Lessons for Defenders
+
+Organizations should consider:
+
+- Monitoring recently registered domains.
+- Correlating browser security warnings with user behavior.
+- Strengthening user awareness around remote recruitment.
+- Verifying recruiter identities independently.
+- Monitoring recruitment workflows that transition to cryptocurrency-related activity.
+- Combining behavioral analytics with traditional threat intelligence.
+
+---
+
+# Conclusion
+
+This investigation demonstrates how publicly available information, technical analysis, and structured intelligence methodologies can be combined to analyze a suspected online recruitment campaign without engaging in intrusive or unauthorized activity.
+
+By documenting infrastructure, operational workflows, social engineering techniques, and detection opportunities, the investigation provides a repeatable methodology for analyzing similar campaigns in the future.
+
+The resulting intelligence should be viewed as an evidence-based assessment rather than definitive attribution. Future investigations incorporating additional data sources may further refine these conclusions.
+
+---
+
+# Related Documents
+
+- Methodology.md
+- Campaign_Overview.md
+- Investigation_Timeline.md
+- passive_dns.md
+- dns_analysis.md
+- certificate_analysis.md
+- infrastructure.md
+- technology_stack.md
+- reputation.md
+- Social_Engineering_Analysis.md
+- mitre_attack_mapping.md
+- Diamond_Model.md
+- Indicators_of_Compromise.md
+- Detection_Opportunities.md
+- Intelligence_Gaps.md
+- Lessons_Learned.md
