@@ -28,9 +28,9 @@ The following confidence scale is used throughout this investigation.
 
 | Confidence | Definition |
 |------------|------------|
-| **High** | Supported by multiple independent sources or direct observations with minimal uncertainty. |
-| **Medium** | Supported by credible evidence but includes analytical interpretation or unresolved uncertainties. |
-| **Low** | Limited supporting evidence or conclusions based primarily on inference requiring additional validation. |
+| **High**   | Supported by multiple independent sources or direct observations with minimal uncertainty.               |
+| **Medium** | Supported by credible evidence but includes analytical interpretation or unresolved uncertainties.       |
+| **Low**    | Limited supporting evidence or conclusions based primarily on inference requiring additional validation. |
 
 ---
 
@@ -58,14 +58,14 @@ No conclusions were based on a single unsupported source.
 
 | Evidence Source | Reliability | Notes |
 |-----------------|-------------|-------|
-| Recruiter conversations | High | First-hand observations recorded during the investigation. |
-| Screenshots | High | Captured directly by the analyst. |
-| DNS records | High | Retrieved from authoritative public sources. |
-| WHOIS records | High | Public registry information. |
-| Certificate Transparency logs | High | Independent certificate records. |
-| Technology fingerprinting | Medium | Dependent on publicly observable characteristics. |
-| Browser warning | High | Directly observed during the investigation. |
-| Public reputation services | Medium | May change over time and should be interpreted alongside other evidence. |
+| Recruiter conversations       | High   | First-hand observations recorded during the investigation.               |
+| Screenshots                   | High   | Captured directly by the analyst.                                        |
+| DNS records                   | High   | Retrieved from authoritative public sources.                             |
+| WHOIS records                 | High   | Public registry information.                                             |
+| Certificate Transparency logs | High   | Independent certificate records.                                         |
+| Technology fingerprinting     | Medium | Dependent on publicly observable characteristics.                        |
+| Browser warning               | High   | Directly observed during the investigation.                              |
+| Public reputation services    | Medium | May change over time and should be interpreted alongside other evidence. |
 
 ---
 
@@ -357,20 +357,20 @@ Consequently, attribution and campaign scope remain limited.
 
 | Analysis Area | Confidence |
 |---------------|------------|
-| Recruiter Communications | High |
-| Timeline Reconstruction | High |
-| DNS Analysis | High |
-| WHOIS Analysis | High |
-| Certificate Analysis | High |
-| Technology Stack | High |
-| Infrastructure Analysis | High |
-| Social Engineering Analysis | High |
-| MITRE ATT&CK Mapping | Medium |
-| Diamond Model | Medium |
-| Detection Opportunities | Medium |
-| Campaign Attribution | Low |
-| Cryptocurrency Attribution | Low |
-| Campaign Scale | Low |
+| Recruiter Communications    | High   |
+| Timeline Reconstruction     | High   |
+| DNS Analysis                | High   |
+| WHOIS Analysis              | High   |
+| Certificate Analysis        | High   |
+| Technology Stack            | High   |
+| Infrastructure Analysis     | High   |
+| Social Engineering Analysis | High   |
+| MITRE ATT&CK Mapping        | Medium |
+| Diamond Model               | Medium |
+| Detection Opportunities     | Medium |
+| Campaign Attribution        | Low    |
+| Cryptocurrency Attribution  | Low    |
+| Campaign Scale              | Low    |
 
 ---
 
