@@ -46,7 +46,7 @@ The lifecycle was reconstructed using:
 - Screenshots
 - Technical analysis
 - Infrastructure observations
-- Investigator notes
+- Analyst notes
 
 No assumptions were made regarding stages that were not directly observed.
 
@@ -100,7 +100,7 @@ Investigation Closed
 
 ## Observation
 
-The investigator submitted an application through **occupationoasis.com** for a remote employment opportunity.
+The analyst submitted an application through **occupationoasis.com** for a remote employment opportunity.
 
 A recruiter subsequently initiated contact, referencing the application and establishing context for further discussion.
 
@@ -175,7 +175,7 @@ This created a structured recruitment experience.
 
 ## Observation
 
-The investigator was instructed to:
+The analyst was instructed to:
 
 - Create an account
 - Register a store
@@ -205,7 +205,7 @@ Instructions included:
 - When to wait for approval
 - How to navigate the platform
 
-The investigator completed only actions necessary for observation and documentation.
+The analyst completed only actions necessary for observation and documentation.
 
 ## Confidence
 
@@ -219,7 +219,7 @@ The investigator completed only actions necessary for observation and documentat
 
 During onboarding, Google displayed a browser security warning when accessing **linkroles.my**.
 
-The recruiter acknowledged the issue and instructed the investigator to continue using a different platform.
+The recruiter acknowledged the issue and instructed the analyst to continue using a different platform.
 
 ## Confidence
 
@@ -231,7 +231,7 @@ The recruiter acknowledged the issue and instructed the investigator to continue
 
 ## Observation
 
-The recruiter directed the investigator to:
+The recruiter directed the analyst to:
 
 **unitelmatch.top**
 
@@ -253,14 +253,14 @@ The investigation does not infer the reason for the migration beyond the observe
 
 ## Observation
 
-During the training session, the investigator observed:
+During the training session, the analyst observed:
 
-- Coincheck
+- OKX Wallet
 - Screenshots of cryptocurrency transfers
 - Customer support conversations containing cryptocurrency-related images
 - Explanations of commission payments
 
-No financial transactions were initiated by the investigator.
+No financial transactions were initiated by the analyst.
 
 ## Confidence
 
@@ -272,7 +272,7 @@ No financial transactions were initiated by the investigator.
 
 ## Observation
 
-Throughout the engagement, the investigator:
+Throughout the engagement, the analyst:
 
 - Collected screenshots
 - Recorded recruiter communications
@@ -304,14 +304,14 @@ All subsequent analysis was performed offline using the collected evidence.
 # Comparison with the Cyber Kill Chain
 
 | Cyber Kill Chain Phase | Observed | Notes |
-|-------------------------|----------|-------|
-| Reconnaissance | Partial | Recruiter leveraged an existing job application. |
-| Weaponization | Not Observed | No malware or exploit preparation identified. |
-| Delivery | Partial | Recruitment messages and onboarding links served as the delivery mechanism. |
-| Exploitation | Not Observed | No software vulnerabilities were exploited. |
-| Installation | Not Observed | No malware or persistence mechanisms observed. |
-| Command and Control | Not Observed | No C2 infrastructure identified. |
-| Actions on Objectives | Partial | The campaign sought continued user engagement through onboarding and platform participation. |
+|------------------------|----------|-------|
+| Reconnaissance        | Partial      | Recruiter leveraged an existing job application.                                             |
+| Weaponization         | Not Observed | No malware or exploit preparation identified.                                                |
+| Delivery              | Partial      | Recruitment messages and onboarding links served as the delivery mechanism.                  |
+| Exploitation          | Not Observed | No software vulnerabilities were exploited.                                                  |
+| Installation          | Not Observed | No malware or persistence mechanisms observed.                                               |
+| Command and Control   | Not Observed | No C2 infrastructure identified.                                                             |
+| Actions on Objectives | Partial      | The campaign sought continued user engagement through onboarding and platform participation. |
 
 ---
 
@@ -337,12 +337,12 @@ Each stage built upon the previous one, reducing friction and increasing engagem
 
 | Lifecycle Stage | Defensive Opportunity |
 |-----------------|-----------------------|
-| Recruiter Contact | Verify recruiter identity independently. |
-| Opportunity Presentation | Research company reputation before proceeding. |
-| Platform Registration | Assess domain age and reputation. |
-| Guided Onboarding | Monitor unusual account creation on newly registered domains. |
-| Browser Warning | Treat browser warnings as high-confidence security signals. |
-| Domain Migration | Investigate unexpected changes in onboarding platforms. |
+| Recruiter Contact           | Verify recruiter identity independently.                                                |
+| Opportunity Presentation    | Research company reputation before proceeding.                                          |
+| Platform Registration       | Assess domain age and reputation.                                                       |
+| Guided Onboarding           | Monitor unusual account creation on newly registered domains.                           |
+| Browser Warning             | Treat browser warnings as high-confidence security signals.                             |
+| Domain Migration            | Investigate unexpected changes in onboarding platforms.                                 |
 | Cryptocurrency Introduction | Exercise additional caution when cryptocurrency becomes part of an employment workflow. |
 
 ---
