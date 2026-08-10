@@ -1,0 +1,424 @@
+# Attack Lifecycle Analysis
+
+**Case ID:** OSINT-2026-001
+
+**Investigation Title:** Analysis of a Suspected Multi-Domain Remote Recruitment Platform
+
+**Classification:** Cyber Threat Intelligence (CTI)
+
+**Framework:** Adapted Cyber Kill Chain / Campaign Lifecycle
+
+**Status:** Investigation Complete
+
+**Version:** 1.0
+
+---
+
+# Objective
+
+This document reconstructs the observed campaign as a chronological lifecycle.
+
+Unlike the MITRE ATT&CK mapping, which categorizes adversary behaviors, this analysis focuses on the sequence of events observed during the investigation.
+
+Only stages directly supported by collected evidence are included.
+
+---
+
+# Scope
+
+This lifecycle covers:
+
+- Initial recruitment
+- Recruiter communications
+- Platform onboarding
+- Domain migration
+- Cryptocurrency introduction
+- Investigation termination
+
+---
+
+# Methodology
+
+The lifecycle was reconstructed using:
+
+- Recruiter conversations
+- Investigation timeline
+- Screenshots
+- Technical analysis
+- Infrastructure observations
+- Investigator notes
+
+No assumptions were made regarding stages that were not directly observed.
+
+---
+
+# Campaign Lifecycle Overview
+
+```text
+Job Application
+      │
+      ▼
+Recruiter Contact
+      │
+      ▼
+Rapport Building
+      │
+      ▼
+Employment Opportunity Presented
+      │
+      ▼
+Training Scheduled
+      │
+      ▼
+Platform Registration
+      │
+      ▼
+Guided Onboarding
+      │
+      ▼
+Browser Warning
+      │
+      ▼
+Migration to Alternate Domain
+      │
+      ▼
+Training Continues
+      │
+      ▼
+Cryptocurrency Introduced
+      │
+      ▼
+Evidence Collection
+      │
+      ▼
+Investigation Closed
+```
+
+---
+
+# Stage 1 — Initial Contact
+
+## Observation
+
+The investigator submitted an application through **occupationoasis.com** for a remote employment opportunity.
+
+A recruiter subsequently initiated contact, referencing the application and establishing context for further discussion.
+
+## Supporting Evidence
+
+- Recruiter conversation
+- Campaign timeline
+
+## Confidence
+
+**High**
+
+---
+
+# Stage 2 — Rapport Building
+
+## Observation
+
+The recruiter established a conversational relationship before introducing operational details.
+
+Topics included:
+
+- Current employment
+- Desired work arrangement
+- Salary expectations
+- Availability
+
+## Assessment
+
+The conversation resembled a legitimate recruitment process, increasing perceived credibility before onboarding activities began.
+
+## Confidence
+
+**High**
+
+---
+
+# Stage 3 — Opportunity Presentation
+
+## Observation
+
+The recruiter introduced a remote e-commerce opportunity involving:
+
+- Online store management
+- Dropshipping
+- Commission-based earnings
+- Flexible working hours
+
+The recruiter emphasized ease of work and potential income.
+
+## Confidence
+
+**High**
+
+---
+
+# Stage 4 — Training Preparation
+
+## Observation
+
+Rather than requesting immediate participation, the recruiter scheduled a future training session.
+
+This created a structured recruitment experience.
+
+## Confidence
+
+**High**
+
+---
+
+# Stage 5 — Platform Registration
+
+## Observation
+
+The investigator was instructed to:
+
+- Create an account
+- Register a store
+- Complete onboarding forms
+- Submit store information
+
+Registration initially occurred through:
+
+**linkroles.my**
+
+## Confidence
+
+**High**
+
+---
+
+# Stage 6 — Guided Onboarding
+
+## Observation
+
+The recruiter remained actively involved throughout onboarding.
+
+Instructions included:
+
+- Which buttons to click
+- How to complete forms
+- When to wait for approval
+- How to navigate the platform
+
+The investigator completed only actions necessary for observation and documentation.
+
+## Confidence
+
+**High**
+
+---
+
+# Stage 7 — Operational Disruption
+
+## Observation
+
+During onboarding, Google displayed a browser security warning when accessing **linkroles.my**.
+
+The recruiter acknowledged the issue and instructed the investigator to continue using a different platform.
+
+## Confidence
+
+**High**
+
+---
+
+# Stage 8 — Domain Migration
+
+## Observation
+
+The recruiter directed the investigator to:
+
+**unitelmatch.top**
+
+Training resumed using the new domain with minimal interruption.
+
+## Assessment
+
+This demonstrated operational flexibility and continuity.
+
+The investigation does not infer the reason for the migration beyond the observed sequence of events.
+
+## Confidence
+
+**High**
+
+---
+
+# Stage 9 — Cryptocurrency Introduction
+
+## Observation
+
+During the training session, the investigator observed:
+
+- Coincheck
+- Screenshots of cryptocurrency transfers
+- Customer support conversations containing cryptocurrency-related images
+- Explanations of commission payments
+
+No financial transactions were initiated by the investigator.
+
+## Confidence
+
+**High**
+
+---
+
+# Stage 10 — Investigation and Evidence Collection
+
+## Observation
+
+Throughout the engagement, the investigator:
+
+- Collected screenshots
+- Recorded recruiter communications
+- Performed passive OSINT
+- Conducted infrastructure analysis
+- Avoided providing sensitive information
+- Did not participate in cryptocurrency transactions
+
+## Confidence
+
+**High**
+
+---
+
+# Stage 11 — Investigation Closure
+
+## Observation
+
+Following completion of evidence collection, the investigation concluded.
+
+All subsequent analysis was performed offline using the collected evidence.
+
+## Confidence
+
+**High**
+
+---
+
+# Comparison with the Cyber Kill Chain
+
+| Cyber Kill Chain Phase | Observed | Notes |
+|-------------------------|----------|-------|
+| Reconnaissance | Partial | Recruiter leveraged an existing job application. |
+| Weaponization | Not Observed | No malware or exploit preparation identified. |
+| Delivery | Partial | Recruitment messages and onboarding links served as the delivery mechanism. |
+| Exploitation | Not Observed | No software vulnerabilities were exploited. |
+| Installation | Not Observed | No malware or persistence mechanisms observed. |
+| Command and Control | Not Observed | No C2 infrastructure identified. |
+| Actions on Objectives | Partial | The campaign sought continued user engagement through onboarding and platform participation. |
+
+---
+
+# Behavioral Progression
+
+The campaign exhibited a gradual increase in user commitment:
+
+1. Job application acknowledged.
+2. Recruiter established rapport.
+3. Employment opportunity presented.
+4. Training session scheduled.
+5. Platform registration requested.
+6. Guided onboarding completed.
+7. Browser warning encountered.
+8. Alternate platform introduced.
+9. Cryptocurrency-related workflow demonstrated.
+
+Each stage built upon the previous one, reducing friction and increasing engagement.
+
+---
+
+# Defensive Opportunities by Lifecycle Stage
+
+| Lifecycle Stage | Defensive Opportunity |
+|-----------------|-----------------------|
+| Recruiter Contact | Verify recruiter identity independently. |
+| Opportunity Presentation | Research company reputation before proceeding. |
+| Platform Registration | Assess domain age and reputation. |
+| Guided Onboarding | Monitor unusual account creation on newly registered domains. |
+| Browser Warning | Treat browser warnings as high-confidence security signals. |
+| Domain Migration | Investigate unexpected changes in onboarding platforms. |
+| Cryptocurrency Introduction | Exercise additional caution when cryptocurrency becomes part of an employment workflow. |
+
+---
+
+# Analytical Assessment
+
+The observed campaign followed a structured and consistent progression from recruitment through onboarding.
+
+Rather than relying on technical exploitation, the campaign emphasized user interaction, recruiter guidance, and incremental commitment.
+
+The immediate migration to a second operational domain after a browser warning demonstrated adaptability within the observed workflow.
+
+No evidence was collected indicating malware delivery, exploitation of software vulnerabilities, or post-compromise activity.
+
+Accordingly, the lifecycle is best characterized as a recruiter-led social engineering campaign supported by coordinated web infrastructure.
+
+---
+
+# Key Findings
+
+1. The campaign unfolded through a clearly defined sequence of recruiter-led interactions.
+2. Multiple domains supported different stages of the onboarding process.
+3. Browser security warnings preceded a transition to an alternate platform.
+4. Cryptocurrency-related activity was introduced only after user engagement had been established.
+5. The investigation remained entirely observational and did not involve financial participation or unauthorized activity.
+
+---
+
+# Evidence
+
+| Evidence ID | Description |
+|-------------|-------------|
+| EV-080 | Recruiter communications |
+| EV-081 | Investigation timeline |
+| EV-082 | Platform registration screenshots |
+| EV-083 | Browser warning |
+| EV-084 | Domain migration observations |
+| EV-085 | Cryptocurrency observations |
+| EV-086 | Technical infrastructure analysis |
+
+---
+
+# Confidence Assessment
+
+| Lifecycle Stage | Confidence |
+|-----------------|------------|
+| Initial Contact | High |
+| Rapport Building | High |
+| Opportunity Presentation | High |
+| Platform Registration | High |
+| Guided Onboarding | High |
+| Browser Warning | High |
+| Domain Migration | High |
+| Cryptocurrency Introduction | High |
+| Campaign Conclusion | High |
+
+---
+
+# Related Documents
+
+- [Campaign_Overview.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/docs/Campaign_Overview.md)
+- [Investigation_Timeline.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/docs/Investigation_Timeline.md)
+- [Social_Engineering_Analysis.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Analysis/Social_Engineering_Analysis.md)
+- [MITRE_ATT&CK_Mapping.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Analysis/MITRE_ATT%26CK_Mapping.md)
+- [Diamond_Model.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Analysis/Diamond_Model.md)
+- [Indicators_of_Compromise.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Analysis/Indicators_of_Compromise.md)
+- [Detection_Opportunities.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Analysis/Detection_Opportunities.md)
+- [Intelligence_Gaps.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Analysis/Intelligence_Gaps.md)
+- [Findings.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/docs/Findings.md)
+- [Lessons_Learned.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/docs/Lessons_Learned.md)
+
+---
+
+## Document Information
+
+**Last Updated:**      August 2026  
+**Analyst:**           Hugh Chanetsa  
+**Assessment Type:**   OSINT Investigation       
+**GitHub:**            https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform     

@@ -92,11 +92,11 @@ The recruiter maintained continuous communication throughout the investigation.
 
 Observed behaviors included:
 
-- scheduling conversations
-- explaining the business model
-- providing step-by-step instructions
-- assisting with platform navigation
-- directing migration to an alternative platform
+- Scheduling conversations
+- Explaining the business model
+- Providing step-by-step instructions
+- Assisting with platform navigation
+- Directing migration to an alternative platform
 
 This structured guidance reduced uncertainty and encouraged continued participation.
 
@@ -110,11 +110,11 @@ The onboarding workflow relied on incremental engagement rather than immediate r
 
 The recruiter gradually introduced:
 
-- employment discussion
-- salary expectations
-- platform registration
-- onboarding tasks
-- cryptocurrency-related concepts
+- Employment discussion
+- Salary expectations
+- Platform registration
+- Onboarding tasks
+- Cryptocurrency-related concepts
 
 This progression aligns with commonly observed staged social engineering techniques.
 
@@ -157,14 +157,14 @@ No wallet addresses or blockchain identifiers were collected.
 
 The investigation found no evidence of:
 
-- malware
-- phishing attachments
-- exploit delivery
-- credential theft
-- persistence mechanisms
-- command-and-control activity
-- privilege escalation
-- lateral movement
+- Malware
+- Phishing attachments
+- Exploit delivery
+- Credential theft
+- Persistence mechanisms
+- Command-and-control activity
+- Privilege escalation
+- Lateral movement
 
 The observed workflow relied primarily on user interaction rather than technical exploitation.
 
@@ -211,18 +211,18 @@ No evidence was collected demonstrating malware deployment or exploitation of so
 Observed behaviors primarily aligned with the early stages of the ATT&CK lifecycle, including:
 
 | Tactic | Observed |
-|---------|----------|
-| Resource Development | Yes |
-| Initial Access | Yes |
-| User Execution | Yes |
-| Credential Access | Limited evidence |
-| Persistence | Limited evidence |
-| Privilege Escalation | Not observed |
-| Defense Evasion | Not observed |
-| Lateral Movement | Not observed |
-| Collection | Not observed |
-| Exfiltration | Not observed |
-| Command and Control | Not observed |
+|--------|----------|
+| Resource Development | Yes              |
+| Initial Access       | Yes              |
+| User Execution       | Yes              |
+| Credential Access    | Limited evidence |
+| Persistence          | Limited evidence |
+| Privilege Escalation | Not observed     |
+| Defense Evasion      | Not observed     |
+| Lateral Movement     | Not observed     |
+| Collection           | Not observed     |
+| Exfiltration         | Not observed     |
+| Command and Control  | Not observed     |
 
 ---
 
@@ -231,11 +231,11 @@ Observed behaviors primarily aligned with the early stages of the ATT&CK lifecyc
 The investigation identified evidence across all four Diamond Model vertices:
 
 | Vertex | Assessment |
-|----------|------------|
-| Adversary | Recruiter-led onboarding observed; true identity unknown |
-| Infrastructure | Multiple domains hosted using AWS and Cloudflare |
-| Capability | Structured onboarding, social engineering, cryptocurrency workflow |
-| Victim | Remote job seeker engaged through a legitimate job application |
+|--------|------------|
+| Adversary      | Recruiter-led onboarding observed; true identity unknown           |
+| Infrastructure | Multiple domains hosted using AWS and Cloudflare                   |
+| Capability     | Structured onboarding, social engineering, cryptocurrency workflow |
+| Victim         | Remote job seeker engaged through a legitimate job application     |
 
 ---
 
