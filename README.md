@@ -1,260 +1,281 @@
-# OSINT Investigation: Suspected Remote Recruitment Scam
+# Analysis of a Suspected Multi-Domain Recruitment Campaign
 
-> **Status:** Under Investigation  
-> **Case ID:** OSINT-2026-001  
-> **Classification:** Suspected Recruitment Fraud Investigation  
-> **Project Type:** Cybersecurity Portfolio Project  
-> **Author:** Hugh Chanetsa
+> A structured Open Source Intelligence (OSINT) and Cyber Threat Intelligence (CTI) investigation into a recruiter-led online campaign utilizing multiple web domains, cloud infrastructure, and progressive social engineering techniques.
 
----
-
-## Executive Summary
-
-This repository documents an Open Source Intelligence (OSINT) investigation into a remote employment opportunity that presented itself as an e-commerce store management position related to TikTok Shop.
-
-The objective of this project is to demonstrate a structured cybersecurity investigation methodology rather than to prove or accuse any individual or organization of fraudulent activity. All findings are based solely on observed evidence collected throughout the investigation.
-
-The investigation focuses on documenting:
-
-- Recruitment techniques
-- Social engineering methods
-- Website analysis
-- Platform behavior
-- Identity verification requests
-- Payment workflow
-- Risk assessment
-- Evidence collection
-- Professional reporting
-
-No conclusions are made without supporting evidence.
+![Version](https://img.shields.io/badge/version-1.1-blue)
+![Status](https://img.shields.io/badge/status-Complete-success)
+![OSINT](https://img.shields.io/badge/OSINT-Investigation-green)
+![CTI](https://img.shields.io/badge/Cyber%20Threat%20Intelligence-Case%20Study-red)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
 ---
 
-# Objectives
+# Overview
 
-The purpose of this investigation is to demonstrate practical cybersecurity skills including:
+This repository documents an end-to-end cyber threat intelligence investigation into a suspected online recruitment campaign encountered during a real-world job application process.
 
-- Open Source Intelligence (OSINT)
-- Threat Intelligence
-- Social Engineering Analysis
-- Digital Evidence Collection
-- Risk Assessment
+Rather than immediately disengaging, I conducted a structured, evidence-driven investigation using passive Open Source Intelligence (OSINT) techniques, behavioral analysis, and established Cyber Threat Intelligence (CTI) methodologies.
+
+The investigation focused on documenting recruiter interactions, analyzing technical infrastructure, identifying recurring behavioral patterns, and developing defensive recommendations without engaging in intrusive or unauthorized activity.
+
+As the investigation progressed, additional infrastructure was identified and incorporated into **Version 1.1**, expanding the documented campaign from three to five operational domains.
+
+---
+
+# Investigation Objectives
+
+The objectives of this investigation were to:
+
+- Document the recruiter-led onboarding process.
+- Identify and analyze campaign infrastructure.
+- Perform passive OSINT collection.
+- Correlate technical and behavioral observations.
+- Apply structured intelligence frameworks.
+- Identify Indicators of Compromise (IOCs).
+- Develop detection opportunities for defenders.
+- Produce professional intelligence reporting.
+
+---
+
+# Skills Demonstrated
+
+## Open Source Intelligence (OSINT)
+
+- DNS Analysis
+- Passive DNS
+- WHOIS Analysis
+- Reverse DNS
+- Certificate Transparency
+- SSL Certificate Analysis
+- Technology Fingerprinting
+- Infrastructure Analysis
+- Domain Correlation
+- Reputation Analysis
+
+---
+
+## Cyber Threat Intelligence (CTI)
+
+- Intelligence Lifecycle
+- Campaign Analysis
+- Behavioral Analysis
+- Social Engineering Assessment
+- Infrastructure Correlation
+- Confidence Assessment
+- Intelligence Gap Analysis
+- Structured Reporting
+
+---
+
+## Detection Engineering
+
+- Indicator Development
+- Detection Opportunities
+- Defensive Recommendations
+- ATT&CK Mapping
+- Threat Hunting Concepts
+
+---
+
+## Security Operations
+
+- Threat Analysis
+- IOC Documentation
+- Timeline Reconstruction
+- Evidence Management
 - Technical Documentation
-- Incident Reporting
 
 ---
 
-# Scope
+# Campaign Overview
 
-This investigation includes:
+The investigation identified five operational domains introduced throughout recruiter-led onboarding.
 
-- Recruiter communications
-- Website observations
-- Registration workflow
-- Identity verification process
-- Platform functionality
-- Domain reputation
-- Publicly available information
-- Technical observations
-
-The investigation does **not** include:
-
-- Unauthorized access
-- Vulnerability scanning
-- Exploitation
-- Circumvention of authentication
-- Malware analysis
-- Any activity that violates applicable laws or terms of service
+| Domain | Observed Purpose | Status |
+|--------|------------------|--------|
+| occupationoasis.com | Recruitment platform          | Observed                           |
+| linkroles.my        | Initial onboarding portal     | Replaced                           |
+| unitelmatch.top     | Replacement onboarding portal | Replaced                           |
+| unitelmatch.cc      | Upgraded onboarding portal    | Replaced following browser warning |
+| unitelmatch.cyou    | Backup onboarding portal      | Active during investigation        |
 
 ---
 
-# Methodology
+# Campaign Progression
 
-The investigation follows a passive evidence collection approach.
-
-## Phase 1 – Initial Contact
-
-- Document recruiter communication
-- Record initial claims
-- Preserve timestamps
-
-## Phase 2 – Platform Investigation
-
-- Observe registration process
-- Capture screenshots
-- Record requested information
-- Analyze workflow
-
-## Phase 3 – OSINT
-
-- Domain analysis
-- DNS information
-- SSL certificate review
-- Technology fingerprinting
-- Public reputation research
-
-## Phase 4 – Risk Assessment
-
-Evaluate:
-
-- Recruitment process
-- Platform behavior
-- Identity verification
-- Financial workflow
-- Consistency of information
+```text
+Job Advertisement
+        │
+        ▼
+occupationoasis.com
+        │
+        ▼
+Recruiter Contact
+        │
+        ▼
+linkroles.my
+        │
+        ▼
+Google Safe Browsing Warning
+        │
+        ▼
+unitelmatch.top
+        │
+        ▼
+Additional Training
+        │
+Google Safe Browsing Warning
+        │
+        ▼
+unitelmatch.cc
+        │
+ Google Safe Browsing Warning
+        │
+        ▼
+unitelmatch.cyou
+```
 
 ---
 
 # Repository Structure
 
-```
-suspected-recruitment-scam-investigation/
-│
+```text
+.
 ├── README.md
-├── DISCLAIMER.md
-├── LICENSE
 │
-├── docs/
-│   ├── Executive_Summary.md
-│   ├── Timeline.md
-│   ├── Findings.md
+├── docs
+│   ├── Campaign_Overview.md
 │   ├── Methodology.md
-│   ├── Risk_Assessment.md
-│   └── Final_Report.pdf
+│   ├── Investigation_Timeline.md
+│   ├── Findings.md
+│   ├── Lessons_Learned.md
+│   ├── Evidence_Register.md
+│   └── Executive_Report.pdf
 │
-├── evidence/
-│   ├── screenshots/
-│   ├── chat_logs/
-│   ├── website/
-│   └── metadata/
+├── osint
+│   ├── Passive_DNS.md
+│   ├── DNS_Analysis.md
+│   ├── Certificate_Analysis.md
+│   ├── Infrastructure.md
+│   ├── Technology_Stack.md
+│   ├── Reputation.md
+│   └── Domain_Relationships.md
 │
-├── osint/
-│   ├── domain_analysis.md
-│   ├── dns.md
-│   ├── whois.md
-│   ├── ssl.md
-│   └── technologies.md
+├── analysis
+│   ├── Social_Engineering_Analysis.md
+│   ├── MITRE_ATT&CK_Mapping.md
+│   ├── Diamond_Model.md
+│   ├── Attack_Lifecycle.md
+│   ├── Indicators_of_Compromise.md
+│   ├── Detection_Opportunities.md
+│   ├── Intelligence_Gaps.md
+│   └── Confidence_Assessment.md
 │
-├── indicators/
-│   ├── domains.md
-│   ├── urls.md
-│   ├── email_addresses.md
-│   ├── phone_numbers.md
-│   └── hashes.md
+├── evidence
+│   ├── Screenshots/
+│   ├── Recruiter_Chat/
+│   └── Browser_Warnings/
 │
-└── references/
+└── assets
+    ├── Campaign_Flow.png
+    ├── Infrastructure_Diagram.png
+    ├── MITRE_ATT&CK.png
+    ├── Diamond_Model.png
+    └── Timeline.png
 ```
 
 ---
 
-# Investigation Timeline
+# Methodology
 
-The repository documents every step of the investigation, including:
+The investigation followed a structured intelligence lifecycle.
 
-- Initial recruiter contact
-- Job description
-- Compensation discussion
-- Registration request
-- Platform onboarding
-- Identity verification
-- Additional observations
-- Final assessment
+1. Evidence Collection
+2. Passive OSINT Collection
+3. Infrastructure Analysis
+4. Behavioral Analysis
+5. Threat Intelligence Mapping
+6. IOC Development
+7. Detection Engineering
+8. Reporting
 
-Each event includes timestamps, screenshots, and supporting evidence where available.
+Only passive intelligence collection methods were used.
 
----
-
-# Evidence Collection
-
-Evidence collected during the investigation includes:
-
-- Chat conversations
-- Email correspondence
-- Screenshots
-- Website pages
-- Registration workflow
-- Requested documentation
-- Platform behavior
-
-Every piece of evidence is preserved in its original form whenever possible.
+No unauthorized access, exploitation, credential harvesting, or intrusive scanning was performed.
 
 ---
 
-# Risk Assessment
+# Intelligence Frameworks Applied
 
-Each observation is evaluated based on:
+- MITRE ATT&CK
+- Diamond Model of Intrusion Analysis
+- Cyber Threat Intelligence Lifecycle
+- Attack Lifecycle Analysis
 
-- Likelihood
-- Potential impact
-- Supporting evidence
-- Confidence level
-
-Example:
-
-| Observation | Risk | Status |
-|------------|------|--------|
-| Third-party platform | Medium | Observed |
-| Identity verification before employment | High | Observed |
-| Employer verification | Unknown | Pending |
-| Payment workflow | Pending | Under Investigation |
+These frameworks were used to organize observations and support evidence-based analytical assessments.
 
 ---
 
-# Professional Skills Demonstrated
+# Key Findings
 
-This project demonstrates practical experience in:
+The investigation identified:
 
-- Open Source Intelligence (OSINT)
-- Threat Intelligence
-- Security Research
-- Digital Evidence Collection
-- Incident Documentation
-- Risk Analysis
-- Critical Thinking
-- Technical Writing
-- Cybersecurity Reporting
-
----
-
-# Tools Used
-
-Examples include:
-
-- Google Chrome
-- Windows 11
-- Git
-- GitHub
-- WHOIS
-- DNS Lookup
-- Certificate Transparency Logs
-- Browser Developer Tools
-- Screenshot Utilities
-
-Additional tools may be added throughout the investigation.
+- A structured recruiter-led onboarding process.
+- Progressive trust-building through staged interactions.
+- Five operational domains introduced throughout the campaign.
+- Repeated migration to replacement domains following browser security warnings.
+- Use of commercial cloud infrastructure (AWS and Cloudflare).
+- Modern JavaScript frameworks (Vue.js and Nuxt.js).
+- Valid SSL certificates from trusted Certificate Authorities.
+- Cryptocurrency-related activity observed during later onboarding stages.
+- No malware delivery or technical exploitation observed.
+- A campaign primarily driven by social engineering techniques.
 
 ---
 
-# Lessons Learned
+# Defensive Recommendations
 
-The investigation records lessons learned regarding:
+Organizations should consider monitoring for:
 
-- Recruitment verification
-- Online identity protection
-- Social engineering awareness
-- Evidence preservation
-- Risk-based decision making
+- Newly registered onboarding domains.
+- Repeated domain migration during user onboarding.
+- Recruiters encouraging users to ignore browser security warnings.
+- Cryptocurrency requests during employment onboarding.
+- Repeated infrastructure changes associated with recruitment workflows.
+
+---
+
+# Ethical Statement
+
+This investigation was conducted exclusively for educational, research, and defensive cybersecurity purposes.
+
+All observations were obtained through passive OSINT techniques and voluntary recruiter communications.
+
+No unauthorized access, exploitation, or interference with any systems occurred during the investigation.
+
+---
+
+# Future Work
+
+Potential future enhancements include:
+
+- Continuous Certificate Transparency monitoring.
+- Passive DNS historical analysis.
+- Infrastructure relationship visualization.
+- Blockchain analytics.
+- Sigma rule development.
+- SIEM detection content.
+- Infrastructure monitoring for newly observed domains.
 
 ---
 
 # Disclaimer
 
-This repository is intended solely for cybersecurity education, professional development, and portfolio purposes.
+This repository documents an evidence-based investigation of a suspected online recruitment campaign.
 
-The contents represent observations collected during an investigation and should **not** be interpreted as definitive evidence of fraudulent or criminal activity unless supported by independently verifiable evidence.
+The inclusion of any domain, IP address, infrastructure provider, or technology does **not** imply malicious ownership or intent. Observations and analytical assessments are based solely on information collected during the investigation and publicly available data.
 
-No unauthorized access, exploitation, or circumvention of security controls was performed during this investigation.
-
-Any conclusions are limited to documented observations and publicly available information.
+No attribution is made beyond what is supported by documented evidence.
 
 ---
 
@@ -279,6 +300,12 @@ Specializing in:
 - Incident Response
 - Threat Intelligence
 - Open Source Intelligence (OSINT)
+
+### Certifications
+
+- ISC² Certified in Cybersecurity (CC)
+- Google Cybersecurity Professional Certificate
+- CompTIA Security+ (In Progress)
 
 ---
 

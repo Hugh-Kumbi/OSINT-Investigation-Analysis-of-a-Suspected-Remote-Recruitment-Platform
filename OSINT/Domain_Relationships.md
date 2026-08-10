@@ -25,12 +25,12 @@ The document does **not** attribute ownership or control of the domains. It reco
 # Observed Domains
 
 | Domain | Role During Investigation | Status |
-|---------|--------------------------|--------|
-| occupationoasis.com | Initial recruitment platform | Observed |
-| linkroles.my | Initial onboarding portal | Replaced |
-| unitelmatch.top | Replacement onboarding portal | Replaced |
-| unitelmatch.cc | Subsequent onboarding portal | Replaced after browser warning |
-| unitelmatch.cyou | Backup onboarding portal | Active during investigation |
+|--------|---------------------------|--------|
+| occupationoasis.com | Initial recruitment platform  | Observed                       |
+| linkroles.my        | Initial onboarding portal     | Replaced                       |
+| unitelmatch.top     | Replacement onboarding portal | Replaced                       |
+| unitelmatch.cc      | Subsequent onboarding portal  | Replaced after browser warning |
+| unitelmatch.cyou    | Backup onboarding portal      | Active during investigation    |
 
 ---
 
@@ -44,8 +44,12 @@ occupationoasis.com
         ▼
 linkroles.my
         │
+ Google Safe Browsing Warning
+        │
         ▼
 unitelmatch.top
+        │
+ Google Safe Browsing Warning
         │
         ▼
 unitelmatch.cc
@@ -102,7 +106,7 @@ Purpose:
 - Training
 - Platform access
 
-The investigator observed cryptocurrency-related activity while using this portal.
+The analyst observed cryptocurrency-related activity while using this portal.
 
 ---
 
@@ -115,7 +119,7 @@ Purpose:
 - Continued access to the platform
 - Ongoing onboarding
 
-The investigator observed a Google Safe Browsing warning when attempting to access the site.
+The analyst observed a Google Safe Browsing warning when attempting to access the site.
 
 The recruiter subsequently supplied another portal.
 
@@ -131,31 +135,31 @@ Purpose:
 - Replacement platform
 - Ongoing training
 
-The recruiter instructed the investigator to continue using this domain while the reported issue with the previous portal was being investigated.
+The recruiter instructed the analyst to continue using this domain while the reported issue with the previous portal was being investigated.
 
 ---
 
 # Timeline of Domain Introduction
 
 | Approximate Order | Domain | How Introduced |
-|------------------:|--------|----------------|
-| 1 | occupationoasis.com | Public job advertisement |
-| 2 | linkroles.my | Recruiter onboarding instructions |
-| 3 | unitelmatch.top | Replacement after browser warning |
-| 4 | unitelmatch.cc | Recruiter introduced upgraded portal |
-| 5 | unitelmatch.cyou | Recruiter supplied backup portal following browser warning |
+|-------------------|--------|----------------|
+| 1 | occupationoasis.com | Public job advertisement                                   |
+| 2 | linkroles.my        | Recruiter onboarding instructions                          |
+| 3 | unitelmatch.top     | Replacement after browser warning                          |
+| 4 | unitelmatch.cc      | Recruiter introduced upgraded portal                       |
+| 5 | unitelmatch.cyou    | Recruiter supplied backup portal following browser warning |
 
 ---
 
 # Infrastructure Comparison
 
 | Domain | Hosting / CDN | Registrar | Certificate | Notes |
-|---------|---------------|-----------|-------------|-------|
-| occupationoasis.com | AWS / CloudFront | Amazon Registrar | AWS Certificate Manager | Nuxt.js, Vue.js |
-| linkroles.my | Cloudflare | Gname.com | Google Trust Services / Cloudflare | Cloudflare infrastructure |
-| unitelmatch.top | Cloudflare | Global Asset Domains | Google Trust Services / Let's Encrypt | Vue.js |
-| unitelmatch.cc | Pending analysis | Pending analysis | Pending analysis | Newly identified |
-| unitelmatch.cyou | Pending analysis | Pending analysis | Pending analysis | Newly identified |
+|--------|---------------|-----------|-------------|-------|
+| occupationoasis.com | AWS / CloudFront | Amazon Registrar     | AWS Certificate Manager               | Nuxt.js, Vue.js           |
+| linkroles.my        | Cloudflare       | Gname.com            | Google Trust Services / Cloudflare    | Cloudflare infrastructure |
+| unitelmatch.top     | Cloudflare       | Global Asset Domains | Google Trust Services / Let's Encrypt | Vue.js                    |
+| unitelmatch.cc      | Pending analysis | Pending analysis     | Pending analysis                      | Newly identified          |
+| unitelmatch.cyou    | Pending analysis | Pending analysis     | Pending analysis                      | Newly identified          |
 
 ---
 
@@ -301,26 +305,26 @@ These findings should be incorporated into Version 1.2 if additional evidence be
 
 | Assessment | Confidence |
 |------------|------------|
-| Domains participated in the same onboarding workflow | High |
-| Domains were introduced sequentially by the recruiter | High |
-| Recruiter supplied replacement portals following browser warnings | High |
-| Infrastructure exhibits recurring technical characteristics | Medium |
-| Domains share common operational management | Medium |
-| Attribution to a specific threat actor or organization | Low |
+| Domains participated in the same onboarding workflow              | High   |
+| Domains were introduced sequentially by the recruiter             | High   |
+| Recruiter supplied replacement portals following browser warnings | High   |
+| Infrastructure exhibits recurring technical characteristics       | Medium |
+| Domains share common operational management                       | Medium |
+| Attribution to a specific threat actor or organization            | Low    |
 
 ---
 
 # Related Documents
 
-- [Passive_DNS.md]()
-- [DNS_Analysis.md]()
-- [Infrastructure.md]()
-- [Certificate_Analysis.md]()
-- [Technology_Stack.md]()
-- [Reputation.md]()
-- [Investigation_Timeline.md]()
-- [Campaign_Overview.md]()
-- [Attack_Lifecycle.md]()
+- [Passive_DNS.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/Passive_DNS.md)
+- [DNS_Analysis.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/DNS_Analysis.md)
+- [Infrastructure.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/Infrastructure.md)
+- [Certificate_Analysis.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/Certificate_Analysis.md)
+- [Technology_Stack.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/Technology_Stack.md)
+- [Reputation.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/Reputation.md)
+- [Investigation_Timeline.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/docs/Investigation_Timeline.md)
+- [Campaign_Overview.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/docs/Campaign_Overview.md)
+- [Attack_Lifecycle.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Analysis/Attack_Lifecycle.md)
 
 ---
 
