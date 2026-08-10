@@ -44,19 +44,19 @@ The investigation sought to:
 
 # Summary of Investigation
 
-The investigation began after the investigator applied for a remote employment opportunity through **occupationoasis.com**.
+The investigation began after the analyst applied for a remote employment opportunity through **occupationoasis.com**.
 
 Following the application:
 
 - A recruiter initiated contact.
 - A structured conversation established rapport and discussed employment expectations.
-- The investigator was introduced to an e-commerce dropshipping business model.
-- The recruiter guided the investigator through platform registration.
+- The analyst was introduced to an e-commerce dropshipping business model.
+- The recruiter guided the analyst through platform registration.
 - The onboarding process initially took place on **linkroles.my**.
-- After a browser security warning, the recruiter directed the investigator to continue onboarding on **unitelmatch.top**.
-- During training, cryptocurrency-related interfaces and Coincheck activity were observed.
+- After a browser security warning, the recruiter directed the analyst to continue onboarding on **unitelmatch.top**.
+- During training, cryptocurrency-related interfaces and OKX Wallet activity were observed.
 
-Throughout the investigation, the investigator remained in an observational role, avoided financial participation, and did not provide sensitive personal information.
+Throughout the investigation, the analyst remained in an observational role, avoided financial participation, and did not provide sensitive personal information.
 
 ---
 
@@ -126,7 +126,7 @@ This progression aligns with commonly observed staged social engineering techniq
 
 During onboarding, Google displayed a browser warning for **linkroles.my**.
 
-The recruiter immediately instructed the investigator to continue using **unitelmatch.top**.
+The recruiter immediately instructed the analyst to continue using **unitelmatch.top**.
 
 This transition demonstrates operational continuity despite disruption.
 
@@ -138,14 +138,14 @@ The investigation documents the sequence of events but does not attribute a spec
 
 ## Finding 6 — Cryptocurrency in the Operational Workflow
 
-During training, the investigator observed:
+During training, the analyst observed:
 
-- Coincheck
+- OKX Wallet
 - Cryptocurrency-related screenshots
 - Apparent cryptocurrency transfer confirmations
 - Customer support conversations referencing cryptocurrency
 
-No cryptocurrency transactions were initiated by the investigator.
+No cryptocurrency transactions were initiated by the analyst.
 
 No wallet addresses or blockchain identifiers were collected.
 
@@ -307,22 +307,23 @@ The resulting intelligence should be viewed as an evidence-based assessment rath
 
 # Related Documents
 
-- [Methodology.md]()
-- [Campaign_Overview.md]()
-- [Investigation_Timeline.md]()
-- [Passive_DNS.md]()
-- [DNS_Analysis.md]()
-- [Certificate_Analysis.md]()
-- [Infrastructure.md]()
-- [Technology_Stack.md]()
-- [Reputation.md]()
-- [Social_Engineering_Analysis.md]()
-- [MITRE_ATT&CK_Mapping.md]()
-- [Diamond_Model.md]()
-- [Indicators_of_Compromise.md]()
-- [Detection_Opportunities.md]()
-- [Intelligence_Gaps.md]()
-- [Lessons_Learned.md]()
+- [Methodology.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/docs/Methodology.md)
+- [Campaign_Overview.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/docs/Campaign_Overview.md)
+- [Investigation_Timeline.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/docs/Investigation_Timeline.md)
+- [Passive_DNS.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/Passive_DNS.md)
+- [DNS_Analysis.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/DNS_Analysis.md)
+- [Certificate_Analysis.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/Certificate_Analysis.md)
+- [Infrastructure.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/Infrastructure.md)
+- [Technology_Stack.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/Technology_Stack.md)
+- [Reputation.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/Reputation.md)
+- [Social_Engineering_Analysis.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Analysis/Social_Engineering_Analysis.md)
+- [MITRE_ATT&CK_Mapping.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Analysis/MITRE_ATT%26CK_Mapping.md)
+- [Diamond_Model.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Analysis/Diamond_Model.md)
+- [Indicators_of_Compromise.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Analysis/Indicators_of_Compromise.md)
+- [Detection_Opportunities.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Analysis/Detection_Opportunities.md)
+- [Intelligence_Gaps.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Analysis/Intelligence_Gaps.md)
+- [Lessons_Learned.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/docs/Lessons_Learned.md)
+
 ---
 
 ## Document Information
