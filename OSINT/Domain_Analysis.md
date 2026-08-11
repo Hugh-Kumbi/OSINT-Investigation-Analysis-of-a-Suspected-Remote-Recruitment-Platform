@@ -149,10 +149,7 @@ The findings are supported by:
 
 ## Document Information
 
-**Document Version:**  2.0  
 **Last Updated:**      August 2026  
 **Analyst:**           Hugh Chanetsa  
-**Project Status:**    ✅ COMPLETE        
 **Assessment Type:**   OSINT Investigation       
-**GitHub:**            https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform     
-**Classification:**    Educational Cybersecurity Investigation Documentation
+**GitHub:**            https://github.com/Hugh-Kumbi/Operation-Phantom-Store     
