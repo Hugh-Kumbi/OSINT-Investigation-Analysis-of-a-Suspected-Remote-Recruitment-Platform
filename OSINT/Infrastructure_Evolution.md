@@ -2,83 +2,162 @@
 
 **Case ID:** OSINT-2026-001
 
----
+**Investigation Title:** Analysis of a Suspected Multi-Domain Recruitment Campaign
 
-# Objective
+**Classification:** Cyber Threat Intelligence (CTI)
 
-Document changes to the web infrastructure observed during the investigation.
-
-Understanding how domains change throughout an investigation may provide context for future technical analysis.
-
-No assumptions regarding intent are made.
+**Version:** 1.1
 
 ---
 
-# Phase 1 — Recruitment
+# Purpose
 
-The investigator submitted an application through:
+This document tracks the evolution of the campaign's technical infrastructure throughout the investigation.
 
+Rather than relying on a single operational platform, the recruiter introduced multiple domains over time. These transitions occurred during active communication with the investigator and illustrate how the onboarding workflow continued despite changes in web infrastructure.
+
+The analysis documents only observed infrastructure changes and does not attribute ownership or operational control beyond the available evidence.
+
+---
+
+# Infrastructure Timeline
+
+| Order | Domain | Purpose | Transition Reason |
+|------:|--------|---------|-------------------|
+| 1 | occupationoasis.com | Initial recruitment website | Initial contact |
+| 2 | linkroles.my | First onboarding portal | Recruiter-guided registration |
+| 3 | unitelmatch.top | Replacement onboarding portal | Introduced after issues with the previous platform |
+| 4 | unitelmatch.cc | Updated onboarding portal | Introduced by recruiter as the next platform |
+| 5 | unitelmatch.cyou | Backup onboarding portal | Introduced after Google Safe Browsing warning |
+
+---
+
+# Infrastructure Evolution
+
+```text
+Recruitment Website
+        │
+        ▼
 occupationoasis.com
-
-This website advertised multiple remote employment opportunities.
-
----
-
-# Phase 2 — Initial Onboarding
-
-Following recruiter contact, the investigator was instructed to register an account using:
-
-linkroles.my
-
-The platform appeared to provide functionality related to store creation and order management.
-
----
-
-# Phase 3 — Platform Transition
-
-During the investigation of linkroles.my, the investigator observed a Google Safe Browsing warning indicating that the website may pose a security risk.
-
-After this occurred, the recruiter instructed the investigator to discontinue use of the original platform and instead access:
-
-unitelmatch.top
-
----
-
-# Timeline
-
-Occupation Oasis
-
-↓
-
+        │
+        ▼
 Recruiter Contact
-
-↓
-
-Initial Registration
-
-↓
-
+        │
+        ▼
+linkroles.my
+        │
+        ▼
+Platform Migration
+        │
+        ▼
+unitelmatch.top
+        │
+        ▼
+Platform Update
+        │
+        ▼
+unitelmatch.cc
+        │
 Google Safe Browsing Warning
-
-↓
-
-Replacement Platform
-
-↓
-
-Investigation Continues
+        │
+        ▼
+unitelmatch.cyou
+```
 
 ---
 
-# Observations
+# Infrastructure Characteristics
 
-The following observations were recorded:
+Throughout the investigation the following recurring characteristics were observed.
 
-- The onboarding platform changed during the investigation.
-- The replacement platform was supplied directly by the recruiter.
-- The investigator documented both domains for further technical analysis.
+## Cloud Hosting
 
-The reason for the infrastructure change has not been independently verified.
+- Amazon Web Services (AWS)
+- Amazon CloudFront
+- Cloudflare
+
+---
+
+## Modern Web Technologies
+
+Observed technologies included:
+
+- Vue.js
+- Nuxt.js
+- HTTP/3
+- QUIC
+- TLS 1.3
+- Google Analytics
+- Google Tag Manager
+- Cloudflare Browser Insights
+
+---
+
+## SSL Certificates
+
+Observed certificate authorities:
+
+- AWS Certificate Manager
+- Google Trust Services
+- Let's Encrypt
+
+The use of valid SSL certificates indicates encrypted communications but does not establish legitimacy.
+
+---
+
+## Domain Registration
+
+Observed domains were registered within a relatively short time period.
+
+| Domain | Creation Date |
+|---------|---------------|
+| occupationoasis.com | 2026-06-29 |
+| linkroles.my | 2026-07-19 |
+| unitelmatch.top | 2026-07-23 |
+| unitelmatch.cc | Pending Analysis |
+| unitelmatch.cyou | Pending Analysis |
+
+---
+
+# Operational Evolution
+
+The campaign infrastructure evolved while maintaining a consistent recruiter-led workflow.
+
+Observed changes included:
+
+- Introduction of replacement portals.
+- Continued recruiter guidance.
+- Migration following browser security warnings.
+- Consistent onboarding experience across domains.
+- Continued use of cloud-hosted infrastructure.
+
+---
+
+# Key Observations
+
+The investigation documented:
+
+- Five operational domains.
+- Multiple infrastructure transitions.
+- Continued recruiter communication during platform migration.
+- Browser security warnings followed by replacement domains.
+- Similar operational purposes across all observed portals.
+
+These observations suggest infrastructure evolution while maintaining a consistent onboarding workflow.
+
+---
+
+# Intelligence Gaps
+
+Further collection is recommended for:
+
+- WHOIS records for unitelmatch.cc
+- WHOIS records for unitelmatch.cyou
+- DNS records
+- SSL certificates
+- Technology stack
+- Reputation
+- Passive DNS history
 
 ---
 
@@ -93,25 +172,18 @@ The reason for the infrastructure change has not been independently verified.
 
 ---
 
-# Next Steps
+# Related Documents
 
-Further investigation will include:
-
-- WHOIS comparison
-- DNS comparison
-- Certificate comparison
-- Hosting comparison
-- Reputation analysis
-- Passive DNS analysis
-
+- domain_relationships.md
+- infrastructure.md
+- certificate_analysis.md
+- Investigation_Timeline.md
+- Campaign_Overview.md
 ---
 
 ## Document Information
 
-**Document Version:**  1.0  
 **Last Updated:**      August 2026  
 **Analyst:**           Hugh Chanetsa  
-**Project Status:**    ✅ COMPLETE        
 **Assessment Type:**   OSINT Investigation       
-**GitHub:**            https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform     
-**Classification:**    Educational Cybersecurity Investigation Documentation
+**GitHub:**            https://github.com/Hugh-Kumbi/Operation-Phantom-Store
