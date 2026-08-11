@@ -2,320 +2,213 @@
 
 **Case ID:** OSINT-2026-001
 
-**Investigation Title:** Analysis of a Suspected Multi-Domain Remote Recruitment Platform
+**Investigation Title:** Analysis of a Suspected Multi-Domain Recruitment Campaign
 
-**Classification:** Open Source Intelligence (OSINT) / Cyber Threat Intelligence (CTI)
+**Classification:** Cyber Threat Intelligence (CTI)
 
-**Status:** Active Investigation
+**Status:** Investigation Updated
 
-**Version:** 1.0
+**Version:** 1.1
 
 ---
 
 # Purpose
 
-This timeline documents the sequence of events observed throughout the investigation.
+This timeline reconstructs the investigation chronologically using documented observations, recruiter communications, technical analysis, and collected evidence.
 
-It records recruiter interactions, analyst actions, technical observations, infrastructure changes, and evidence collection in chronological order.
+Only events directly observed during the investigation are included.
 
-Dates and times are presented using the best available evidence. Where exact timestamps are unavailable, approximate dates are clearly identified.
+Analytical conclusions are documented separately within the Findings and Analysis sections of this repository.
 
 ---
 
-# Timeline
+# Investigation Timeline
 
-| Event ID | Date / Time | Event | Evidence |
-|----------|-------------|-------|----------|
-| EVT-001 | July 2026                                      | Remote position identified on Occupation Oasis     | [EV-001-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-01.png), [EV-001-02](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-02.png), [EV-001-03](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-03.png), [EV-001-04](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-04.png) |
-| EVT-002 | July 2026                                      | Application submitted                              | [EV-001-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-01.png), [EV-001-02](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-02.png), [EV-001-03](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-03.png), [EV-001-04](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-04.png) |
-| EVT-003 | Shortly after application                      | Recruiter initiated contact                        | [EV-002-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-002-01.png) |
-| EVT-004 | Same conversation                              | Remote e-commerce position explained               | [EV-003-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-01.png), [EV-003-02](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-02.png), [EV-003-03](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-03.png), [EV-003-04](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-04.png), [EV-003-05](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-05.png), [EV-003-06](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-06.png), [EV-003-07](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-07.png), [EV-003-08](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-08.png), [EV-003-09](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-09.png), [EV-003-10](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-10.png), [EV-003-11](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-11.png), [EV-003-12](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-12.png), [EV-003-13](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-13.png), [EV-003-14](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-14.png), [EV-003-15](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-15.png), [EV-003-16](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-16.png), [EV-003-17](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-17.png), [EV-003-18](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-18.png) |
-| EVT-005 | Same conversation                              | Compensation model discussed                       | [EV-004-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-01.png), [EV-004-02](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-02.png), [EV-004-03](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-03.png), [EV-004-04](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-04.png), [EV-004-05](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-05.png), [EV-004-06](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-06.png) |
-| EVT-006 | Same conversation                              | Recruiter introduced linkroles.my                  | [EV-009-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-009-01.png) |
-| EVT-007 | Same session                                   | Account registration completed                     | [EV-006-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-006-01.png), [EV-006-02](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-006-02.png), [EV-006-03](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-006-03.png), [EV-006-04](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-006-04.png), [EV-006-05](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-006-05.png) |
-| EVT-008 | Same session                                   | Store profile created                              | [EV-007-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-007-01.png) |
-| EVT-009 | Same session                                   | Identity verification requested                    | [EV-008-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-008-01.png), [EV-008-02](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-008-02.png), [EV-008-03](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-008-03.png) |
-| EVT-010 | During OSINT investigation                     | Google Safe Browsing warning observed              | [EV-012-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-012-01.png) |
-| EVT-011 | After warning                                  | Recruiter introduced unitelmatch.top               | https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-013-01.png |
-| EVT-012 | Following platform transition                  | OSINT investigation expanded to include new domain | [EV-014-01]() |
+| Phase | Event | Evidence |
+|-------|-------|----------|
+| Phase 1 | Analyst discovers remote job advertisement on **occupationoasis.com** | Recruiter advertisement |
+| Phase 2 | Job application submitted | Analyst observation |
+| Phase 3 | Recruiter establishes initial contact | Chat transcript |
+| Phase 4 | Recruiter explains remote dropshipping business model | Chat transcript |
+| Phase 5 | Recruiter discusses salary, commission, and onboarding process | Chat transcript |
+| Phase 6 | Training session scheduled | Chat transcript |
+| Phase 7 | Analyst instructed to register on **linkroles.my** | Recruiter instructions |
+| Phase 8 | Store registration and onboarding completed on **linkroles.my** | Screenshots |
+| Phase 9 | Google Safe Browsing warning observed for **linkroles.my** | Analyst observation |
+| Phase 10 | Recruiter instructs migration to **unitelmatch.top** | Chat transcript |
+| Phase 11 | Training continues on **unitelmatch.top** | Screenshots |
+| Phase 12 | Cryptocurrency-related activity observed during training | Analyst observation |
+| Phase 13 | Passive OSINT investigation initiated | Investigation notes |
+| Phase 14 | DNS, WHOIS, SSL certificate, and infrastructure analysis performed | Technical analysis |
+| Phase 15 | Technology stack and reputation analysis completed | Technical analysis |
+| Phase 16 | Initial CTI documentation completed (Version 1.0) | Repository documentation |
+| Phase 17 | Recruiter provides a new portal: **unitelmatch.cc** | Chat transcript |
+| Phase 18 | Analyst attempts to access **unitelmatch.cc** | Analyst observation |
+| Phase 19 | Google Safe Browsing displays a warning identifying **unitelmatch.cc** as a dangerous website | Analyst observation |
+| Phase 20 | Analyst asks the recruiter to explain the warning | Chat transcript |
+| Phase 21 | Recruiter states they will consult the technical staff | Chat transcript |
+| Phase 22 | Recruiter provides **unitelmatch.cyou** as a backup portal | Chat transcript |
+| Phase 23 | Recruiter instructs analyst to continue onboarding using the backup portal | Chat transcript |
+| Phase 24 | Recruiter later explains that the warning was caused by a "platform upgrade" and tells the analyst not to worry | Chat transcript |
+| Phase 25 | Investigation expanded to include the newly observed domains | Investigation notes |
+| Phase 26 | Repository updated to Version 1.1 | Repository documentation |
 
 ---
 
 # Detailed Timeline
 
----
+## Phase 1 – Initial Recruitment
 
-## EVT-001 – Remote Position Identified
+The investigation began when the analyst discovered a remote employment opportunity advertised through **occupationoasis.com**.
 
-### Description
+Following the application, a recruiter initiated contact and introduced a remote e-commerce opportunity involving store management and dropshipping.
 
-The analyst located a remote employment opportunity advertised through Occupation Oasis.
+**Evidence**
 
-### Analyst Action
-
-Reviewed the advertised position and submitted an application.
-
-### Evidence
-
-- [EV-001-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-01.png) 
-- [EV-001-02](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-02.png) 
-- [EV-001-03](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-03.png) 
-- [EV-001-04](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-04.png)
-
-### Confidence
-
-High
+- Recruiter messages
+- Job advertisement
 
 ---
 
-## EVT-002 – Recruiter Contact
+## Phase 2 – Guided Onboarding
 
-### Description
+The recruiter guided the analyst through:
 
-Following the application, a recruiter initiated direct communication regarding the advertised position.
+- Employment discussion
+- Salary explanation
+- Platform registration
+- Store setup
+- Training schedule
 
-The recruiter introduced a remote e-commerce opportunity involving online store management.
+The initial onboarding platform was:
 
-### Analyst Action
-
-Maintained all communications and preserved screenshots.
-
-### Evidence
-
-- [EV-002-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-002-01.png)
-
-### Confidence
-
-High
+**linkroles.my**
 
 ---
 
-## EVT-003 – Position Explanation
+## Phase 3 – First Platform Migration
 
-### Description
+While accessing **linkroles.my**, the analyst observed a Google Safe Browsing warning.
 
-The recruiter described the proposed workflow, including:
+The recruiter responded by directing the analyst to continue using:
 
-- Store management
-- Order processing
-- Customer interaction
-- Commission-based compensation
+**unitelmatch.top**
 
-### Analyst Action
-
-Documented all stated responsibilities.
-
-### Evidence
-
-- [EV-003-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-01.png) 
-- [EV-003-02](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-02.png) 
-- [EV-003-03](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-03.png) 
-- [EV-003-04](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-04.png) 
-- [EV-003-05](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-05.png) 
-- [EV-003-06](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-06.png) 
-- [EV-003-07](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-07.png) 
-- [EV-003-08](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-08.png) 
-- [EV-003-09](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-09.png) 
-- [EV-003-10](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-10.png) 
-- [EV-003-11](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-11.png) 
-- [EV-003-12](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-12.png) 
-- [EV-003-13](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-13.png) 
-- [EV-003-14](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-14.png) 
-- [EV-003-15](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-15.png) 
-- [EV-003-16](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-16.png) 
-- [EV-003-17](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-17.png) 
-- [EV-003-18](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-18.png)
-- [EV-004-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-01.png) 
-- [EV-004-02](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-02.png) 
-- [EV-004-03](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-03.png) 
-- [EV-004-04](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-04.png) 
-- [EV-004-05](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-05.png) 
-- [EV-004-06](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-06.png)
-
-### Confidence
-
-High
+Training resumed on the replacement platform.
 
 ---
 
-## EVT-004 – Registration Portal Introduced
+## Phase 4 – Cryptocurrency Observations
 
-### Description
+During the training process, the analyst observed:
 
-The recruiter instructed the analyst to register an account using:
+- OKX Wallet
+- Cryptocurrency transfer screenshots
+- Customer support conversations containing cryptocurrency-related images
+- Explanations regarding commissions and platform operations
 
-linkroles.my
-
-The analyst completed registration for documentation purposes.
-
-### Analyst Action
-
-Captured screenshots of the onboarding process.
-
-### Evidence
-
-- [EV-006-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-006-01.png) 
-- [EV-006-02](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-006-02.png) 
-- [EV-006-03](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-006-03.png) 
-- [EV-006-04](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-006-04.png) 
-- [EV-006-05](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-006-05.png)
-- [EV-009-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-009-01.png)
-
-### Confidence
-
-High
+The analyst did not conduct any cryptocurrency transactions.
 
 ---
 
-## EVT-005 – Store Configuration
+## Phase 5 – Technical Investigation
 
-### Description
+Following the onboarding process, a structured OSINT investigation was conducted.
 
-Following registration, the platform required creation of a storefront profile.
+Activities included:
 
-Observed fields included:
-
-- Store Name
-- Store Description
-- Supporting documentation
-
-### Analyst Action
-
-Captured screenshots without submitting genuine personal information.
-
-### Evidence
-
-- [EV-007-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-007-01.png)
-
-### Confidence
-
-High
-
----
-
-## EVT-006 – Identity Verification Request
-
-### Description
-
-The onboarding workflow requested identity verification documentation.
-
-Examples included:
-
-- Government-issued identification
-- Utility bill
-
-### Analyst Action
-
-The analyst did not provide authentic identity documents.
-
-Instead, the request was documented as part of the investigation.
-
-### Evidence
-
-- [EV-008-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-008-01.png) 
-- [EV-008-02](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-008-02.png) 
-- [EV-008-03](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-008-03.png)
-
-### Confidence
-
-High
-
----
-
-## EVT-007 – Google Safe Browsing Warning
-
-### Description
-
-While conducting passive OSINT analysis, the analyst observed a Google Safe Browsing warning associated with the onboarding platform.
-
-### Analyst Action
-
-Preserved the browser warning and suspended further interaction with the original platform pending investigation.
-
-### Evidence
-
-- [EV-012-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-012-01.png)
-
-### Confidence
-
-High
-
----
-
-## EVT-008 – Platform Transition
-
-### Description
-
-Following the browser warning, the recruiter instructed the analyst to continue using a different domain:
-
-unitelmatch.top
-
-### Analyst Action
-
-Documented the newly introduced domain and added it to the investigation scope.
-
-### Evidence
-
-- [EV-013-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-013-01.png)
-
-### Confidence
-
-High
-
----
-
-## EVT-009 – Investigation Expansion
-
-### Description
-
-The investigation expanded beyond recruiter communications to include:
-
-- WHOIS analysis
 - DNS analysis
-- Infrastructure analysis
+- Passive DNS analysis
+- WHOIS analysis
+- Reverse DNS lookups
+- Certificate Transparency analysis
+- SSL certificate analysis
 - Technology fingerprinting
-- Certificate Transparency
-- Reputation analysis
+- Infrastructure analysis
+- Reputation assessment
 
-### Analyst Action
-
-Created dedicated documentation for each investigative workstream.
-
-### Evidence
-
-- EV-011
-- EV-015
-
-### Confidence
-
-High
+These findings formed the basis of Version 1.0 of the investigation.
 
 ---
 
-# Infrastructure Evolution
+## Phase 6 – Second Platform Migration
+
+During a subsequent conversation, the recruiter instructed the analyst to access a newly introduced portal:
+
+**unitelmatch.cc**
+
+After attempting to access the site, the analyst observed that Google Safe Browsing displayed a warning indicating that the website was considered dangerous.
+
+The analyst informed the recruiter and requested clarification.
+
+The recruiter replied that they would consult their technical staff regarding the warning.
+
+Shortly afterwards, the recruiter supplied another portal:
+
+**unitelmatch.cyou**
+
+The recruiter instructed the analyst to continue using the new portal while awaiting a technical explanation.
+
+Later, the recruiter stated:
+
+> "That's just the platform upgrading, it's nothing to worry about."
+
+The investigation records this explanation as an observed statement made by the recruiter and does not independently verify its accuracy.
+
+---
+
+## Phase 7 – Investigation Expansion
+
+The discovery of two additional portals prompted an expansion of the investigation.
+
+The repository was updated to include:
+
+- Additional infrastructure analysis
+- Updated campaign overview
+- Expanded attack lifecycle
+- Revised findings
+- Updated indicators of compromise
+- Additional detection opportunities
+- Revised confidence assessment
+
+The investigation now documents five observed domains associated with the recruiter-led onboarding workflow.
+
+---
+
+# Domain Progression
 
 ```text
-OccupationOasis.com
+occupationoasis.com
         │
-Application Submitted
-        │
-Recruiter Contact
-        │
+        ▼
 linkroles.my
         │
-Account Registration
-        │
-Store Creation
-        │
-Identity Verification Requested
-        │
-Google Safe Browsing Warning
-        │
-Recruiter Introduces
+        ▼
 unitelmatch.top
         │
-Expanded Technical Investigation
+        ▼
+unitelmatch.cc
+        │
+ Google Safe Browsing Warning
+        │
+        ▼
+unitelmatch.cyou
 ```
+
+---
+
+# Key Observations
+
+The investigation identified several recurring patterns throughout the campaign:
+
+- Structured recruiter-led onboarding.
+- Progressive trust-building through staged interactions.
+- Repeated migration between operational domains.
+- Browser security warnings preceding domain changes.
+- Continued use of newly introduced backup portals.
+- Introduction of cryptocurrency-related concepts during later stages of onboarding.
+
+These observations are supported by recruiter communications, screenshots, analyst notes, and technical analysis.
 
 ---
 
@@ -323,39 +216,28 @@ Expanded Technical Investigation
 
 | Evidence ID | Description |
 |-------------|-------------|
-| [EV-001-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-01.png), [EV-001-02](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-02.png), [EV-001-03](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-03.png), [EV-001-04](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-001-04.png) | Occupation Oasis job advertisement    |
-| [EV-002-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-002-01.png) | Initial recruiter communication       |
-| [EV-003-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-01.png), [EV-003-02](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-02.png), [EV-003-03](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-03.png), [EV-003-04](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-04.png), [EV-003-05](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-05.png), [EV-003-06](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-06.png), [EV-003-07](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-07.png), [EV-003-08](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-08.png), [EV-003-09](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-09.png), [EV-003-10](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-10.png), [EV-003-11](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-11.png), [EV-003-12](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-12.png), [EV-003-13](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-13.png), [EV-003-14](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-14.png), [EV-003-15](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-15.png), [EV-003-16](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-16.png), [EV-003-17](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-17.png), [EV-003-18](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-003-18.png) | Job description                       |
-| [EV-004-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-01.png), [EV-004-02](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-02.png), [EV-004-03](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-03.png), [EV-004-04](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-04.png), [EV-004-05](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-05.png), [EV-004-06](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-004-06.png) | Compensation discussion               |
-| [EV-006-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-006-01.png), [EV-006-02](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-006-02.png), [EV-006-03](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-006-03.png), [EV-006-04](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-006-04.png), [EV-006-05](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-006-05.png) | Registration portal                   |
-| [EV-007-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-007-01.png) | Store profile page                    |
-| [EV-008-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-008-01.png), [EV-008-02](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-008-02.png), [EV-008-03](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-008-03.png) | Identity verification request         |
-| [EV-009-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-009-01.png) | linkroles.my URL                      |
-| EV-011 | WHOIS records                         |
-| [EV-012-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-012-01.png) | Google Safe Browsing warning          |
-| [EV-013-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-013-01.png) | unitelmatch.top introduction          |
-| [EV-014]() | OSINT findings for replacement domain |
-
----
-
-# Timeline Assessment
-
-The investigation identified a structured onboarding workflow that progressed through multiple stages, including recruiter engagement, account registration, storefront setup, and identity verification requests.
-
-A notable development occurred when the initial onboarding platform was replaced with a different domain after the investigator observed a Google Safe Browsing warning. The platform transition was communicated directly by the recruiter and was incorporated into the ongoing technical investigation.
-
-The timeline documents observed events only and does not attribute intent beyond what is supported by the collected evidence.
+| EV-001 – EV-079 | Initial investigation evidence (Version 1.0) |
+| EV-080 | Recruiter introduces **unitelmatch.cc** |
+| EV-081 | Google Safe Browsing warning observed for **unitelmatch.cc** |
+| EV-082 | Analyst questions the browser warning |
+| EV-083 | Recruiter states they will consult technical staff |
+| EV-084 | Recruiter introduces **unitelmatch.cyou** |
+| EV-085 | Recruiter instructs analyst to continue onboarding using the backup portal |
+| EV-086 | Recruiter explains the issue as a platform upgrade |
+| EV-087 | Repository updated to Version 1.1 |
 
 ---
 
 # Related Documents
 
 - [Campaign_Overview.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/docs/Campaign_Overview.md)
-- [Methodology.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/docs/Methodology.md)
-- [Investigation_Log.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/docs/Investigation_Log.md)
-- [Domain_Analysis.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/Domain_Analysis.md)
-- [Infrastructure_Evolution.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/OSINT/Infrastructure_Evolution.md)
 - [Findings.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/docs/Findings.md)
+- [Attack_Lifecycle.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Analysis/Attack_Lifecycle.md)
+- [Diamond_Model.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Analysis/Diamond_Model.md)
+- [Indicators_of_Compromise.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Analysis/Indicators_of_Compromise.md)
+- [Detection_Opportunities.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Analysis/Detection_Opportunities.md)
+- [Confidence_Assessment.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Analysis/Confidence_Assessment.md)
+- [Evidence_Register.md](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/docs/Evidence_Register.md)
 
 ---
 
