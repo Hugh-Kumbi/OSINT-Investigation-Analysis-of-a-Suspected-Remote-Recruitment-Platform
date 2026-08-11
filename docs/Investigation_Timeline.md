@@ -221,15 +221,15 @@ These observations are supported by recruiter communications, screenshots, analy
 
 | Evidence ID | Description |
 |-------------|-------------|
-| [EV-001-01 – EV-044-64](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/tree/main/Evidence/Screenshots) | Initial investigation evidence (Version 1.0)                               |
-| [EV-045-01]()             | Recruiter introduces **unitelmatch.cc**                                    |
-| [EV-046-01]()             | Google Safe Browsing warning observed for **unitelmatch.cc**               |
-| [EV-047-01]()             | Analyst questions the browser warning                                      |
-| [EV-048-01]()             | Recruiter states they will consult technical staff                         |
-| [EV-049-01]()             | Recruiter introduces **unitelmatch.cyou**                                  |
-| [EV-050-01]()             | Recruiter instructs analyst to continue onboarding using the backup portal |
-| [EV-051-01]()             | Recruiter explains the issue as a platform upgrade                         |
-| [EV-052-01]()             | Repository updated to Version 1.1                                          |
+| [EV-001-01 – EV-044-64](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/tree/main/Evidence/Screenshots)     | Initial investigation evidence (Version 1.0)   |
+| [EV-045-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-045-01.png)             | Recruiter introduces **unitelmatch.cc**                                    |
+| [EV-046-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-046-01.png)             | Google Safe Browsing warning observed for **unitelmatch.cc**               |
+| [EV-047-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-047-01.png)             | Analyst questions the browser warning                                      |
+| [EV-048-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-048-01.png)             | Recruiter states they will consult technical staff                         |
+| [EV-049-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-049-01.png)             | Recruiter introduces **unitelmatch.cyou**                                  |
+| [EV-050-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-050-01.png)             | Recruiter instructs analyst to continue onboarding using the backup portal |
+| [EV-051-01](https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform/blob/main/Evidence/Screenshots/EV-051-01.png)             | Recruiter explains the issue as a platform upgrade                         |
+| [EV-052-01](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-052-01.png)   | Repository updated to Version 1.1                         |
 
 ---
 
