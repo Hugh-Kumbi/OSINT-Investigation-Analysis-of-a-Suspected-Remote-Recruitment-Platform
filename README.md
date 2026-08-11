@@ -1,6 +1,17 @@
-# Analysis of a Suspected Multi-Domain Recruitment Campaign
+# Operation Phantom Store
 
-> A structured Open Source Intelligence (OSINT) and Cyber Threat Intelligence (CTI) investigation into a recruiter-led online campaign utilizing multiple web domains, cloud infrastructure, and progressive social engineering techniques.
+> **Analysis of a Suspected Multi-Domain Recruitment Campaign**
+
+A structured Open Source Intelligence (OSINT) and Cyber Threat Intelligence (CTI) investigation into a recruiter-led online campaign that evolved across multiple web domains. The investigation combines passive OSINT collection, infrastructure analysis, behavioral analysis, and threat intelligence methodologies to document the campaign and identify defensive opportunities.
+
+---
+
+**Case ID:** OSINT-2026-001  
+**Project Type:** Cyber Threat Intelligence (CTI) Case Study  
+**Version:** 1.1  
+**Status:** Complete (Version 1.1)
+
+---
 
 ![Version](https://img.shields.io/badge/version-1.1-blue)
 ![Status](https://img.shields.io/badge/status-Complete-success)
