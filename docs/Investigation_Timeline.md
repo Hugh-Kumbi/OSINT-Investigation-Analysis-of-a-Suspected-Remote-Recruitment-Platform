@@ -26,32 +26,33 @@ Analytical conclusions are documented separately within the Findings and Analysi
 
 | Phase | Event | Evidence |
 |-------|-------|----------|
-| Phase 1 | Analyst discovers remote job advertisement on **occupationoasis.com** | Recruiter advertisement |
-| Phase 2 | Job application submitted | Analyst observation |
-| Phase 3 | Recruiter establishes initial contact | Chat transcript |
-| Phase 4 | Recruiter explains remote dropshipping business model | Chat transcript |
-| Phase 5 | Recruiter discusses salary, commission, and onboarding process | Chat transcript |
-| Phase 6 | Training session scheduled | Chat transcript |
-| Phase 7 | Analyst instructed to register on **linkroles.my** | Recruiter instructions |
-| Phase 8 | Store registration and onboarding completed on **linkroles.my** | Screenshots |
-| Phase 9 | Google Safe Browsing warning observed for **linkroles.my** | Analyst observation |
-| Phase 10 | Recruiter instructs migration to **unitelmatch.top** | Chat transcript |
-| Phase 11 | Training continues on **unitelmatch.top** | Screenshots |
-| Phase 12 | Cryptocurrency-related activity observed during training | Analyst observation |
-| Phase 13 | Passive OSINT investigation initiated | Investigation notes |
-| Phase 14 | DNS, WHOIS, SSL certificate, and infrastructure analysis performed | Technical analysis |
-| Phase 15 | Technology stack and reputation analysis completed | Technical analysis |
-| Phase 16 | Initial CTI documentation completed (Version 1.0) | Repository documentation |
-| Phase 17 | Recruiter provides a new portal: **unitelmatch.cc** | Chat transcript |
-| Phase 18 | Analyst attempts to access **unitelmatch.cc** | Analyst observation |
-| Phase 19 | Google Safe Browsing displays a warning identifying **unitelmatch.cc** as a dangerous website | Analyst observation |
-| Phase 20 | Analyst asks the recruiter to explain the warning | Chat transcript |
-| Phase 21 | Recruiter states they will consult the technical staff | Chat transcript |
-| Phase 22 | Recruiter provides **unitelmatch.cyou** as a backup portal | Chat transcript |
-| Phase 23 | Recruiter instructs analyst to continue onboarding using the backup portal | Chat transcript |
-| Phase 24 | Recruiter later explains that the warning was caused by a "platform upgrade" and tells the analyst not to worry | Chat transcript |
-| Phase 25 | Investigation expanded to include the newly observed domains | Investigation notes |
-| Phase 26 | Repository updated to Version 1.1 | Repository documentation |
+| Phase 1  | Analyst discovers remote job advertisement on **occupationoasis.com**                         | Recruiter advertisement  |
+| Phase 2  | Job application submitted                                                                     | Analyst observation      |
+| Phase 3  | Recruiter establishes initial contact                                                         | Chat transcript          |
+| Phase 4  | Recruiter explains remote dropshipping business model                                         | Chat transcript          |
+| Phase 5  | Recruiter discusses salary, commission, and onboarding process                                | Chat transcript          |
+| Phase 6  | Training session scheduled                                                                    | Chat transcript          |
+| Phase 7  | Analyst instructed to register on **linkroles.my**                                            | Recruiter instructions   |
+| Phase 8  | Store registration and onboarding completed on **linkroles.my**                               | Screenshots              |
+| Phase 9  | Google Safe Browsing warning observed for **linkroles.my**                                    | Analyst observation      |
+| Phase 10 | Recruiter instructs migration to **unitelmatch.top**                                          | Chat transcript          |
+| Phase 11 | Training continues on **unitelmatch.top**                                                     | Screenshots              |
+| Phase 12 | Cryptocurrency-related activity observed during training                                      | Analyst observation      |
+| Phase 13 | Passive OSINT investigation initiated                                                         | Investigation notes      |
+| Phase 14 | DNS, WHOIS, SSL certificate, and infrastructure analysis performed                            | Technical analysis       |
+| Phase 15 | Technology stack and reputation analysis completed                                            | Technical analysis       |
+| Phase 16 | Initial CTI documentation completed (Version 1.0)                                             | Repository documentation |
+| Phase 17 | Google Safe Browsing warning observed for **unitelmatch.top**                                 | Analyst observation      |
+| Phase 18 | Recruiter provides a new portal: **unitelmatch.cc**                                           | Chat transcript          |
+| Phase 19 | Analyst attempts to access **unitelmatch.cc**                                                 | Analyst observation      |
+| Phase 20 | Google Safe Browsing displays a warning identifying **unitelmatch.cc** as a dangerous website | Analyst observation      |
+| Phase 21 | Analyst asks the recruiter to explain the warning                                             | Chat transcript          |
+| Phase 22 | Recruiter states they will consult the technical staff                                        | Chat transcript          |
+| Phase 23 | Recruiter provides **unitelmatch.cyou** as a backup portal                                    | Chat transcript          |
+| Phase 24 | Recruiter instructs analyst to continue onboarding using the backup portal                    | Chat transcript          |
+| Phase 25 | Recruiter later explains that the warning was caused by a "platform upgrade" and tells the analyst not to worry | Chat transcript |
+| Phase 26 | Investigation expanded to include the newly observed domains                                  | Investigation notes      |
+| Phase 27 | Repository updated to Version 1.1                                                             | Repository documentation |
 
 ---
 
