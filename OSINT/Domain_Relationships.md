@@ -156,10 +156,10 @@ The recruiter instructed the analyst to continue using this domain while the rep
 | Domain | Hosting / CDN | Registrar | Certificate | Notes |
 |--------|---------------|-----------|-------------|-------|
 | occupationoasis.com | AWS / CloudFront | Amazon Registrar     | AWS Certificate Manager               | Nuxt.js, Vue.js           |
-| linkroles.my        | Cloudflare       | Gname.com            | Google Trust Services / Cloudflare    | Cloudflare infrastructure |
+| linkroles.my        | Cloudflare       | Gname.com            | Google Trust Services / Cloudflare    | Vue.js                    |
 | unitelmatch.top     | Cloudflare       | Global Asset Domains | Google Trust Services / Let's Encrypt | Vue.js                    |
-| unitelmatch.cc      | Pending analysis | Pending analysis     | Pending analysis                      | Newly identified          |
-| unitelmatch.cyou    | Pending analysis | Pending analysis     | Pending analysis                      | Newly identified          |
+| unitelmatch.cc      | Cloudflare       | Dynadot Inc          | Google Trust Services /  SSL.com      | Vue.js                    |
+| unitelmatch.cyou    | Cloudflare       | Global Asset Domains | SSL.com / Google Trust Services       | Nuxt.js, Vue.js           |
 
 ---
 
@@ -333,4 +333,4 @@ These findings should be incorporated into Version 1.2 if additional evidence be
 **Last Updated:**      August 2026  
 **Analyst:**           Hugh Chanetsa  
 **Assessment Type:**   OSINT Investigation       
-**GitHub:**            https://github.com/Hugh-Kumbi/OSINT-Investigation-Analysis-of-a-Suspected-Remote-Recruitment-Platform 
+**GitHub:**            https://github.com/Hugh-Kumbi/Operation-Phantom-Store 
