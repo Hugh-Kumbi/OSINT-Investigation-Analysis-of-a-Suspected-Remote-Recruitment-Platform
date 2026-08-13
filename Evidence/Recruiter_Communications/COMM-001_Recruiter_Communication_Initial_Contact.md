@@ -82,7 +82,7 @@ This evidence supports the following investigation artifacts:
 ヒュー・チャネツァさん、こんにちは。チェ・ジュンと申します。Googleを通じて求人にご応募いただき、リモートワークにご興味をお持ちとのことでしたので、こちらで自己紹介をお願いできますでしょうか？
 
 **17:06** チェ・ジュン:
-Photos
+![Photo](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_occupationoasis_remote-app.png)
 
 > **Analyst Observation**
 >
