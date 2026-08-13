@@ -19,9 +19,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 #### Documentation
 
-- Added `osint/domain_relationships.md`.
-- Added `Infrastructure_Evolution.md`.
-- Added `Domain_Analysis.md`.
+- Added [`osint/Domain_Relationships.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Domain_Relationships.md).
+- Added [`Infrastructure_Evolution.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Infrastructure_Analysis.md).
+- Added [`Domain_Analysis.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Domain_Analysis.md).
 - Updated repository documentation to Version 1.1.
 
 #### Evidence
