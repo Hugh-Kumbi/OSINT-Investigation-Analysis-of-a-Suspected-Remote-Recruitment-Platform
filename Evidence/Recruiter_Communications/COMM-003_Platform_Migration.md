@@ -19,7 +19,7 @@
 
 This evidence documents one of the most significant developments observed during the investigation: the repeated migration between onboarding platforms following browser security warnings and accessibility issues.
 
-Rather than discontinuing the onboarding process after security warnings were encountered, the recruiter consistently provided replacement domains and instructed the investigator to continue using the newly supplied infrastructure. This recurring behavior established a clear pattern of infrastructure replacement throughout the campaign.
+Rather than discontinuing the onboarding process after security warnings were encountered, the recruiter consistently provided replacement domains and instructed the analyst to continue using the newly supplied infrastructure. This recurring behavior established a clear pattern of infrastructure replacement throughout the campaign.
 
 The repeated introduction of newly observed domains represents a key behavioral and operational characteristic of the campaign.
 
@@ -134,7 +134,7 @@ That's just the platform upgrading, it's nothing to worry about. Are you checkin
 
 ## Behavioral Assessment
 
-Rather than attempting to troubleshoot or resolve browser security warnings, the recruiter immediately redirected the investigator to replacement infrastructure.
+Rather than attempting to troubleshoot or resolve browser security warnings, the recruiter immediately redirected the analyst to replacement infrastructure.
 
 This response indicates that operational continuity was prioritized over retaining a consistent platform. The repeated migration pattern suggests that the campaign was designed to tolerate infrastructure disruption by maintaining multiple operational domains capable of serving the same onboarding function.
 
