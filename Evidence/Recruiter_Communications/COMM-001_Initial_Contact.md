@@ -4,14 +4,14 @@
 
 | Field | Value |
 |-------|-------|
-| **Evidence ID**       | COMM-001                                                                                    |
-| **Evidence Type**     | Recruiter Communication                                                                     |
-| **Campaign Phase**    | Initial Contact                                                                             |
-| **Collection Method** | Direct Communication                                                                        |
-| **Source**            | [Recruiter Chat Transcript]()                                                                   |
-| **Integrity**         | Original conversation preserved. Formatting converted to Markdown only.                     |
-| **Related Domains**   | occupationoasis.com                                                                         |
-| **Related Analysis**  | [Campaign_Overview.md](), [Investigation_Timeline.md](), [Social_Engineering_Analysis.md]() |
+| **Evidence ID**       | COMM-001                                                                        |
+| **Evidence Type**     | Recruiter Communication                                                         |
+| **Campaign Phase**    | Initial Contact                                                                 |
+| **Collection Method** | Direct Communication                                                            |
+| **Source**            | Recruiter Chat Transcript                                                       |
+| **Integrity**         | Original conversation preserved. Formatting converted to Markdown only.         |
+| **Related Domains**   | occupationoasis.com                                                             |
+| **Related Analysis**  | Campaign_Overview.md, Investigation_Timeline.md, Social_Engineering_Analysis.md |
 
 ---
 
@@ -119,11 +119,11 @@ The following infrastructure is first introduced or referenced during this phase
 
 ## Related Analysis
 
-- `[docs/Campaign_Overview.md`]()
-- `[docs/Investigation_Timeline.md`]()
-- `[Analysis/Social_Engineering_Analysis.md`]()
-- `[Analysis/Attack_Lifecycle.md`]()
-- `[Analysis/Confidence_Assessment.md`]()
+- `docs/Campaign_Overview.md`
+- `docs/Investigation_Timeline.md`
+- `analysis/Social_Engineering_Analysis.md`
+- `analysis/Attack_Lifecycle.md`
+- `analysis/Confidence_Assessment.md`
 
 ---
 
@@ -137,7 +137,7 @@ This phase primarily represents:
 - Victim engagement
 - Preparation for subsequent onboarding activities
 
-Formal ATT&CK mappings are documented within [`Analysis/MITRE_ATT&CK_Mapping.md`]().
+Formal ATT&CK mappings are documented within `analysis/MITRE_ATT&CK_Mapping.md`.
 
 ---
 
