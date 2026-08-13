@@ -1,0 +1,452 @@
+# COMM-002 — Onboarding
+
+## Evidence Metadata
+
+| Field | Value |
+|-------|-------|
+| **Evidence ID**       | COMM-002                                                                                                 |
+| **Evidence Type**     | Recruiter Communication                                                                                  |
+| **Campaign Phase**    | Onboarding                                                                                               |
+| **Collection Method** | Direct Communication                                                                                     |
+| **Source**            | [Recruiter Chat Transcript](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Recruiter_Communications/Recruiter_Chat_Transcript.md)                                                                            |
+| **Integrity**         | Original conversation preserved. Formatting converted to Markdown only.                                  |
+| **Related Domains**   | occupationoasis.com, linkroles.my                                                                        |
+| **Related Analysis**  | [Campaign_Overview.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/docs/Campaign_Overview.md), [Investigation_Timeline.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/docs/Investigation_Timeline.md), [Social_Engineering_Analysis.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Analysis/Social_Engineering_Analysis.md), [Attack_Lifecycle.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Analysis/Attack_Lifecycle.md) |
+
+---
+
+# Executive Summary
+
+This evidence documents the transition from initial recruiter engagement to the campaign's structured onboarding process. During this phase, the recruiter provides registration instructions, guides the investigator through account creation, and introduces the first operational platform.
+
+The communication demonstrates a gradual increase in user commitment through guided actions, incremental task completion, and continued reassurance. The onboarding process establishes the operational foundation for subsequent campaign activities and introduces the first externally controlled infrastructure used throughout the investigation.
+
+---
+
+# Investigation Relevance
+
+This evidence supports the following investigation artifacts:
+
+- Campaign Overview
+- Methodology
+- Investigation Timeline
+- Findings
+- Social Engineering Analysis
+- Attack Lifecycle Analysis
+- Domain Relationships
+- Confidence Assessment
+
+---
+
+# Campaign Phase
+
+**Phase:** Onboarding
+
+### Primary Objectives Observed
+
+- User registration initiated.
+- Account creation completed.
+- Initial onboarding instructions provided.
+- Platform navigation explained.
+- User encouraged to complete introductory tasks.
+- Continued trust-building through guided interaction.
+
+---
+
+# Key Observations
+
+- Recruiter provides step-by-step onboarding assistance.
+- User is directed toward an external onboarding platform.
+- Registration process is closely supervised.
+- Questions are answered promptly to maintain engagement.
+- The recruiter emphasizes ease of participation and continued communication.
+- Platform familiarity is established before operational tasks are introduced.
+
+---
+
+# Transcript
+
+> **Note**
+>
+> The following transcript has been preserved in its original form. Only formatting has been modified to improve readability within this repository. No conversational content has been altered, omitted, or reordered.
+
+---
+
+# COMM-002_Onboarding.md
+
+## Phase: Onboarding
+
+**Date:** 2026.07.22  
+**Participants:** チェ・ジュン (Choi Jun) and Hugh K (Hugh Chanetsa)
+
+---
+
+## Conversation Log
+
+**14:55** Hugh K:  
+こんにちは
+
+**14:55** Hugh K:  
+素敵な夜を過ごされたことと思います。
+
+**14:56** Hugh K:  
+今は手が空いており、始める準備ができています。
+
+**14:56** チェ・ジュン:  
+ありがとう、昨夜はよく休めました。あなたも楽しい夜を過ごせたことを願っています
+
+**14:56** Hugh K:  
+ありがとうございます。おかげさまで、昨夜はよく休めました。お気遣いいただき、ありがとうございます。それでは、本日もよろしくお願いいたします。
+
+**14:57** チェ・ジュン:  
+はい、それでは始めましょう
+
+**14:57** Hugh K:  
+はい、よろしくお願いいたします。準備ができていますので、ご説明をお願いいたします。
+
+**14:58** チェ・ジュン:  
+ログインリンク：[https://www.linkroles.my](https://www.linkroles.my/) 招待コード：TIYO5998
+
+**15:00** チェ・ジュン:  
+まず自分のお店を登録してから、トレーニングを続けましょう
+
+**15:05** Hugh K:  
+承知しました。先にアカウントを作成すべきでしょうか？
+
+**15:05** チェ・ジュン:  
+はい
+
+**15:12** Hugh K:  
+なんとかログインできました。
+
+**15:12** チェ・ジュン:  
+とても良いです。今すぐスクリーンショットを開いて私に送ってください。私は次の作業を進めるのをお手伝いします
+
+**15:14** Hugh K:  
+Photos
+
+**15:15** チェ・ジュン:  
+Photos
+
+**15:15** チェ・ジュン:  
+現在「店舗情報が不完全」ボタンをクリックして、店舗情報を提出することができます。承認には約10分かかり、その後でプラットフォームの機能にアクセスできるようになります
+
+**15:15** チェ・ジュン:  
+上記の操作を完了すると、このプラットフォームのすべての機能を利用できます。
+
+**15:21** チェ・ジュン:  
+店舗の説明文は次のように書けます。当店へようこそ！お客様のニーズに応えるため、高品質で実用的、かつコストパフォーマンスに優れた人気商品を厳選して取り揃えています。すべての商品は信頼できるサプライヤーから仕入れているため、安心してお買い物を楽しんでいただけます。
+
+**15:26** チェ・ジュン:  
+検証はどうでしたか？
+
+**15:29** Hugh K:  
+必要な書類を提出しましたが、店舗情報は現在確認中となっています。
+
+**15:31** チェ・ジュン:  
+承認には約10分かかります
+
+**15:33** Hugh K:  
+オーケー
+
+**15:34** チェ・ジュン:  
+今、まずあなたを私たちの作業グループに招待しますが、いかがでしょうか？
+
+**15:34** チェ・ジュン:  
+nul
+
+**15:36** Hugh K:  
+はい、そうです！ありがとうございます。
+
+**15:37** チェ・ジュン:  
+はい、それでは審査に合格した場合、次のステップをご案内します
+
+**15:39** Hugh K:  
+なるほど、いいですね。
+
+**15:39** チェ・ジュン:  
+はい、もし私にスクリーンショットを送ってもらえれば、そうすれば私たちは始めることができます
+
+**15:41** Hugh K:  
+Photos
+
+**15:41** チェ・ジュン:  
+Photos
+
+**15:41** チェ・ジュン:  
+時間があればあなたのお店のプロフィール写真を変えてあげられます
+
+**15:42** チェ・ジュン:  
+今すぐ下にスクロールして「タスク」をクリックし、私に見せてください。先にこれについて説明させてください。
+
+**15:44** Hugh K:  
+Photos
+
+**15:44** チェ・ジュン:  
+Photos
+
+**15:44** チェ・ジュン:  
+こちらでは、私たちがより多くのトラフィックサポートを得るために役立つ5つのタスクをご覧いただけます。
+
+**15:44** チェ・ジュン:  
+店の流入が多いほど、儲けのチャンスが増えます
+
+**15:46** チェ・ジュン:  
+これが、私たちがこれらのタスクを完了することでトラフィックサポートを得る方法です。
+
+**15:46** チェ・ジュン:  
+こう言えば分かりますか？
+
+**15:47** Hugh K:  
+はい、大まかな流れは理解できました。
+
+**15:47** チェ・ジュン:  
+では、今から「プロダクトマーケット」に戻りましょう
+
+**15:48** チェ・ジュン:  
+自分の店のためにいくつかの商品を追加して、集客しましょう
+
+**15:48** Hugh K:  
+Photos
+
+**15:49** チェ・ジュン:  
+Photos
+
+**15:49** チェ・ジュン:  
+上記の指定された製品から10種類を選び、タスクを完了してトラフィックを増やします
+
+**15:50** Hugh K:  
+Photos
+
+**15:50** チェ・ジュン:  
+Photos
+
+**15:50** チェ・ジュン:  
+ここに好きな製品をいくつか追加することもできます
+
+**15:51** チェ・ジュン:  
+50以上の製品を追加すると、いくつかのタスクを完了してトラフィックを引き寄せることができます
+
+**15:51** チェ・ジュン:  
+終わったら教えてください
+
+**15:52** Hugh K:  
+いいですね！追加しておきます。
+
+**15:52** チェ・ジュン:  
+はい、完了したら操作方法を案内します
+
+**15:56** Hugh K:  
+終わりました。
+
+**15:57** チェ・ジュン:  
+Photos
+
+**15:57** チェ・ジュン:  
+はい、今このアイコンをクリックしてカスタマーサービスに連絡してください
+
+**15:57** チェ・ジュン:  
+50以上の商品をアップロードしました。現在、トラフィックタスクへの参加を申請します。ストア名：（あなたのストア名）
+
+**15:57** Hugh K:  
+Photos
+
+**15:58** チェ・ジュン:  
+私は50点以上の商品をアップロードしました。現在、トラフィックタスクへの参加を申請しています。店舗名：（あなたの店舗名）
+
+**15:58** チェ・ジュン:  
+カスタマーサービスに送信する
+
+**15:58** チェ・ジュン:  
+完了したら教えてください。それではトレーニングを始めましょう。
+
+**16:00** Hugh K:  
+終わりました。
+
+**16:00** チェ・ジュン:  
+もう大丈夫ですか？>
+
+**16:01** チェ・ジュン:  
+今、あなたは自分の店からログアウトして、このトレーニング用の店舗にログインできます。ログインしたら教えてください
+
+**16:01** Hugh K:  
+やった！カスタマーサービスが確認中だと言っていました。
+
+**16:02** チェ・ジュン:  
+店舗名：Choi Jun01 パスワード：Aa112211
+
+**16:02** チェ・ジュン:  
+いいよ
+
+**16:02** Hugh K:  
+なるほど、いいですね。
+
+**16:03** チェ・ジュン:  
+はい、完了したら、私のこのトレーニングにログインしてください。私はあなたが達成できるように指導します
+
+**16:04** Hugh K:  
+ログインできません。パスワードエラーと表示されます。
+
+**16:05** Hugh K:  
+心配しないで、私は参加します
+
+**16:05** チェ・ジュン:  
+あなたは入力ミスをしましたか？
+
+**16:05** チェ・ジュン:  
+スクリーンショットを見せて
+
+**16:06** Hugh K:  
+Photos
+
+**16:07** チェ・ジュン:  
+この店には既に注文がありますので、私はあなたにトレーニングを提供できます。注文をクリックして私に見せてください
+
+**16:07** チェ・ジュン:  
+Photos
+
+**16:08** Hugh K:  
+Photos
+
+**16:08** チェ・ジュン:  
+Photos
+
+**16:08** チェ・ジュン:  
+私はそれを完成させることで得られる利益を計算してあげるよ
+
+**16:09** Hugh K:  
+なるほど、いいですね。
+
+---
+
+# Analyst Notes
+
+## Behavioral Assessment
+
+The recruiter transitions from relationship building to operational guidance. Rather than immediately requesting sensitive information or financial commitments, the conversation focuses on helping the investigator successfully complete the onboarding workflow.
+
+This staged progression reduces perceived risk while increasing user investment in the recruitment process.
+
+---
+
+## Social Engineering Assessment
+
+Observed techniques include:
+
+- Guided task completion.
+- Positive reinforcement following successful actions.
+- Immediate assistance when questions arise.
+- Incremental commitment through small onboarding tasks.
+- Continued reassurance regarding the legitimacy of the opportunity.
+
+The interaction demonstrates a classic commitment-escalation strategy where each completed action increases the likelihood of continued participation.
+
+---
+
+## Infrastructure References
+
+Infrastructure introduced or actively utilized during this phase includes:
+
+| Domain | Purpose |
+|--------|---------|
+| occupationoasis.com | Initial recruitment platform |
+| linkroles.my        | Primary onboarding portal    |
+| line.me             | Communication platform       |
+
+---
+
+## Campaign Progression
+
+During this phase the campaign evolves from:
+
+```
+Recruiter Contact
+        │
+        ▼
+Employment Opportunity
+        │
+        ▼
+User Registration
+        │
+        ▼
+Platform Onboarding
+        │
+        ▼
+Initial Operational Tasks
+```
+
+This progression represents the first significant increase in campaign engagement.
+
+---
+
+## Related Evidence
+
+| Evidence ID | Description |
+|-------------|-------------|
+| [COMM-001](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Recruiter_Communications/COMM-001_Initial_Contact.md) | Initial Contact      |
+| [COMM-003](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Recruiter_Communications/COMM-003_Platform_Migration.md) | Platform Migration   |
+| [COMM-004](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Recruiter_Communications/COMM-004_Operational_Training.md) | Operational Training |
+
+---
+
+## Related Analysis
+
+- [`docs/Campaign_Overview.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/docs/Campaign_Overview.md)
+- [`docs/Investigation_Timeline.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/docs/Investigation_Timeline.md)
+- [`Analysis/Social_Engineering_Analysis.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Analysis/Social_Engineering_Analysis.md)
+- [`Analysis/Attack_Lifecycle.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Analysis/Attack_Lifecycle.md)
+- [`Analysis/Diamond_Model.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Analysis/Diamond_Model.md)
+- [`OSINT/Infrastructure_Analysis.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Infrastructure_Analysis.md)
+
+---
+
+# Intelligence Assessment
+
+## Campaign Evolution
+
+Compared to the Initial Contact phase, this stage demonstrates a measurable increase in operational engagement.
+
+Observed progression includes:
+
+- Establishment of user accounts.
+- Introduction of campaign infrastructure.
+- Structured onboarding workflow.
+- Continued recruiter oversight.
+- Preparation for subsequent operational activities.
+
+The onboarding process appears intentionally designed to normalize repeated interaction while minimizing suspicion.
+
+---
+
+## Confidence Level
+
+**High**
+
+This evidence is derived directly from first-hand recruiter communications collected during the investigation.
+
+---
+
+## Intelligence Value
+
+**High**
+
+This phase documents the transition from initial social engineering into active operational engagement and provides critical context for understanding later infrastructure migration and behavioral escalation observed throughout the campaign.
+
+---
+
+# Evidence Integrity Statement
+
+This document is an evidence artifact produced during a structured Cyber Threat Intelligence (CTI) investigation.
+
+The transcript has been converted into Markdown format solely to improve readability and repository organization.
+
+No conversational content has been modified, removed, or reordered.
+
+---
+
+## Document Information
+
+**Last Updated:**      August 2026  
+**Analyst:**           Hugh Chanetsa  
+**Assessment Type:**   OSINT Investigation       
+**GitHub:**            https://github.com/Hugh-Kumbi/Operation-Phantom-Store
