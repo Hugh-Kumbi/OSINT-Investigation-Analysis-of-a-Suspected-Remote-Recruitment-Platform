@@ -48,12 +48,12 @@ The complete transcript has been segmented into the following evidence artifacts
 
 | Evidence ID | Campaign Phase |
 |-------------|----------------|
-| COMM-001 | Initial Contact |
-| COMM-002 | Onboarding |
-| COMM-003 | Platform Migration |
-| COMM-004 | Operational Training |
-| COMM-005 | Financial Escalation |
-| COMM-006 | Campaign Closure |
+| [COMM-001](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Recruiter_Communications/COMM-001_Initial_Contact.md) | Initial Contact      |
+| [COMM-002](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Recruiter_Communications/COMM-002_Onboarding.md) | Onboarding           |
+| [COMM-003](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Recruiter_Communications/COMM-003_Platform_Migration.md) | Platform Migration   |
+| [COMM-004](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Recruiter_Communications/COMM-004_Operational_Training.md) | Operational Training |
+| [COMM-005](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Recruiter_Communications/COMM-005_Financial_Escalation.md) | Financial Escalation |
+| [COMM-006](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Recruiter_Communications/COMM-006_Campaign_Closure.md) | Campaign Closure     |
 
 Each evidence artifact references a specific portion of this master transcript while preserving the original chronological order.
 
@@ -94,39 +94,39 @@ This transcript supported the following investigation activities:
 
 ## Documentation
 
-- `docs/Campaign_Overview.md`
-- `docs/Methodology.md`
-- `docs/Investigation_Timeline.md`
-- `docs/Findings.md`
-- `docs/Evidence_Register.md`
-- `docs/Lessons_Learned.md`
-- `docs/Executive_Report.pdf`
+- [`docs/Campaign_Overview.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/docs/Campaign_Overview.md)
+- [`docs/Methodology.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/docs/Methodology.md)
+- [`docs/Investigation_Timeline.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/docs/Investigation_Timeline.md)
+- [`docs/Findings.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/docs/Findings.md)
+- [`docs/Evidence_Register.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/docs/Evidence_Register.md)
+- [`docs/Lessons_Learned.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/docs/Lessons_Learned.md)
+- [`docs/Executive_Report.pdf`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/docs/Executive_Report.pdf)
 
 ---
 
 ## Technical Analysis
 
-- `analysis/Attack_Lifecycle.md`
-- `analysis/Social_Engineering_Analysis.md`
-- `analysis/MITRE_ATT&CK_Mapping.md`
-- `analysis/Diamond_Model.md`
-- `analysis/Indicators_of_Compromise.md`
-- `analysis/Detection_Opportunities.md`
-- `analysis/Confidence_Assessment.md`
-- `analysis/Intelligence_Gaps.md`
+- [`Analysis/Attack_Lifecycle.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Analysis/Attack_Lifecycle.md)
+- [`Analysis/Social_Engineering_Analysis.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Analysis/Confidence_Assessment.md)
+- [`Analysis/MITRE_ATT&CK_Mapping.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Analysis/MITRE_ATT%26CK_Mapping.md)
+- [`Analysis/Diamond_Model.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Analysis/Diamond_Model.md)
+- [`Analysis/Indicators_of_Compromise.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Analysis/Indicators_of_Compromise.md)
+- [`Analysis/Detection_Opportunities.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Analysis/Detection_Opportunities.md)
+- [`Analysis/Confidence_Assessment.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Analysis/Confidence_Assessment.md)
+- [`Analysis/Intelligence_Gaps.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Analysis/Intelligence_Gaps.md)
 
 ---
 
 ## OSINT Analysis
 
-- `osint/DNS_Analysis.md`
-- `osint/Passive_DNS.md`
-- `osint/WHOIS_Analysis.md`
-- `osint/Certificate_Analysis.md`
-- `osint/Infrastructure_Analysis.md`
-- `osint/Technology_Stack.md`
-- `osint/Reputation_Analysis.md`
-- `osint/Domain_Relationships.md`
+- [`OSINT/DNS_Analysis.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/DNS_Analysis.md)
+- [`OSINT/Passive_DNS.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Passive_DNS.md)
+- [`OSINT/Domain_Analysis.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Domain_Analysis.md)
+- [`OSINT/Certificate_Analysis.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Certificate_Analysis.md)
+- [`OSINT/Infrastructure_Analysis.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Infrastructure_Analysis.md)
+- [`OSINT/Technology_Stack.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Technology_Stack.md)
+- [`OSINT/Reputation_Analysis.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Reputation_Analysis.md)
+- [`OSINT/Domain_Relationships.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Domain_Relationships.md)
 
 ---
 

@@ -72,9 +72,7 @@ This evidence supports the following investigation artifacts:
 
 ---
 
-# COMM-002_Onboarding.md
-
-## Phase: Onboarding
+# Phase: Onboarding
 
 **Date:** 2026.07.22  
 **Participants:** チェ・ジュン (Choi Jun) and Hugh K (Hugh Chanetsa)
