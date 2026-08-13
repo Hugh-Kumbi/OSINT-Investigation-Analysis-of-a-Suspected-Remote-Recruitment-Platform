@@ -235,6 +235,7 @@ The following infrastructure is first introduced or referenced during this phase
 | Domain | Purpose |
 |--------|---------|
 | occupationoasis.com | Initial recruitment platform |
+| line.me             | Communication platform       |
 
 ---
 
@@ -242,19 +243,19 @@ The following infrastructure is first introduced or referenced during this phase
 
 | Evidence ID | Description |
 |-------------|-------------|
-| [COMM-002](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Recruiter_Communications/COMM-001_Initial_Contact.md) | Onboarding Process   |
-| [COMM-003](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Recruiter_Communications/COMM-002_Onboarding.md) | Platform Migration   |
-| [COMM-004](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Recruiter_Communications/COMM-003_Platform_Migration.md) | Operational Training |
+| [COMM-002](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Recruiter_Communications/COMM-002_Initial_Contact.md) | Onboarding Process   |
+| [COMM-003](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Recruiter_Communications/COMM-003_Onboarding.md) | Platform Migration   |
+| [COMM-004](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Recruiter_Communications/COMM-004_Platform_Migration.md) | Operational Training |
 
 ---
 
 ## Related Analysis
 
-- `[docs/Campaign_Overview.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/docs/Campaign_Overview.md)
-- `[docs/Investigation_Timeline.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/docs/Investigation_Timeline.md)
-- `[Analysis/Social_Engineering_Analysis.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Analysis/Social_Engineering_Analysis.md)
-- `[Analysis/Attack_Lifecycle.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Analysis/Attack_Lifecycle.md)
-- `[Analysis/Confidence_Assessment.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Analysis/Confidence_Assessment.md)
+- [`docs/Campaign_Overview.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/docs/Campaign_Overview.md)
+- [`docs/Investigation_Timeline.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/docs/Investigation_Timeline.md)
+- [`Analysis/Social_Engineering_Analysis.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Analysis/Social_Engineering_Analysis.md)
+- [`Analysis/Attack_Lifecycle.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Analysis/Attack_Lifecycle.md)
+- [`Analysis/Confidence_Assessment.md`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Analysis/Confidence_Assessment.md)
 
 ---
 
