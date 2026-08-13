@@ -17,7 +17,7 @@
 
 # Executive Summary
 
-This evidence documents the transition from initial recruiter engagement to the campaign's structured onboarding process. During this phase, the recruiter provides registration instructions, guides the investigator through account creation, and introduces the first operational platform.
+This evidence documents the transition from initial recruiter engagement to the campaign's structured onboarding process. During this phase, the recruiter provides registration instructions, guides the analyst through account creation, and introduces the first operational platform.
 
 The communication demonstrates a gradual increase in user commitment through guided actions, incremental task completion, and continued reassurance. The onboarding process establishes the operational foundation for subsequent campaign activities and introduces the first externally controlled infrastructure used throughout the investigation.
 
@@ -321,7 +321,7 @@ Photos
 
 ## Behavioral Assessment
 
-The recruiter transitions from relationship building to operational guidance. Rather than immediately requesting sensitive information or financial commitments, the conversation focuses on helping the investigator successfully complete the onboarding workflow.
+The recruiter transitions from relationship building to operational guidance. Rather than immediately requesting sensitive information or financial commitments, the conversation focuses on helping the analyst successfully complete the onboarding workflow.
 
 This staged progression reduces perceived risk while increasing user investment in the recruitment process.
 
