@@ -115,7 +115,7 @@ This evidence supports the following investigation artifacts:
 
 📎 Related Screenshot
 
-[`linkroles_login_page.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/linkroles_login_page.png)
+[`CTI-2026-07_linkroles_login_page.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_linkroles_login_page.png)
 
 ---
 
@@ -135,10 +135,10 @@ This evidence supports the following investigation artifacts:
 とても良いです。今すぐスクリーンショットを開いて私に送ってください。私は次の作業を進めるのをお手伝いします
 
 **15:14** Hugh K:
-![linkroles_store_information](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_linkroles_store_information.png)
+![CTI-2026-07_linkroles_store_information.png](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_linkroles_store_information.png)
 
 **15:15** チェ・ジュン:
-![linkroles_store_information_verification_pending](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_linkroles_store_information_verification_pending.png)
+![CTI-2026-07_linkroles_store_information_verification_pending.png](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_linkroles_store_information_verification_pending.png)
 
 **15:15** チェ・ジュン:
 現在「店舗情報が不完全」ボタンをクリックして、店舗情報を提出することができます。承認には約10分かかり、その後でプラットフォームの機能にアクセスできるようになります
@@ -154,7 +154,7 @@ This evidence supports the following investigation artifacts:
 
 📎 Related Screenshot
 
-`screenshots/linkroles/store_information.png`
+![CTI-2026-07_linkroles_store_information.png](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_linkroles_store_information.png)
 
 ---
 
@@ -181,7 +181,7 @@ This evidence supports the following investigation artifacts:
 
 📎 Related Screenshot
 
-`screenshots/linkroles/store_verification_pending.png`
+[`CTI-2026-07_linkroles_verification_complete.png`]()
 
 ---
 
@@ -204,10 +204,10 @@ nul
 はい、もし私にスクリーンショットを送ってもらえれば、そうすれば私たちは始めることができます
 
 **15:41** Hugh K:
-Photos
+[CTI-2026-07_linkroles_onboarding_process-01]()
 
 **15:41** チェ・ジュン:
-Photos
+[CTI-2026-07_linkroles_onboarding_process-02]()
 
 > **Analyst Observation**
 >
@@ -224,10 +224,10 @@ Photos
 今すぐ下にスクロールして「タスク」をクリックし、私に見せてください。先にこれについて説明させてください。
 
 **15:44** Hugh K:
-Photos
+[CTI-2026-07_linkroles_onboarding_process-03]()
 
 **15:44** チェ・ジュン:
-Photos
+[CTI-2026-07_linkroles_onboarding_process-04]()
 
 **15:44** チェ・ジュン:
 こちらでは、私たちがより多くのトラフィックサポートを得るために役立つ5つのタスクをご覧いただけます。
@@ -252,7 +252,7 @@ Photos
 
 📎 Related Screenshot
 
-`screenshots/linkroles/tasks.png`
+[`CTI-2026-07_linkroles_tasks.png`]()
 
 ---
 
@@ -263,19 +263,19 @@ Photos
 自分の店のためにいくつかの商品を追加して、集客しましょう
 
 **15:48** Hugh K:
-Photos
+[`CTI-2026-07_linkroles_onboarding_process-05`]()
 
 **15:49** チェ・ジュン:
-Photos
+[`CTI-2026-07_linkroles_onboarding_process-06`]()
 
 **15:49** チェ・ジュン:
 上記の指定された製品から10種類を選び、タスクを完了してトラフィックを増やします
 
 **15:50** Hugh K:
-Photos
+[`CTI-2026-07_linkroles_onboarding_process-07`]()
 
 **15:50** チェ・ジュン:
-Photos
+[`CTI-2026-07_linkroles_onboarding_process-08`]()
 
 **15:50** チェ・ジュン:
 ここに好きな製品をいくつか追加することもできます
@@ -303,12 +303,12 @@ Photos
 
 📎 Related Screenshot
 
-`screenshots/linkroles/product_market.png`
+[`CTI-2026-07_linkroles_product_market.png`]()
 
 ---
 
 **15:57** チェ・ジュン:
-Photos
+[`CTI-2026-07_linkroles_onboarding_process-09`]()
 
 **15:57** チェ・ジュン:
 はい、今このアイコンをクリックしてカスタマーサービスに連絡してください
@@ -317,7 +317,7 @@ Photos
 50以上の商品をアップロードしました。現在、トラフィックタスクへの参加を申請します。ストア名：（あなたのストア名）
 
 **15:57** Hugh K:
-Photos
+[`CTI-2026-07_linkroles_onboarding_process-10`]()
 
 **15:58** チェ・ジュン:
 私は50点以上の商品をアップロードしました。現在、トラフィックタスクへの参加を申請しています。店舗名：（あなたの店舗名）
@@ -339,7 +339,7 @@ Photos
 
 📎 Related Screenshot
 
-`screenshots/linkroles/customer_service_traffic_task_request.png`
+[`CTI-2026-07_linkroles_customer_service_traffic_task_request.png`]()
 
 ---
 
@@ -366,7 +366,7 @@ Photos
 
 📎 Related Screenshot
 
-`screenshots/training_store_credentials.png`
+[`CTI-2026-07_training_store_credentials.png`]()
 
 ---
 
@@ -389,19 +389,19 @@ Photos
 スクリーンショットを見せて
 
 **16:06** Hugh K:
-Photos
+[`CTI-2026-07_linkroles_onboarding_process-11`]()
 
 **16:07** チェ・ジュン:
 この店には既に注文がありますので、私はあなたにトレーニングを提供できます。注文をクリックして私に見せてください
 
 **16:07** チェ・ジュン:
-Photos
+[`CTI-2026-07_linkroles_onboarding_process-12`]()
 
 **16:08** Hugh K:
-Photos
+[`CTI-2026-07_linkroles_onboarding_process-13`]()
 
 **16:08** チェ・ジュン:
-Photos
+[`CTI-2026-07_linkroles_onboarding_process-14`]()
 
 **16:08** チェ・ジュン:
 私はそれを完成させることで得られる利益を計算してあげるよ
@@ -419,7 +419,7 @@ Photos
 
 📎 Related Screenshot
 
-`screenshots/training_store_order.png`
+[`CTI-2026-07_linkrolestraining_store_order.png`]()
 
 ---
 
