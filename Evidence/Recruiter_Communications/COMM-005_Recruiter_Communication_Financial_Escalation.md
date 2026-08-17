@@ -653,7 +653,8 @@ unsent a message.
 ---
 
 **19:28** チェ・ジュン:  
-> [`CTI-2026-07_financial_transaction_profit.png`]()
+> ![`CTI-2026-07_financial_transaction_profit.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_financial_transaction_profit.png)
+
 > **Analyst Observation**
 >
 > Image sent—likely showing withdrawal screen or balance.
@@ -722,7 +723,7 @@ unsent a message.
 > Detailed breakdown of the transaction: charge, profit, 30% crypto bonus, total. Emphasizes “no shipping needed” for e-orders.
 >
 > 📎 Related Screenshot  
-> [`CTI-2026-07_financial_transaction_breakdown.png`]()
+> [`CTI-2026-07_financial_transaction_breakdown.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_financial_transaction_breakdown.png)
 
 ---
 
@@ -936,7 +937,8 @@ unsent a message.
 ---
 
 **18:42** Hugh K:  
-> [`CTI-2026-07_training_store_dashboard.png`]()
+> [`CTI-2026-07_training_store_dashboard-01.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_training_store_dashboard-01.png)
+
 > **Analyst Observation**
 >
 > Screenshot of store dashboard.
@@ -944,7 +946,7 @@ unsent a message.
 ---
 
 **18:42** Hugh K:  
-> [`CTI-2026-07_training_store_dashboard-02.png`]()
+> [`CTI-2026-07_training_store_dashboard-02.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_training_store_dashboard-02.png)
 > **Analyst Observation**
 >
 > Additional screenshot—possibly order or balance view.
