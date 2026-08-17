@@ -947,6 +947,7 @@ unsent a message.
 
 **18:42** Hugh K:  
 > [`CTI-2026-07_training_store_dashboard-02.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_training_store_dashboard-02.png)
+
 > **Analyst Observation**
 >
 > Additional screenshot—possibly order or balance view.
@@ -999,7 +1000,7 @@ unsent a message.
 ---
 
 **18:57** チェ・ジュン:  
-> [`CTI-2026-07_training_store_dashboard-02.png`]()
+> [`CTI-2026-07_training_store_dashboard-03.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_training_store_dashboard-03.png)
 
 > **Analyst Observation**
 >
@@ -1222,7 +1223,7 @@ unsent a message.
 > Instructs to register an ERC-20 address (note: different chain from earlier TRC-20) before withdrawing.
 >
 > 📎 Related Screenshot  
-> [`CTI-2026-07_financial_erc20_address_instruction.png`]()
+> [`CTI-2026-07_financial_erc20_address_instruction.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_financial_erc20_address_instruction.png)
 
 ---
 
@@ -1335,7 +1336,7 @@ unsent a message.
 > Escalates tone: asks candidate to confirm if they’re quitting. References “not sending messages” as confusing behavior.
 >
 > 📎 Related Screenshot  
-> [`CTI-2026-07_financial_pressure_message.png`]()
+> [`CTI-2026-07_financial_pressure_message.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_unitelmatch_reassurance_message.png)
 
 ---
 
