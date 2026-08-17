@@ -152,8 +152,8 @@ TikTok は托管取引モデルと 48 時間の返品期間を採用して、購
 >
 > First explicit mention of upfront capital requirement: sellers must “advance” product costs before shipment. This is the core financial commitment of the scheme.
 >
-📎 Related Screenshot  
-![`CTI-2026-07_training_upfront_cost_explanation.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_training_upfront_cost_explanation.png)
+> 📎 Related Screenshot  
+> ![`CTI-2026-07_training_upfront_cost_explanation.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_training_upfront_cost_explanation.png)
 
 ---
 
