@@ -84,7 +84,8 @@ This evidence supports the following investigation artifacts:
 ### 2026.07.22
 
 **18:10** チェ・ジュン:  
-> [`CTI-2026-07_customer_service_traffic_task_request`]()
+> ![`CTI-2026-07_customer_service_traffic_task_request`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_customer_service_traffic_task_request.png)
+
 > **Analyst Observation**
 >
 > The following message contains an image illustrating how to access customer service in order to request traffic for tasks.
@@ -108,7 +109,7 @@ This evidence supports the following investigation artifacts:
 > Explicit instruction: candidate must send deposit address so recruiter can “prepay” for an order. Framed as collaborative, but candidate is being set up to fund the transaction.
 >
 > 📎 Related Screenshot  
-> [`CTI-2026-07_financial_trc20_address_request.png`]()
+> ![`CTI-2026-07_financial_trc20_address_request.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_financial_trc20_address_request.png)
 
 ---
 
@@ -167,7 +168,8 @@ This evidence supports the following investigation artifacts:
 ---
 
 **18:24** Hugh K:  
-> [`CTI-2026-07_customer_service_traffic_task_request_conversation.png`]()
+> ![`CTI-2026-07_customer_service_traffic_task_request_conversation.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_customer_service_traffic_task_request_conversation.png)
+
 > **Analyst Observation**
 >
 > Conversation between analyst and customer support about the recruiter’s crypto top-up that was supposedly done.
@@ -184,7 +186,8 @@ This evidence supports the following investigation artifacts:
 ---
 
 **18:25** チェ・ジュン:  
-> [`CTI-2026-07_customer_financial_trc20_address_highlighted.png`]()
+> ![`CTI-2026-07_customer_financial_trc20_address_highlighted.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_customer_financial_trc20_address_highlighted.png)
+
 > **Analyst Observation**
 >
 > Likely a visual aid (e.g., where to find address in wallet).
@@ -199,7 +202,7 @@ TMbunybGaMmrjt91SAJ8YGRDGkZ65huntH
 > Candidate provides a TRC20 address (42-character string starting with “T”). This is a critical step: sharing crypto wallet details with the recruiter.
 >
 > 📎 Related Screenshot  
-> [`CTI-2026-07_financial_recruiter_trc20_address.png`]()
+> ![`CTI-2026-07_financial_recruiter_trc20_address.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_financial_recruiter_trc20_address.png)
 
 ---
 
@@ -213,7 +216,8 @@ TMbunybGaMmrjt91SAJ8YGRDGkZ65huntH
 ---
 
 **18:39** チェ・ジュン:  
-> [`CTI-2026-07_financial_deposit_proof.png`]()
+> ![`CTI-2026-07_financial_deposit_proof.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_financial_deposit_proof.png)
+
 > **Analyst Observation**
 >
 > The following message contains an image showing proof of deposit and the transaction hash.
@@ -266,7 +270,8 @@ TMbunybGaMmrjt91SAJ8YGRDGkZ65huntH
 ---
 
 **18:48** Hugh K:  
-> [`CTI-2026-07_financial_balance_update.png`]()
+> ![`CTI-2026-07_financial_balance_update.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_financial_balance_update.png)
+
 > **Analyst Observation**
 >
 > Candidate sends screenshot—likely of updated order status or balance.
@@ -310,7 +315,8 @@ TMbunybGaMmrjt91SAJ8YGRDGkZ65huntH
 ---
 
 **18:55** Hugh K:  
-> [`CTI-2026-07_training_order_completion-01.png`]()
+> ![`CTI-2026-07_training_order_completion-01.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_training_order_completion-01.png)
+
 > **Analyst Observation**
 >
 > Candidate complies with screenshot request.
@@ -318,8 +324,10 @@ TMbunybGaMmrjt91SAJ8YGRDGkZ65huntH
 ---
 
 **18:55** チェ・ジュン:  
-> [`CTI-2026-07_training_order_completion-02.png`]()
-> [`CTI-2026-07_training_order_completion-03.png`]()
+> ![`CTI-2026-07_training_order_completion-02.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_training_order_completion-02.png)
+
+> ![`CTI-2026-07_training_order_completion-03.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_training_order_completion-03.png)
+
 > **Analyst Observation**
 >
 > Recruiter sends image—possibly highlighting the “Advance” button or next step.
@@ -336,7 +344,8 @@ TMbunybGaMmrjt91SAJ8YGRDGkZ65huntH
 ---
 
 **18:57** Hugh K:  
-> [`CTI-2026-07_training_order_completion-04.png`]()
+> ![`CTI-2026-07_training_order_completion-04.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_training_order_completion-04.png)
+
 > **Analyst Observation**
 >
 > Candidate sends screenshot—likely showing order in “processing” or “shipped” state.
@@ -344,7 +353,8 @@ TMbunybGaMmrjt91SAJ8YGRDGkZ65huntH
 ---
 
 **18:58** チェ・ジュン:  
-> [`CTI-2026-07_training_order_completion-05.png`]()
+> ![`CTI-2026-07_training_order_completion-05.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_training_order_completion-05.png)
+
 > **Analyst Observation**
 >
 > Recruiter responds with image confirmation and an instruction about the next screen.
@@ -352,7 +362,7 @@ TMbunybGaMmrjt91SAJ8YGRDGkZ65huntH
 ---
 
 **18:59** Hugh K:  
-> [`CTI-2026-07_training_order_completion-06.png`]()
+> ![`CTI-2026-07_training_order_completion-06.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_training_order_completion-06.png)
 
 > **Analyst Observation**
 >
@@ -530,7 +540,7 @@ TikTok のトラフィックは非常に多く、世界中のサプライヤー�
 > Recommends Coincheck—a Japan-licensed crypto exchange. Adds legitimacy by naming a regulated platform.
 >
 > 📎 Related Screenshot  
-> [`CTI-2026-07_financial_coincheck_recommendation.png`]()
+> ![`CTI-2026-07_financial_coincheck_recommendation.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_financial_coincheck_recommendation.png)
 
 ---
 
