@@ -252,7 +252,7 @@ nul
 
 📎 Related Screenshot
 
-![`CTI-2026-07_linkroles_tasks.png`]()
+![`CTI-2026-07_linkroles_tasks.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_linkroles_tasks.png)
 
 ---
 
@@ -303,7 +303,7 @@ nul
 
 📎 Related Screenshot
 
-![`CTI-2026-07_unitelmatch.top_product_market.png`]()
+![`CTI-2026-07_unitelmatch.top_product_market.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_unitelmatch.top_product_market.png)
 
 ---
 
@@ -339,7 +339,7 @@ nul
 
 📎 Related Screenshot
 
-![`CTI-2026-07_linkroles_customer_service_traffic_task_request.png`]()
+![`CTI-2026-07_linkroles_customer_service_traffic_task_request.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_linkroles_customer_service_traffic_task_request.png)
 
 ---
 
@@ -366,7 +366,7 @@ nul
 
 📎 Related Screenshot
 
-![`CTI-2026-07_training_store_credentials.png`]()
+![`CTI-2026-07_training_store_credentials.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_training_store_credentials.png)
 
 ---
 
@@ -419,9 +419,9 @@ nul
 
 📎 Related Screenshot
 
-![`CTI-2026-07_linkroles_training_store_order-01.png`]()
-![`CTI-2026-07_linkroles_training_store_order-02.png`]()
-![`CTI-2026-07_linkroles_training_store_order-03.png`]()
+![`CTI-2026-07_linkroles_training_store_order-01.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_linkroles_training_store_order-01.png)
+![`CTI-2026-07_linkroles_training_store_order-02.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_linkroles_training_store_order-02.png)
+![`CTI-2026-07_linkroles_training_store_order-03.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_linkroles_training_store_order-03.png)
 
 ---
 
@@ -468,12 +468,12 @@ The final messages are particularly significant because the recruiter introduces
 * ![`CTI-2026-07_linkroles_store_information_verification_pending.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_linkroles_store_information_verification_pending.png)
 * ![`CTI-2026-07_linkroles__verification_complete.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_linkroles__verification_complete.png)
 * ![`CTI-2026-07_linkroles_tasks.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_linkroles_tasks.png)
-* ![`CTI-2026-07_unitelmatch.top_product_market.png`]()
-* ![`CTI-2026-07_linkroles_customer_service_traffic_task_request.png`]()
-* ![`CTI-2026-07_training_store_credentials.png`]()
-* ![`CTI-2026-07_training_store_order-01.png`]()
-* ![`CTI-2026-07_training_store_order-02.png`]()
-* ![`CTI-2026-07_training_store_order-03.png`]()
+* ![`CTI-2026-07_unitelmatch.top_product_market.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_unitelmatch.top_product_market.png)
+* ![`CTI-2026-07_linkroles_customer_service_traffic_task_request.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_linkroles_customer_service_traffic_task_request.png)
+* ![`CTI-2026-07_training_store_credentials.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_training_store_credentials.png)
+* ![`CTI-2026-07_training_store_order-01.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_linkroles_training_store_order-01.png)
+* ![`CTI-2026-07_training_store_order-02.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_linkroles_training_store_order-02.png)
+* ![`CTI-2026-07_training_store_order-03.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_linkroles_training_store_order-03.png)
 
 ---
 
