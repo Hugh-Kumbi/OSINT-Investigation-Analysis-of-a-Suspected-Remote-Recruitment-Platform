@@ -88,11 +88,30 @@ This evidence supports the following investigation artifacts:
 **11:08** チェ・ジュン:  
 おはよう！☀️🌸今日も心地よく、笑顔で過ごせますように😆
 
+> **Analyst Observation**
+>
+> Opening message uses warm, friendly Japanese greeting with emojis—typical rapport-building opener in recruiter–candidate outreach.
+
+---
+
 **12:21** チェ・ジュン:  
 [https://www.unitelmatch.top](https://www.unitelmatch.top/) 今日、あなたは自分のネットショップにログインして確認しましたか？
 
+> **Analyst Observation**
+>
+> First introduction of a task-related link (`unitelmatch.top`). The message shifts from greeting to prompting action: logging into an “online shop.”
+>
+📎 Related Screenshot  
+![`CTI-2026-07_unitelmatch_login_prompt`]()
+
+---
+
 **13:32** チェ・ジュン:  
 今日はシステムがアップグレードされました。これを使って先にあなたのオンラインショップにログインして確認できます
+
+> **Analyst Observation**
+>
+> Justification for link usage: “system upgrade.” This frames the platform change as routine maintenance while reinforcing the need to log in.
 
 ---
 
@@ -101,32 +120,99 @@ This evidence supports the following investigation artifacts:
 **12:06** チェ・ジュン:  
 [https://www.unitelmatch.cc](https://www.unitelmatch.cc/)
 
+> **Analyst Observation**
+>
+> New domain (`unitelmatch.cc`) introduced without explanation—first sign of domain rotation. No accompanying instruction beyond the URL itself.
+>
+📎 Related Screenshot  
+![`CTI-2026-07_unitelmatch.cc_domain_change.png`]()
+
+---
+
 **19:35** Hugh K:  
 Yes, I am ready. I tried to login but google is saying that [https://www.unitelmatch.cc](https://www.unitelmatch.cc/) is a dangerous site
+
+> **Analyst Observation**
+>
+> Candidate expresses readiness but raises a security warning from Google Safe Browsing. This is a critical trust signal and potential friction point.
+
+---
 
 **19:35** Hugh K:  
 What does that mean?
 
+> **Analyst Observation**
+>
+> Direct request for clarification. Indicates candidate is cautious and seeking reassurance before proceeding.
+
+---
+
 **19:36** チェ・ジュン:  
 技術スタッフに質問する必要があるので、少々お待ちください。
+
+> **Analyst Observation**
+>
+> Recruiter defers to “technical staff,” creating a buffer while avoiding an immediate explanation. This is a common delay tactic in ambiguous situations.
+
+---
 
 **19:37** Hugh K:  
 Okay cool
 
+> **Analyst Observation**
+>
+> Candidate remains cooperative despite the warning. Trust is still intact at this stage.
+
+---
+
 **19:38** チェ・ジュン:  
 [https://www.unitelmatch.cyou](https://www.unitelmatch.cyou/)
+
+> **Analyst Observation**
+>
+> Second domain rotation within minutes (`unitelmatch.cyou`). Rapid URL changes may indicate infrastructure instability or deliberate obfuscation.
+>
+📎 Related Screenshot  
+![`CTI-2026-07_unitelmatch.cyou_backup_link.png`]()
+
+---
 
 **19:38** チェ・ジュン:  
 まずはこちらのバックアップリンクを使ってストアにログインしてください。技術的な回答をお待ちしています。
 
+> **Analyst Observation**
+>
+> Explicit instruction to use a “backup link.” Framed as temporary workaround while awaiting “technical answer.” Reinforces urgency to log in despite earlier warning.
+
+---
+
 **19:39** チェ・ジュン:  
 Tell me when you log in
+
+> **Analyst Observation**
+>
+> Direct call for confirmation. Shifts language to English, possibly to ensure clarity or mirror candidate’s language.
+
+---
 
 **19:54** チェ・ジュン:  
 ？？
 
+> **Analyst Observation**
+>
+> Follow-up after 15 minutes of silence. Use of “？？” conveys impatience or concern over lack of response.
+
+---
+
 **20:14** チェ・ジュン:  
 That's just the platform upgrading, it's nothing to worry about. Are you checking your messages?
+
+> **Analyst Observation**
+>
+> Retrospective reassurance: dismisses Google warning as routine “platform upgrading.” Ends with a mild challenge (“Are you checking your messages?”), implying candidate may be inattentive.
+>
+📎 Related Screenshot  
+![`CTI-2026-07_unitelmatch_reassurance_message.png`]()
 
 ---
 
