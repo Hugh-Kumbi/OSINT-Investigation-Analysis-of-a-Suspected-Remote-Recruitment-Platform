@@ -2438,7 +2438,7 @@ unsent a message.
 ---
 
 **18:43** Hugh K:  
-> ![`CTI-2026-07_candidate_orders_screen.png`]()
+> ![`CTI-2026-07_candidate_orders_screen.png`](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/CTI-2026-07_candidate_orders_screen.png)
 
 > **Analyst Observation**
 >
