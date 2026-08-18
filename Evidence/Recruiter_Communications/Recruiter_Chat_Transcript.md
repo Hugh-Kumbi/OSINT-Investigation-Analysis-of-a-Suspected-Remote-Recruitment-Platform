@@ -90,11 +90,11 @@ Each evidence artifact references a specific portion of this master transcript w
 ---
 
 **17:06** チェ・ジュン:  
-Photos
+> [`CTI-2026-07_occupationoasis_referenced_site_verification.png`]()
 
 > **Analyst Observation**
 >
-> Image sent—likely a business card, profile, or credential screenshot. Content not preserved in text.
+> The following message contains an image referencing https://www.occupationoasis.com/, the supposed job board advertising remote work opportunities.
 
 ---
 
@@ -153,7 +153,7 @@ Photos
 > Candidate expresses interest but requests structured clarification on six critical points—including upfront costs. Strong signal of caution.
 >
 > 📎 Related Screenshot  
-> `screenshots/full_transcript/candidate_questions_07_21.png`
+> [`CTI-2026-07_full_transcript_candidate_questions.png`]()
 
 ---
 
@@ -342,7 +342,7 @@ TT ショッププラットフォームに所属しており、私自身も店�
 > Introduces dropshipping model: no inventory, logistics, or after-sales burden. Claims low startup ease and reduced risk.
 >
 > 📎 Related Screenshot  
-> `screenshots/full_transcript/dropshipping_explanation_07_21.png`
+> [`CTI-2026-07_full_transcript_dropshipping_explanation.png`]()
 
 ---
 
@@ -563,7 +563,7 @@ TT ショッププラットフォームに所属しており、私自身も店�
 > First introduction of **linkroles.my** with invitation code. Marks transition from recruiter communication to platform onboarding.
 >
 > 📎 Related Screenshot  
-> `screenshots/full_transcript/linkroles_invitation_07_22.png`
+> [`CTI-2026-07_full_transcript_linkroles_invitation.png`]()
 
 ---
 
@@ -613,7 +613,7 @@ TT ショッププラットフォームに所属しており、私自身も店�
 ---
 
 **15:14** Hugh K:  
-Photos
+> [`CTI-2026-07_shop_registration_training_prerequisite.png`]()
 
 > **Analyst Observation**
 >
@@ -622,11 +622,11 @@ Photos
 ---
 
 **15:15** チェ・ジュン:  
-Photos
+> [`CTI-2026-07_recruiter_UI_element_highlight.png`]()
 
 > **Analyst Observation**
 >
-> Recruiter sends image—likely highlighting next UI element.
+> Recruiter sends image highlighting next UI element.
 
 ---
 
@@ -748,7 +748,7 @@ nul
 ---
 
 **15:41** Hugh K:  
-Photos
+> [`CTI-2026-07_next_steps_post_screening.png`]()
 
 > **Analyst Observation**
 >
@@ -757,7 +757,7 @@ Photos
 ---
 
 **15:41** チェ・ジュン:  
-Photos
+> [`CTI-2026-07_recruiter_UI_next_element.png`]()
 
 > **Analyst Observation**
 >
@@ -784,7 +784,8 @@ Photos
 ---
 
 **15:44** Hugh K:  
-Photos
+> [`CTI-2026-07_tasks_click_scroll_instruction.png`]()
+
 
 > **Analyst Observation**
 >
@@ -793,7 +794,7 @@ Photos
 ---
 
 **15:44** チェ・ジュン:  
-Photos
+> [`CTI-2026-07_recruiter_task_elements_highlight.png`]()
 
 > **Analyst Observation**
 >
@@ -865,7 +866,7 @@ Photos
 ---
 
 **15:48** Hugh K:  
-Photos
+> [`CTI-2026-07_add_products_store_attract_customers.png`]()
 
 > **Analyst Observation**
 >
@@ -874,7 +875,7 @@ Photos
 ---
 
 **15:49** チェ・ジュン:  
-Photos
+> [`CTI-2026-07_recruiter_add_products_UI_highlight.png`]()
 
 > **Analyst Observation**
 >
@@ -892,7 +893,7 @@ Photos
 ---
 
 **15:50** Hugh K:  
-Photos
+> [`CTI-2026-07_select_10_products_task_traffic.png`]()
 
 > **Analyst Observation**
 >
@@ -901,7 +902,7 @@ Photos
 ---
 
 **15:50** チェ・ジュン:  
-Photos
+> [`CTI-2026-07_post_10_products_UI_highlight.png`]()
 
 > **Analyst Observation**
 >
@@ -964,11 +965,11 @@ Photos
 ---
 
 **15:57** チェ・ジュン:  
-Photos
+> [`CTI-2026-07_customer_service_contact_button.png`]()
 
 > **Analyst Observation**
 >
-> Recruiter sends image—likely customer service contact button.
+> Recruiter sends image pointing out the customer service contact button.
 
 ---
 
@@ -991,7 +992,7 @@ Photos
 ---
 
 **15:57** Hugh K:  
-Photos
+> [`CTI-2026-07_recruiter_traffic_task_apply_instruction.png`]()
 
 > **Analyst Observation**
 >
@@ -1070,7 +1071,7 @@ Photos
 > Provides training store credentials. Shared password is a security red flag.
 >
 > 📎 Related Screenshot  
-> `screenshots/full_transcript/training_store_credentials_07_22.png`
+> [`CTI-2026-07_full_transcript_training_store_credentials.png`]()
 
 ---
 
@@ -1138,7 +1139,7 @@ Photos
 ---
 
 **16:06** Hugh K:  
-Photos
+> [`CTI-2026-07_store_orders_live.png`]()
 
 > **Analyst Observation**
 >
@@ -1156,7 +1157,7 @@ Photos
 ---
 
 **16:07** チェ・ジュン:  
-Photos
+> [`CTI-2026-07_store_orders_live_training_UI_highlight.png`]()
 
 > **Analyst Observation**
 >
@@ -1165,7 +1166,7 @@ Photos
 ---
 
 **16:08** Hugh K:  
-Photos
+> [`CTI-2026-07_candidate_compliance_confirmation.png`]()
 
 > **Analyst Observation**
 >
@@ -1174,7 +1175,7 @@ Photos
 ---
 
 **16:08** チェ・ジュン:  
-Photos
+> [`CTI-2026-07_candidate_compliance_UI_highlight.png`]()
 
 > **Analyst Observation**
 >
@@ -1210,7 +1211,7 @@ Photos
 > First concrete financial breakdown with crypto bonus incentive.
 >
 > 📎 Related Screenshot  
-> `screenshots/full_transcript/profit_breakdown_07_22.png`
+> [`CTI-2026-07_full_transcript_profit_breakdown.png`]()
 
 ---
 
@@ -1276,7 +1277,7 @@ TikTok は托管取引モデルと 48 時間の返品期間を採用して、購
 > First explicit mention of upfront capital requirement.
 >
 > 📎 Related Screenshot  
-> `screenshots/full_transcript/upfront_cost_07_22.png`
+> [`CTI-2026-07_full_transcript_upfront_cost.png`]()
 
 ---
 
@@ -1469,7 +1470,7 @@ TikTok は托管取引モデルと 48 時間の返品期間を採用して、購
 > First concrete funding request: $221 needed. Directs to “Help Center” for recharge details.
 >
 > 📎 Related Screenshot  
-> `screenshots/full_transcript/recharge_instruction_07_22.png`
+> [`CTI-2026-07_full_transcript_recharge_instruction.png`]()
 
 ---
 
@@ -1492,7 +1493,7 @@ TikTok は托管取引モデルと 48 時間の返品期間を採用して、購
 ---
 
 **18:09** チェ・ジュン:  
-Photos
+> [`CTI-2026-07_balance_insufficient_221_help_center.png`]()
 
 > **Analyst Observation**
 >
@@ -1573,7 +1574,7 @@ Photos
 ---
 
 **18:24** Hugh K:  
-Photos
+> [`CTI-2026-07_blue_checkmark_language_exchange.png`]()
 
 > **Analyst Observation**
 >
@@ -1591,11 +1592,11 @@ Photos
 ---
 
 **18:25** チェ・ジュン:  
-Photos
+> [`CTI-2026-07_recruiter_address_request.png`]()
 
 > **Analyst Observation**
 >
-> Likely visual aid for finding address.
+> Visual aid for finding address.
 
 ---
 
@@ -1607,7 +1608,7 @@ TMbunybGaMmrjt91SAJ8YGRDGkZ65huntH
 > Candidate provides TRC20 address—critical step: sharing wallet details.
 >
 > 📎 Related Screenshot  
-> `screenshots/full_transcript/hugh_trc20_07_22.png`
+> [`CTI-2026-07_full_transcript_hugh_trc20.png`]()
 
 ---
 
@@ -1621,11 +1622,11 @@ TMbunybGaMmrjt91SAJ8YGRDGkZ65huntH
 ---
 
 **18:39** チェ・ジュン:  
-Photos
+> [`CTI-2026-07_proof_of_deposit_to_requested_address.png`]()
 
 > **Analyst Observation**
 >
-> Likely proof of deposit.
+> Proof of deposit.
 
 ---
 
@@ -1675,7 +1676,7 @@ Photos
 ---
 
 **18:48** Hugh K:  
-Photos
+> [`CTI-2026-07_customer_service_replied_finalize.png`]()
 
 > **Analyst Observation**
 >
@@ -1720,7 +1721,7 @@ Photos
 ---
 
 **18:55** Hugh K:  
-Photos
+> [`CTI-2026-07_additional_30_deposited_open_order.png`]()
 
 > **Analyst Observation**
 >
@@ -1729,7 +1730,7 @@ Photos
 ---
 
 **18:55** チェ・ジュン:  
-Photos
+> [`CTI-2026-07_open_order_UI_highlight.png`]()
 
 > **Analyst Observation**
 >
@@ -1747,7 +1748,7 @@ Photos
 ---
 
 **18:57** Hugh K:  
-Photos
+> [`CTI-2026-07_click_advance_process_order-01.png`]()
 
 > **Analyst Observation**
 >
@@ -1756,7 +1757,7 @@ Photos
 ---
 
 **18:58** チェ・ジュン:  
-Photos
+> [`CTI-2026-07_click_advance_process_order-02.png`]()
 
 > **Analyst Observation**
 >
@@ -1765,7 +1766,7 @@ Photos
 ---
 
 **18:59** Hugh K:  
-Photos
+> [`CTI-2026-07_click_advance_process_order-03.png`]()
 
 > **Analyst Observation**
 >
@@ -1943,7 +1944,7 @@ TikTok のトラフィックは非常に多く、世界中のサプライヤー�
 > Recommends Coincheck (Japan-licensed exchange).
 >
 > 📎 Related Screenshot  
-> `screenshots/full_transcript/coincheck_rec_07_22.png`
+> [`CTI-2026-07_full_transcript_coincheck_rec.png`]()
 
 ---
 
@@ -2056,11 +2057,11 @@ unsent a message.
 ---
 
 **19:28** チェ・ジュン:  
-Photos
+[`CTI-2026-07_full_order_completed_screen`]()
 
 > **Analyst Observation**
 >
-> Likely withdrawal screen.
+> Withdrawal screen.
 
 ---
 
@@ -2130,7 +2131,7 @@ Photos
 > Full transaction breakdown.
 >
 > 📎 Related Screenshot  
-> `screenshots/full_transcript/transaction_summary_07_22.png`
+> [`CTI-2026-07_full_transcript_transaction_summary.png`]()
 
 ---
 
@@ -2351,7 +2352,7 @@ Photos
 > First introduction of **unitelmatch.top**. Shifts from linkroles.my to new domain.
 >
 > 📎 Related Screenshot  
-> `screenshots/full_transcript/unitelmatch_top_07_23.png`
+> [`CTI-2026-07_full_transcript_unitelmatch_top.png`]()
 
 ---
 
@@ -2428,7 +2429,7 @@ Photos
 ---
 
 **18:42** Hugh K:  
-Photos
+> [`CTI-2026-07_candidate_performance_data`]()
 
 > **Analyst Observation**
 >
@@ -2437,7 +2438,7 @@ Photos
 ---
 
 **18:43** Hugh K:  
-Photos
+> [`CTI-2026-07_candidate_orders_screen`]()
 
 > **Analyst Observation**
 >
@@ -2491,7 +2492,7 @@ Photos
 ---
 
 **18:57** チェ・ジュン:  
-Photos
+> [`CTI-2026-07_orders_screen_next_action_UI_highlight`]()
 
 > **Analyst Observation**
 >
@@ -2716,7 +2717,7 @@ unsent a message.
 > Instructs to register ERC-20 address (different chain from TRC-20).
 >
 > 📎 Related Screenshot  
-> `screenshots/full_transcript/erc20_instruction_07_23.png`
+> [`CTI-2026-07_full_transcript_erc20_instruction.png`]()
 
 ---
 
@@ -2829,7 +2830,7 @@ unsent a message.
 > Escalates tone; asks if candidate is quitting.
 >
 > 📎 Related Screenshot  
-> `screenshots/full_transcript/pressure_message_07_24.png`
+> [`CTI-2026-07_full_transcript_pressure_message.png`]()
 
 ---
 
@@ -2945,7 +2946,7 @@ In hospital. I was admitted on the 25th of July
 > Discloses hospitalization since July 25.
 >
 > 📎 Related Screenshot  
-> `screenshots/full_transcript/hospital_disclosure_08_03.png`
+> [`CTI-2026-07_full_transcript_hospital_disclosure.png`]()
 
 ---
 
@@ -3038,7 +3039,7 @@ unsent a message.
 > Formal 24-hour deadline justification.
 >
 > 📎 Related Screenshot  
-> `screenshots/full_transcript/24h_deadline_08_03.png`
+> [`CTI-2026-07_full_transcript_24h_deadline.png`]()
 
 ---
 
@@ -3196,7 +3197,7 @@ Can I have the upgraded site?
 > Provides **unitelmatch.cc**—second domain rotation.
 >
 > 📎 Related Screenshot  
-> `screenshots/full_transcript/domain_cc_08_04.png`
+> [`CTI-2026-07_full_transcript_domain_cc.png`]()
 
 ---
 
@@ -3244,7 +3245,7 @@ Yes, I am ready. I tried to login but google is saying that [https://www.unitelm
 > Google Safe Browsing warning—major trust friction.
 >
 > 📎 Related Screenshot  
-> `screenshots/full_transcript/google_warning_08_04.png`
+> [`CTI-2026-07_full_transcript_google_warning.png`]()
 
 ---
 
@@ -3283,7 +3284,7 @@ Okay cool
 > Third domain rotation: **unitelmatch.cyou**.
 >
 > 📎 Related Screenshot  
-> `screenshots/full_transcript/domain_cyou_08_04.png`
+> [`CTI-2026-07_full_transcript_domain_cyou.png`]()
 
 ---
 
@@ -3322,7 +3323,7 @@ That's just the platform upgrading, it's nothing to worry about. Are you checkin
 > Dismisses warning as “platform upgrading”; mild challenge.
 >
 > 📎 Related Screenshot  
-> `screenshots/full_transcript/reassurance_08_04.png`
+> [`CTI-2026-07_full_transcript_reassurance.png`]()
 
 ---
 
@@ -3345,7 +3346,7 @@ Do you still need to manage your store?
 > Repeats opening question from Aug 3—potential campaign closure signal.
 >
 > 📎 Related Screenshot  
-> `screenshots/full_transcript/final_check_08_05.png`
+> [`CTI-2026-07_full_transcript_final_check.png`]()
 
 ---
 
