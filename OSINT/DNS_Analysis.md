@@ -8,354 +8,346 @@
 
 **Status:** Active Investigation
 
-**Version:** 1.0
+**Version:** 1.1
 
 ---
 
-# Objective
+## Objective
 
-This document analyzes the Domain Name System (DNS) configuration observed for the domains identified during the investigation.
+This document analyses the Domain Name System (DNS) infrastructure associated with the domains observed during the investigation. The objective is to identify common infrastructure characteristics, hosting providers, DNS configuration patterns, and relationships that may assist in understanding the campaign architecture.
 
-The objective is to document the current DNS infrastructure supporting each domain and identify technical characteristics that may assist further analysis.
-
-DNS observations are point-in-time findings and may change after collection.
+The analysis is based solely on passive OSINT collection and publicly observable DNS records.
 
 ---
 
-# Scope
+# Domains Analysed
 
-Domains analyzed:
+| Domain | Role During Investigation |
+|--------|---------------------------|
+| occupationoasis.com | Initial recruitment website    |
+| linkroles.my        | First operational portal       |
+| unitelmatch.top     | Replacement operational portal |
+| unitelmatch.cc      | Updated operational portal     |
+| unitelmatch.cyou    | Backup operational portal      |
 
-- occupationoasis.com
+---
+
+# DNS Infrastructure Comparison
+
+| Domain | DNS Provider | Name Servers | CDN / Proxy | MX Records |
+|--------|--------------|--------------|-------------|------------|
+| occupationoasis.com | AWS Route53    | AWS Route53 | Amazon CloudFront | None |
+| linkroles.my        | Cloudflare DNS | alina / bob | Cloudflare        | None |
+| unitelmatch.top     | Cloudflare DNS | alina / bob | Cloudflare        | None |
+| unitelmatch.cc      | Cloudflare DNS | alina / bob | Cloudflare        | None |
+| unitelmatch.cyou    | Cloudflare DNS | alina / bob | Cloudflare        | None |
+
+---
+
+# Name Server Analysis
+
+## Occupation Oasis
+
+Name servers:
+
+- ns-149.awsdns-18.com
+- ns-865.awsdns-44.net
+- ns-1883.awsdns-43.co.uk
+- ns-1422.awsdns-49.org
+
+The domain uses Amazon Route53 authoritative name servers consistent with hosting on AWS infrastructure.
+
+---
+
+## Operational Portals
+
+The remaining operational domains all utilise identical Cloudflare authoritative name servers.
+
+- alina.ns.cloudflare.com
+- bob.ns.cloudflare.com
+
+Observed on:
+
 - linkroles.my
 - unitelmatch.top
+- unitelmatch.cc
+- unitelmatch.cyou
+
+This consistency indicates a common DNS management approach across the operational portals.
 
 ---
 
-# Collection Methodology
+# SOA Comparison
 
-DNS information was collected using passive and publicly accessible DNS lookup services.
+| Domain | Primary SOA |
+|--------|-------------|
+| occupationoasis.com | ns-865.awsdns-44.net    |
+| linkroles.my        | alina.ns.cloudflare.com |
+| unitelmatch.top     | alina.ns.cloudflare.com |
+| unitelmatch.cc      | alina.ns.cloudflare.com |
+| unitelmatch.cyou    | alina.ns.cloudflare.com |
 
-The following record types were reviewed where available:
-
-- A
-- AAAA
-- MX
-- NS
-- SOA
-- TXT
-- CNAME
-
-Supporting infrastructure observations included:
-
-- Autonomous System (ASN)
-- Hosting provider
-- Geographic location
-- Name server provider
-
-No active exploitation or unauthorized interaction with the infrastructure was performed.
+The operational portals share the same Cloudflare SOA configuration, whereas the recruitment website uses Amazon Route53.
 
 ---
 
-# Domain Analysis
-
----
-
-# Domain: occupationoasis.com
-
-## Name Servers
-
-| Server |
-|--------|
-| ns-149.awsdns-18.com    |
-| ns-865.awsdns-44.net    |
-| ns-1883.awsdns-43.co.uk |
-| ns-1422.awsdns-49.org   |
-
-### Observation
-
-The domain uses Amazon Route 53 authoritative name servers.
-
----
-
-## SOA Record
-
-| Property | Value |
-|----------|-------|
-| Primary Name Server | ns-865.awsdns-44.net         |
-| Responsible Contact | awsdns-hostmaster.amazon.com |
-| Serial              | 1                            |
-| Refresh             | 7200                         |
-| Retry               | 900                          |
-| Expire              | 1209600                      |
-| Minimum TTL         | 86400                        |
-
----
+# DNS Record Comparison
 
 ## A Records
 
-Observed root A record:
+### occupationoasis.com
 
-- 18.239.36.77
+Hosted via Amazon CloudFront edge nodes.
 
-Observed WWW A records:
+Multiple AWS IP addresses observed.
 
-- 65.8.180.42
-- 65.8.180.52
-- 65.8.180.92
-- 65.8.180.104
+### linkroles.my
 
----
+Cloudflare Proxy
 
-## AAAA Records
-
-No AAAA records were observed during collection.
-
----
-
-## MX Records
-
-No MX records were observed during collection.
-
----
-
-## TXT Records
-
-No TXT records were observed during collection.
-
----
-
-## CNAME Records
-
-No CNAME records were observed during collection.
-
----
-
-## Infrastructure
-
-| Property | Value |
-|----------|-------|
-| ASN               | AS16509                |
-| Provider          | Amazon.com, Inc.       |
-| Observed Location | Amsterdam, Netherlands |
-
----
-
-## Assessment
-
-The observed DNS configuration indicates the use of Amazon Web Services (AWS), including Route 53 name servers and Amazon-owned IP address space.
-
-The absence of observed MX and TXT records suggests that the domain was not advertising email infrastructure or DNS-based verification records at the time of collection.
-
-No conclusions regarding operational intent are drawn from these observations alone.
-
----
-
-# Domain: linkroles.my
-
-## Name Servers
-
-| Server |
-|--------|
-| alina.ns.cloudflare.com |
-| bob.ns.cloudflare.com   |
-
-### Observation
-
-The domain uses Cloudflare authoritative name servers.
-
----
-
-## SOA Record
-
-| Property | Value |
-|----------|-------|
-| Primary Name Server | alina.ns.cloudflare.com |
-| Responsible Contact | dns.cloudflare.com      |
-| Serial              | 2409939902              |
-| Refresh             | 10000                   |
-| Retry               | 2400                    |
-| Expire              | 604800                  |
-| Minimum TTL         | 1800                    |
-
----
-
-## A Records
-
-Observed root A records:
-
-- 188.114.97.0
-
-Observed WWW A records:
-
-- 104.21.30.243
 - 172.67.174.52
+- 104.21.30.243
 
 ---
 
-## AAAA Records
+### unitelmatch.top
 
-Observed:
+Cloudflare Proxy
 
-- 2a06:98c1:3120::0
-- 2a06:98c1:3121::0
-
----
-
-## MX Records
-
-No MX records were observed during collection.
-
----
-
-## TXT Records
-
-No TXT records were observed during collection.
-
----
-
-## CNAME Records
-
-No CNAME records were observed during collection.
-
----
-
-## Infrastructure
-
-| Property | Value |
-|----------|-------|
-| ASN                | AS13335                                      |
-| Provider           | Cloudflare                                   |
-| Observed Locations | Medellín (Colombia), Embsay (United Kingdom) |
-
----
-
-## Assessment
-
-The observed DNS configuration indicates that the domain is fronted by Cloudflare infrastructure.
-
-Cloudflare can provide services such as reverse proxying, caching, DDoS mitigation, and TLS termination. Based on the available DNS records alone, it is not possible to determine which specific Cloudflare services are being used.
-
----
-
-# Domain: unitelmatch.top
-
-## Name Servers
-
-| Server |
-|--------|
-| alina.ns.cloudflare.com |
-| bob.ns.cloudflare.com   |
-
-### Observation
-
-The domain uses the same authoritative Cloudflare name servers observed for linkroles.my.
-
----
-
-## SOA Record
-
-| Property | Value |
-|----------|-------|
-| Primary Name Server | alina.ns.cloudflare.com |
-| Responsible Contact | dns.cloudflare.com      |
-| Serial              | 2410260643              |
-| Refresh             | 10000                   |
-| Retry               | 2400                    |
-| Expire              | 604800                  |
-| Minimum TTL         | 1800                    |
-
----
-
-## A Records
-
-Observed root A record:
-
-- 188.114.96.0
-
-Observed WWW A records:
-
-- 104.21.22.200
 - 172.67.206.231
+- 104.21.22.200
 
 ---
 
-## AAAA Records
+### unitelmatch.cc
 
-Observed:
+Cloudflare Proxy
 
-- 2a06:98c1:3120::0
-- 2a06:98c1:3121::0
-
----
-
-## MX Records
-
-No MX records were observed during collection.
+- 172.67.171.54
+- 104.21.29.4
 
 ---
 
-## TXT Records
+### unitelmatch.cyou
 
-No TXT records were observed during collection.
+Cloudflare Proxy
 
----
-
-## CNAME Records
-
-No CNAME records were observed during collection.
+- 172.67.211.59
+- 104.21.45.78
 
 ---
 
-## Infrastructure
+# IPv6 Support
 
-| Property | Value |
-|----------|-------|
-| ASN                | AS13335                                      |
-| Provider           | Cloudflare                                   |
-| Observed Locations | Medellín (Colombia), Embsay (United Kingdom) |
+IPv6 records were observed for:
 
----
+- linkroles.my
+- unitelmatch.top
+- unitelmatch.cc
+- unitelmatch.cyou
 
-## Assessment
-
-The DNS configuration closely resembles that of linkroles.my, including the use of identical authoritative name servers, the same autonomous system (AS13335), and Cloudflare infrastructure.
-
-These similarities are documented as technical observations only. Additional evidence would be required to determine whether the domains are operationally related.
+No IPv6 infrastructure was identified for occupationoasis.com during this investigation.
 
 ---
 
-# Comparative Analysis
+# Mail Infrastructure
 
-| Feature | occupationoasis.com | linkroles.my | unitelmatch.top |
-|---------|---------------------|--------------|-----------------|
-| DNS Provider  | Amazon Route 53 | Cloudflare | Cloudflare      |
-| ASN           | AS16509         | AS13335    | AS13335         |
-| MX Observed   | No              | No         | No              | 
-| TXT Observed  | No              | No         | No              |
-| IPv6 Observed | No              | Yes        | Yes             |
-| WWW A Records | Yes             | Yes        | Yes             |
+No MX records were identified for any operational portal.
+
+| Domain | MX Records |
+|--------|------------|
+| occupationoasis.com | None |
+| linkroles.my        | None |
+| unitelmatch.top     | None |
+| unitelmatch.cc      | None |
+| unitelmatch.cyou    | None |
+
+The absence of mail infrastructure suggests the domains were not configured for conventional email services.
 
 ---
 
-# Key Observations
+# TXT Records
 
-The following observations are supported by the DNS data collected during the investigation:
+No TXT records were identified.
 
-1. **Different DNS Providers**
-   - `occupationoasis.com` uses Amazon Route 53.
-   - `linkroles.my` and `unitelmatch.top` use Cloudflare.
+Specifically, no evidence of:
 
-2. **Shared Cloudflare Infrastructure**
-   - `linkroles.my` and `unitelmatch.top` share the same authoritative name servers (`alina.ns.cloudflare.com` and `bob.ns.cloudflare.com`) and are associated with the same ASN (AS13335).
+- SPF
+- DKIM
+- DMARC
 
-3. **Email Infrastructure**
-   - No MX records were observed for any of the three domains at the time of collection.
+was observed for any operational portal.
 
-4. **TXT Records**
-   - No TXT records were observed, meaning no SPF, DKIM, DMARC, or other TXT-based verification records were visible during the collection period.
+---
 
-These are point-in-time observations and should not be interpreted as definitive indicators of legitimacy or maliciousness.
+# TTL Analysis
+
+The operational domains consistently used relatively short DNS TTL values.
+
+| Record | TTL |
+|--------|-----|
+| WWW A Records       | 300 seconds   |
+| Parent Name Servers | 3600 seconds  |
+| Local Name Servers  | 86400 seconds |
+
+Short TTL values facilitate rapid infrastructure changes while allowing Cloudflare to manage caching efficiently.
+
+---
+
+# CDN Comparison
+
+## Recruitment Website
+
+occupationoasis.com
+
+- Amazon CloudFront
+- Amazon S3
+- AWS Route53
+
+---
+
+## Operational Infrastructure
+
+All operational portals utilise:
+
+- Cloudflare CDN
+- Cloudflare DNS
+- Cloudflare Reverse Proxy
+- Cloudflare WAF
+
+This represents a distinct architectural shift from the initial recruitment website.
+
+---
+
+# Infrastructure Evolution
+
+```text
+Recruitment Website
+
+occupationoasis.com
+        │
+        ▼
+AWS Route53
+Amazon CloudFront
+
+────────────────────────────
+
+Operational Infrastructure
+
+linkroles.my
+unitelmatch.top
+unitelmatch.cc
+unitelmatch.cyou
+        │
+        ▼
+Cloudflare DNS
+Cloudflare CDN
+Cloudflare WAF
+```
+
+---
+
+# Observed DNS Characteristics
+
+Common characteristics across the operational domains include:
+
+- Cloudflare authoritative name servers
+- Cloudflare reverse proxy
+- No MX records
+- No TXT records
+- Short DNS TTL values
+- IPv6 enabled
+- Cloudflare-managed SOA records
+
+These similarities indicate a consistent DNS configuration strategy across the observed operational infrastructure.
+
+---
+
+# Analytical Assessment
+
+The DNS analysis identifies two distinct infrastructure groups:
+
+**Recruitment Infrastructure**
+
+- occupationoasis.com
+
+Characteristics:
+
+- Amazon Route53
+- Amazon CloudFront
+- AWS-hosted infrastructure
+
+**Operational Infrastructure**
+
+- linkroles.my
+- unitelmatch.top
+- unitelmatch.cc
+- unitelmatch.cyou
+
+Characteristics:
+
+- Cloudflare DNS
+- Cloudflare reverse proxy
+- Shared name servers
+- Consistent DNS configuration
+- Similar record structure
+
+The investigation documents these technical similarities as observed facts. While the shared DNS characteristics support infrastructure correlation, they do not independently establish common ownership or operational control.
+
+---
+
+# DNS Infrastructure Comparison
+
+| DNS Attribute          | occupationoasis.com                                                                  | linkroles.my                                 | unitelmatch.top                              | unitelmatch.cc                                             | unitelmatch.cyou                                   |
+| ---------------------- | ------------------------------------------------------------------------------------ | -------------------------------------------- | -------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------- |
+| Name Servers (Parent)  | ns-149.awsdns-18.comns-865.awsdns-44.netns-1883.awsdns-43.co.ukns-1422.awsdns-49.org | bob.ns.cloudflare.comalina.ns.cloudflare.com | bob.ns.cloudflare.comalina.ns.cloudflare.com | bob.ns.cloudflare.comalina.ns.cloudflare.com               | bob.ns.cloudflare.comalina.ns.cloudflare.com       |
+| Parent NS TTL          | 172800                                                                               | 86400                                        | 3600                                         | 172800                                                     | 3600                                               |
+| Local NS TTL           | 172800                                                                               | 86400                                        | 86400                                        | 86400                                                      | 86400                                              |
+| SOA Primary Nameserver | ns-865.awsdns-44.net                                                                 | alina.ns.cloudflare.com                      | alina.ns.cloudflare.com                      | alina.ns.cloudflare.com                                    | alina.ns.cloudflare.com                            |
+| SOA Hostmaster Email   | awsdns-hostmaster.amazon.com                                                         | dns.cloudflare.com                           | dns.cloudflare.com                           | dns.cloudflare.com                                         | dns.cloudflare.com                                 |
+| SOA Serial Number      | 1                                                                                    | 2409939902                                   | 2410260643                                   | 2410260636                                                 | 2410373765                                         |
+| SOA Refresh            | 7200                                                                                 | 10000                                        | 10000                                        | 10000                                                      | 10000                                              |
+| SOA Retry              | 900                                                                                  | 2400                                         | 2400                                         | 2400                                                       | 2400                                               |
+| SOA Expire             | 1209600                                                                              | 604800                                       | 604800                                       | 604800                                                     | 604800                                             |
+| SOA Minimum TTL        | 86400                                                                                | 1800                                         | 1800                                         | 1800                                                       | 1800                                               |
+| WWW A Records          | 65.8.180.4265.8.180.5265.8.180.9265.8.180.104                                        | 172.67.174.52104.21.30.243                   | 104.21.22.200172.67.206.231                  | 104.21.29.4172.67.171.54                                   | 104.21.45.78172.67.211.59                          |
+| WWW A TTL              | 60                                                                                   | 300                                          | 300                                          | 300                                                        | 300                                                |
+| Root A Records         | 18.239.36.1518.239.36.6218.239.36.9918.239.36.77                                     | 188.114.96.0188.114.97.0                     | 188.114.96.0188.114.97.0                     | 188.114.96.0188.114.97.0                                   | 104.21.45.78172.67.211.59                          |
+| Root AAAA Records      | No AAAA records found                                                                | 2a06:98c1:3120::02a06:98c1:3121::0           | 2a06:98c1:3120::02a06:98c1:3121::0           | 2a06:98c1:3120::02a06:98c1:3121::0                         | 2606:4700:3030::ac43:d33b2606:4700:3033::6815:2d4e |
+| MX Records             | No mail servers found                                                                | No mail servers found                        | No mail servers found                        | No mail servers found                                      | No mail servers found                              |
+| TXT Records            | No TXT records found                                                                 | No TXT records found                         | No TXT records found                         | No TXT records found                                       | No TXT records found                               |
+| CNAME Records          | No CNAME record found                                                                | No CNAME record found                        | No CNAME record found                        | No CNAME record found                                      | No CNAME record found                              |
+| ASN                    | AS16509 / AS14618                                                                    | AS13335                                      | AS13335                                      | AS13335                                                    | AS13335                                            |
+| AS Name                | amazon.com Inc.                                                                      | Cloudflare                                   | Cloudflare                                   | Cloudflare                                                 | Cloudflare                                         |
+| Location               | Amsterdam, Netherlands                                                               | Medellín, ColombiaEmbsay, UK                 | Medellín, ColombiaEmbsay, UK                 | Pittsfield, ME (US)San Jose, CA (US)San Francisco, CA (US) |                                                    |
+
+---
+
+# DNS Correlation Matrix
+
+| Feature             | OccupationOasis | LinkRoles | UnitelMatch.top | UnitelMatch.cc | UnitelMatch.cyou |
+| ------------------- | --------------- | --------- | --------------- | -------------- | ---------------- |
+| AWS Route53         |        ✅       |    ❌    |        ❌       |      ❌       |        ❌       |
+| Cloudflare DNS      |        ❌       |    ✅    |        ✅       |      ✅       |        ✅       |
+| Cloudflare WAF      |        ❌       |    ✅    |        ✅       |      ✅       |        ✅       |
+| Cloudflare CDN      |        ❌       |    ✅    |        ✅       |      ✅       |        ✅       |
+| No MX Records       |        ✅       |    ✅    |        ✅       |      ✅       |        ✅       |
+| No TXT Records      |        ✅       |    ✅    |        ✅       |      ✅       |        ✅       |
+| IPv6 Enabled        |        ❌*      |    ✅    |        ✅       |      ✅       |        ✅       |
+| Shared Name Servers |        ❌       |    ✅    |        ✅       |      ✅       |        ✅       |
+
+---
+
+# CHANGELOG
+
+## Version 1.1
+
+- Added DNS analysis for `unitelmatch.cc`.
+- Added DNS analysis for `unitelmatch.cyou`.
+- Expanded comparison from three to five domains.
+- Documented common Cloudflare DNS infrastructure across operational portals.
+- Distinguished recruitment infrastructure from operational infrastructure.
+- Added comparative DNS tables and infrastructure evolution analysis.
 
 ---
 
@@ -366,30 +358,35 @@ These are point-in-time observations and should not be interpreted as definitive
 | [EV-016-01](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-016-01.png), [EV-016-02](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-016-02.png), [EV-016-03](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-016-03.png), [EV-016-04](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-016-04.png), [EV-016-05](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-016-05.png), [EV-016-06](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-016-06.png), [EV-016-07](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-016-07.png) | DNS lookup – occupationoasis.com |
 | [EV-017-01](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-017-01.png), [EV-017-02](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-017-02.png), [EV-017-03](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-017-03.png), [EV-017-04](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-017-04.png) | DNS lookup – linkroles.my        |
 | [EV-018-01](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-018-01.png), [EV-018-02](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-018-02.png), [EV-018-03](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-018-03.png), [EV-018-04](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-018-04.png) | DNS lookup – unitelmatch.top     |
-
----
-
-# Confidence Assessment
-
-| Finding | Confidence |
-|---------|------------|
-| Amazon Route 53 used by occupationoasis.com                             | High |
-| Cloudflare used by linkroles.my                                         | High |
-| Cloudflare used by unitelmatch.top                                      | High |
-| Shared Cloudflare name servers between linkroles.my and unitelmatch.top | High |
-| No MX records observed during collection                                | High |
-| No TXT records observed during collection                               | High |
+| [EV-026-01](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-026-01.png), [EV-026-02](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-026-02.png), [EV-026-03](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-026-03.png), [EV-026-04](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-026-04.png) | Reverse DNS lookup  – occupationoasis.com     |
+| [EV-026-05](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-026-05.png), [EV-026-06](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-026-06.png), [EV-026-07](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-026-07.png), [EV-026-08](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-026-08.png) | Reverse DNS lookup  – linkroles.my            |
+| [EV-026-09](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-026-09.png), [EV-026-10](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-026-10.png), [EV-026-11](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-026-11.png), [EV-026-12](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-026-12.png) | Reverse DNS lookup  – unitelmatch.top         |
+| [EV-026-13](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-026-13.png), [EV-026-14](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-026-14.png), [EV-026-15](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-026-15.png), [EV-026-16](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-026-16.png) | Reverse DNS lookup  – unitelmatch.cc          |
+| [EV-026-17](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-026-17.png), [EV-026-18](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-026-18.png), [EV-026-19](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-026-19.png), [EV-026-20](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Evidence/Screenshots/EV-026-20.png) | Reverse DNS lookup  – unitelmatch.cyou        |
+| [EV-032-01](), [EV-032-02](), [EV-032-03](), [EV-032-04](), [EV-032-05]() | Passive DNS lookup  – occupationoasis.com     |
+| [EV-032-06](), [EV-032-07](), [EV-032-08](), [EV-032-09]() | Passive DNS lookup  – linkroles.my            |
+| [EV-032-10](), [EV-032-11](), [EV-032-12]() | Passive DNS lookup  – unitelmatch.top         |
+| [EV-032-13](), [EV-032-14](), [EV-032-15]() | Passive DNS lookup  – unitelmatch.cc          |
+| [EV-032-16](), [EV-032-17](), [EV-032-18](), [EV-032-19]() | Passive DNS lookup  – unitelmatch.cyou        |
+| [EV-065-01](), [EV-065-02](), [EV-065-03](), [EV-065-04]() | Cloudflare DNS records  – occupationoasis.com |
+| [EV-066-01](), [EV-066-02](), [EV-066-03](), [EV-066-04]() | Cloudflare DNS records  – linkroles.my        |
+| [EV-067-01](), [EV-067-02](), [EV-067-03](), [EV-067-04]() | Cloudflare DNS records  – unitelmatch.top     |
+| [EV-068-01](), [EV-068-02](), [EV-068-03](), [EV-068-04]() | Cloudflare DNS records  – unitelmatch.cc      |
+| [EV-069-01](), [EV-069-02](), [EV-069-03](), [EV-069-04]() | Cloudflare DNS records  – unitelmatch.cyou    |
+| [EV-070-01](), [EV-070-02](), [EV-070-03](), [EV-070-04]() | AWS Route53 records  – occupationoasis.com    |
 
 ---
 
 # Related Documents
 
 - [Domain_Analysis.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Domain_Analysis.md)
-- [Passive_dns.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Passive_DNS.md)
-- [Certificate_analysis.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Certificate_Analysis.md)
+- [Domain_Relationships.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Domain_Analysis.md)
+- [Certificate_analysis.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Certificate_Analysis.md) 
 - [Infrastructure_Analysis.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Infrastructure_Analysis.md)
-- [Reputation_Analysis.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Reputation_Analysis.md)
 - [Infrastructure_Evolution.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Infrastructure_Evolution.md)
+- [Passive_dns.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Passive_DNS.md)
+- [Reputation_Analysis.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Reputation_Analysis.md)
+- [Technology_Stack.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Technology_Stack.md)
 
 ---
 
