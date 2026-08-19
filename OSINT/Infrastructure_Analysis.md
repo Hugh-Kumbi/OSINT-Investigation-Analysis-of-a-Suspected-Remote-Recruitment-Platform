@@ -23,13 +23,13 @@ The analysis is based on publicly available OSINT and passive reconnaissance onl
 # Domains Analysed
 
 | Domain | Observed Role |
-|----------|---------------|
+|--------|---------------|
 | occupationoasis.com | Initial recruitment website |
-| linkroles.my | First operational portal |
-| unitelmatch.top | Second operational portal |
-| unitelmatch.cc | Third operational portal |
-| unitelmatch.cyou | Backup operational portal |
-| www.ioutrankap.cyou | Shared backend API |
+| linkroles.my        | First operational portal    |
+| unitelmatch.top     | Second operational portal   |
+| unitelmatch.cc      | Third operational portal    |
+| unitelmatch.cyou    | Backup operational portal   |
+| www.ioutrankap.cyou | Shared backend API          |
 
 ---
 
