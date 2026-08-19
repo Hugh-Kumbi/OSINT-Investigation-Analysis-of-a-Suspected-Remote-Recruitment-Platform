@@ -8,121 +8,97 @@
 
 **Status:** Active Investigation
 
-**Version:** 1.0
+**Version:** 1.2
 
 ---
 
 # Objective
 
-This document analyzes the publicly observable SSL/TLS certificates associated with the domains identified during the investigation.
+This document analyses the TLS/SSL certificates observed across the domains associated with the investigation. The objective is to identify certificate issuance patterns, certificate authorities, Subject Alternative Names (SANs), Certificate Transparency (CT) logs, and relationships that may indicate shared infrastructure or operational practices.
 
-Certificate Transparency (CT) logs provide visibility into publicly trusted certificates that have been issued for a domain. They can assist in identifying:
-
-- Certificate Authorities (CAs)
-- Certificate issuance timelines
-- Subject Alternative Names (SANs)
-- Wildcard certificates
-- Related hostnames
-- Infrastructure changes over time
-
-The observations in this document are based on Certificate Transparency records collected during the investigation.
+The analysis is based on Certificate Transparency (crt.sh), Censys, browser observations, and passive OSINT.
 
 ---
 
-# Scope
+# Domains Analysed
 
-Domains analyzed:
-
-- occupationoasis.com
-- linkroles.my
-- unitelmatch.top
-
----
-
-# Collection Methodology
-
-Certificate information was collected from publicly accessible Certificate Transparency logs.
-
-Observed attributes include:
-
-- Certificate Authority (CA)
-- Validity period
-- Certificate status
-- Subject Alternative Names (SANs)
-- Wildcard certificate usage
-- Certificate issuance timeline
-
-No certificate validation bypasses or active testing were performed.
+| Domain | Observed Role |
+|----------|---------------|
+| occupationoasis.com | Recruitment website |
+| linkroles.my | First operational portal |
+| unitelmatch.top | Second operational portal |
+| unitelmatch.cc | Third operational portal |
+| unitelmatch.cyou | Backup operational portal |
 
 ---
 
-# Domain: occupationoasis.com
+# Certificate Summary
 
-## Certificate Summary
-
-| Status | Valid From | Valid To | Issuer |
-|--------|------------|----------|--------|
-| Valid   | 29 Jun 2026 | 12 Jan 2027 | Amazon RSA 2048  |
-| Expired | 21 Feb 2024 | 21 May 2024 | Let's Encrypt R3 |
-| Expired | 23 Dec 2023 | 22 Mar 2024 | Let's Encrypt R3 |
+| Domain | Certificate Authority | Certificate Type | Validity | Observations |
+|---------|----------------------|------------------|----------|--------------|
+| occupationoasis.com | Amazon RSA 2048 M01 | AWS Managed | ~7 months | AWS infrastructure |
+| linkroles.my | Google Trust Services (WE1/WR1) | Cloudflare Managed | ~3 months | Dual certificates |
+| unitelmatch.top | Google Trust Services (WE1/WR1) | Cloudflare Managed | ~3 months | Dual certificates |
+| unitelmatch.cc | Google Trust Services (WE1/WR1) | Cloudflare Managed | ~3 months | Dual certificates |
+| unitelmatch.cyou | Google Trust Services (WE1/WR1) | Cloudflare Managed | ~3 months | Dual certificates |
 
 ---
 
-## Subject Alternative Names (SANs)
+# Recruitment Infrastructure
 
-Observed SANs:
+## occupationoasis.com
+
+### Certificate Authority
+
+Amazon RSA 2048 M01
+
+### Validity
+
+29 June 2026
+
+↓
+
+12 January 2027
+
+Approximately seven months.
+
+### Subject Alternative Names
 
 - occupationoasis.com
 - *.occupationoasis.com
-- www.occupationoasis.com
+
+### Certificate Protocol
+
+TLS 1.3
+
+### Observations
+
+Unlike the operational portals, the recruitment website uses an AWS-managed certificate consistent with Amazon CloudFront hosting.
+
+Historical Certificate Transparency logs also identified expired Let's Encrypt certificates from 2023 and 2024, indicating the domain has undergone multiple certificate renewals prior to the current campaign.
 
 ---
 
-## Certificate Authorities Observed
+# Operational Infrastructure
 
-- Amazon RSA
-- Let's Encrypt R3
+## linkroles.my
 
----
+Certificate Authorities
 
-## Certificate Transparency Observations
+- Google Trust Services WE1
+- Google Trust Services WR1
 
-CT log entries were observed in:
+### Validity
 
-- Tiger
-- Nimbus
-- Argon
-- Xenon
+19 July 2026
 
-These logs demonstrate that publicly trusted certificates have been issued for the domain over multiple years.
+↓
 
----
+17 October 2026
 
-## Assessment
+Approximately three months.
 
-The certificate history indicates that the domain transitioned from Let's Encrypt certificates in 2023–2024 to an Amazon-issued certificate in 2026.
-
-The presence of a wildcard certificate (`*.occupationoasis.com`) indicates support for securing multiple subdomains.
-
-No additional subdomains were identified from the available CT data beyond those covered by the wildcard certificate.
-
----
-
-# Domain: linkroles.my
-
-## Certificate Summary
-
-| Status | Valid From | Valid To | Issuer |
-|--------|------------|----------|--------|
-| Valid  | 19 Jul 2026 | 17 Oct 2026 | Google Trust Services WE1    |
-| Valid  | 19 Jul 2026 | 17 Oct 2026 | SSL Corporation (Cloudflare) |
-| Valid  | 19 Jul 2026 | 17 Oct 2026 | Google Trust Services WE1    |
-
----
-
-## Subject Alternative Names (SANs)
-
-Observed SANs:
+### SANs
 
 - linkroles.my
 - *.linkroles.my
@@ -130,50 +106,25 @@ Observed SANs:
 
 ---
 
-## Certificate Authorities Observed
+## unitelmatch.top
+
+Certificate Authorities
 
 - Google Trust Services WE1
-- Cloudflare (SSL Corporation)
+- Google Trust Services WR1
+- Let's Encrypt YE2
 
----
+### Validity
 
-## Certificate Transparency Observations
+23 July 2026
 
-CT log entries were observed in:
+↓
 
-- Tiger
-- Wyvern
-- TrustAsia
+21 October 2026
 
-Multiple certificates were issued on the same day, consistent with certificate provisioning for Cloudflare-managed infrastructure.
+Approximately three months.
 
----
-
-## Assessment
-
-The observed certificates indicate that the domain uses publicly trusted certificates issued through Google Trust Services and Cloudflare.
-
-Wildcard certificates covering `*.linkroles.my` were observed, allowing TLS protection for multiple subdomains.
-
-Based solely on the available CT records, no additional subdomains beyond those represented by the wildcard certificate were identified.
-
----
-
-# Domain: unitelmatch.top
-
-## Certificate Summary
-
-| Status | Valid From | Valid To | Issuer |
-|--------|------------|----------|--------|
-| Valid  | 23 Jul 2026 | 21 Oct 2026 | Google Trust Services WE1 |
-| Valid  | 23 Jul 2026 | 21 Oct 2026 | Google Trust Services WE1 |
-| Valid  | 23 Jul 2026 | 21 Oct 2026 | Let's Encrypt YE2         |
-
----
-
-## Subject Alternative Names (SANs)
-
-Observed SANs:
+### SANs
 
 - unitelmatch.top
 - *.unitelmatch.top
@@ -181,77 +132,234 @@ Observed SANs:
 
 ---
 
-## Certificate Authorities Observed
+## unitelmatch.cc
+
+Certificate Authorities
 
 - Google Trust Services WE1
-- Let's Encrypt YE2
+- Google Trust Services WR1
+
+### Validity
+
+23 July 2026
+
+↓
+
+21 October 2026
+
+Approximately three months.
+
+### SANs
+
+- www.unitelmatch.cc
+
+Certificate SHA256 fingerprints were collected and preserved as indicators of compromise.
 
 ---
 
-## Certificate Transparency Observations
+## unitelmatch.cyou
 
-CT log entries were observed in:
+Certificate Authorities
 
-- Tiger
-- TrustAsia
+- Google Trust Services WE1
+- Google Trust Services WR1
 
-The certificates were issued within a short time window, suggesting coordinated certificate deployment.
+### Validity
 
----
+24 July 2026
 
-## Assessment
+↓
 
-The observed certificates include both Google Trust Services and Let's Encrypt-issued certificates.
+22 October 2026
 
-Wildcard coverage for `*.unitelmatch.top` indicates support for multiple secured subdomains.
+Approximately three months.
 
-No additional subdomains beyond those covered by the wildcard certificate were identified from the collected CT logs.
+### SANs
 
----
+- www.unitelmatch.cyou
 
-# Comparative Analysis
-
-| Feature | occupationoasis.com | linkroles.my | unitelmatch.top |
-|---------|---------------------|--------------|-----------------|
-| Wildcard Certificate    | Yes        | Yes                             | Yes |
-| WWW Certificate         | Yes        | Yes                             | Yes |
-| Root Domain Certificate | Yes        | Yes                             | Yes |
-| Google Trust Services   | No         | Yes                             | Yes |
-| Amazon Certificate      | Yes        | No                              | No  |
-| Let's Encrypt           | Historical | No (observed during collection) | Yes |
-| Cloudflare Certificate  | No         | Yes                             | No  |
+crt.sh recorded both RSA and ECDSA certificates shortly after domain creation.
 
 ---
 
-# Timeline Observations
+# Certificate Transparency Analysis
 
-| Domain | Earliest Observed Certificate | Latest Observed Certificate |
-|--------|-------------------------------|-----------------------------|
-| occupationoasis.com | Dec 2023 | Jan 2027 |
-| linkroles.my        | Jul 2026 | Oct 2026 |
-| unitelmatch.top     | Jul 2026 | Oct 2026 |
+Certificate Transparency logs revealed several consistent characteristics across the operational domains.
+
+Observed patterns include:
+
+- Automated certificate issuance.
+- Google Trust Services as the primary certificate authority.
+- Dual RSA and ECDSA certificates.
+- Certificates logged immediately after domain registration.
+- Approximately three-month validity periods.
+- Certificates issued for individual operational domains rather than a shared wildcard certificate.
+
+These characteristics are consistent with Cloudflare-managed certificate provisioning.
 
 ---
 
-# Key Observations
+# Certificate Timeline
 
-The following observations are supported by the collected Certificate Transparency data:
+```text
+29 Jun 2026
 
-1. **Wildcard Certificate Usage**
-   - All three domains have wildcard certificates, enabling TLS coverage for subdomains.
+occupationoasis.com
+Amazon RSA
 
-2. **Shared Certificate Providers**
-   - `linkroles.my` and `unitelmatch.top` both use Google Trust Services-issued certificates.
-   - `occupationoasis.com` currently uses an Amazon-issued certificate.
+────────────────────────────
 
-3. **Certificate Issuance Timing**
-   - Certificates for `linkroles.my` and `unitelmatch.top` were issued in July 2026 within days of one another.
+19 Jul 2026
 
-4. **Historical Evolution**
-   - `occupationoasis.com` shows a longer certificate history dating back to December 2023.
-   - `linkroles.my` and `unitelmatch.top` have a more recent observable certificate history beginning in July 2026.
+linkroles.my
+Google Trust Services
 
-These observations describe the certificate ecosystem and do not, by themselves, establish operational relationships or intent.
+↓
+
+23 Jul 2026
+
+unitelmatch.top
+Google Trust Services
+
+↓
+
+23 Jul 2026
+
+unitelmatch.cc
+Google Trust Services
+
+↓
+
+24 Jul 2026
+
+unitelmatch.cyou
+Google Trust Services
+```
+
+---
+
+# Certificate Comparison
+
+| Feature | OccupationOasis | LinkRoles | UnitelMatch.top | UnitelMatch.cc | UnitelMatch.cyou |
+|----------|:---------------:|:---------:|:---------------:|:--------------:|:----------------:|
+| AWS Certificate | ✓ | ✗ | ✗ | ✗ | ✗ |
+| Google Trust Services | ✗ | ✓ | ✓ | ✓ | ✓ |
+| Let's Encrypt History | ✓ | ✗ | ✓ | ✗ | ✗ |
+| Dual Certificates | ✗ | ✓ | ✓ | ✓ | ✓ |
+| Wildcard SAN | ✓ | ✓ | ✓ | ✗ | ✗ |
+| HTTP/3 | ✗ | ✓ | ✓ | ✓ | ✓ |
+| Cloudflare Managed | ✗ | ✓ | ✓ | ✓ | ✓ |
+
+---
+
+# Certificate Issuance Pattern
+
+The operational portals exhibit a consistent certificate lifecycle:
+
+1. Domain registered.
+2. Cloudflare DNS configured.
+3. TLS certificates issued within hours of registration.
+4. Dual RSA and ECDSA certificates generated.
+5. Certificates published to Certificate Transparency logs.
+6. Approximately three-month certificate validity.
+
+This repeated pattern was observed across all operational portals.
+
+---
+
+# Certificate Relationship Analysis
+
+The investigation identified two distinct certificate ecosystems.
+
+## Recruitment Infrastructure
+
+- AWS-managed certificates.
+- Amazon CloudFront integration.
+- Longer certificate validity.
+- Independent certificate lifecycle.
+
+## Operational Infrastructure
+
+- Google Trust Services.
+- Cloudflare-managed certificates.
+- Automated issuance.
+- Short validity periods.
+- Consistent provisioning process.
+- Uniform certificate architecture.
+
+These observations indicate a common TLS deployment strategy across the operational portals.
+
+---
+
+# Analytical Assessment
+
+The certificate analysis supports the broader infrastructure assessment.
+
+Observed technical consistencies include:
+
+- Common certificate authority.
+- Automated certificate issuance.
+- Similar certificate validity periods.
+- Cloudflare-managed provisioning.
+- Uniform TLS configuration.
+- Consistent Certificate Transparency logging behaviour.
+
+These characteristics strengthen the correlation between the operational domains while remaining insufficient on their own to establish ownership or attribution.
+
+---
+
+# Screenshots
+
+Include:
+
+## crt.sh
+
+- Certificate search results for each domain.
+- Certificate timelines.
+- SAN listings.
+
+## Censys
+
+- Certificate observations.
+- Certificate fingerprints.
+- TLS protocol information.
+
+## Browser
+
+- Certificate viewer.
+- TLS connection details.
+- Issuer information.
+
+## Certificate Transparency
+
+- Logged certificate entries.
+- Validity periods.
+- Dual certificate observations.
+
+---
+
+# Related Documents
+
+- osint/infrastructure.md
+- osint/dns_analysis.md
+- osint/passive_dns.md
+- osint/technology_stack.md
+- osint/domain_relationships.md
+- analysis/Indicators_of_Compromise.md
+
+---
+
+# CHANGELOG
+
+## Version 1.2
+
+- Added certificate analysis for `unitelmatch.cc`.
+- Added certificate analysis for `unitelmatch.cyou`.
+- Expanded comparison from three to five domains.
+- Added certificate issuance timeline.
+- Documented Cloudflare-managed certificate provisioning.
+- Added certificate relationship analysis.
+- Included certificate lifecycle observations.
 
 ---
 
