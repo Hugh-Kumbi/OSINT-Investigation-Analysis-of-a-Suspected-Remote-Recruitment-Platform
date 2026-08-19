@@ -8,257 +8,376 @@
 
 **Status:** Active Investigation
 
-**Version:** 1.0
+**Version:** 1.2
 
 ---
 
 # Objective
 
-This document analyzes the hosting and network infrastructure associated with the domains identified during the investigation.
+This document analyses the technical infrastructure supporting the domains identified during the investigation. The objective is to examine domain registration, hosting providers, content delivery networks (CDNs), reverse DNS information, infrastructure evolution, and architectural relationships between the observed domains.
 
-The objective is to document publicly observable infrastructure characteristics, identify similarities and differences between the domains, and establish a technical baseline for later threat intelligence assessments.
-
-Infrastructure observations are based entirely on publicly available information collected during the investigation.
+The analysis is based on publicly available OSINT and passive reconnaissance only.
 
 ---
 
-# Scope
+# Domains Analysed
 
-Domains analyzed:
+| Domain | Observed Role |
+|----------|---------------|
+| occupationoasis.com | Initial recruitment website |
+| linkroles.my | First operational portal |
+| unitelmatch.top | Second operational portal |
+| unitelmatch.cc | Third operational portal |
+| unitelmatch.cyou | Backup operational portal |
+| www.ioutrankap.cyou | Shared backend API |
 
-- occupationoasis.com
+---
+
+# Infrastructure Evolution
+
+The investigation identified a clear evolution in the campaign infrastructure.
+
+```text
+Recruitment Phase
+
+occupationoasis.com
+        │
+        ▼
+Amazon AWS Infrastructure
+(Route53 + CloudFront)
+
+────────────────────────────────────
+
+Operational Phase
+
+linkroles.my
+        │
+        ▼
+unitelmatch.top
+        │
+        ▼
+unitelmatch.cc
+        │
+        ▼
+unitelmatch.cyou
+        │
+        ▼
+Cloudflare Infrastructure
+        │
+        ▼
+Shared Backend
+
+www.ioutrankap.cyou
+```
+
+The initial recruitment website operated independently using Amazon Web Services. During the operational phase, multiple onboarding portals were introduced, all adopting a common Cloudflare-based architecture while communicating with the same backend API.
+
+---
+
+# Domain Registration Comparison
+
+| Domain | Creation Date | Registrar | Privacy Protection |
+|---------|---------------|-----------|--------------------|
+| occupationoasis.com | 2026-06-29 | Amazon Registrar | Enabled |
+| linkroles.my | 2026-07-19 | Gname.com | Full WHOIS Redaction |
+| unitelmatch.top | 2026-07-23 | Global Asset Domains Inc. | Full WHOIS Redaction |
+| unitelmatch.cc | 2026-07-23 | Dynadot LLC | Super Privacy Service |
+| unitelmatch.cyou | 2026-07-24 (observed) | Unknown | Not available |
+
+---
+
+# Registration Timeline
+
+```text
+29 Jun 2026
+
+occupationoasis.com
+
+↓
+
+19 Jul 2026
+
+linkroles.my
+
+↓
+
+23 Jul 2026
+
+unitelmatch.top
+
+↓
+
+23 Jul 2026
+
+unitelmatch.cc
+
+↓
+
+24 Jul 2026
+
+unitelmatch.cyou
+```
+
+The observed registration sequence demonstrates rapid deployment of operational portals over approximately one week.
+
+---
+
+# Hosting Providers
+
+## Recruitment Website
+
+occupationoasis.com
+
+Hosting:
+
+- Amazon Web Services
+- Amazon CloudFront
+- Amazon S3
+- Amazon Route53
+
+ASN
+
+AS16509
+
+---
+
+## Operational Infrastructure
+
+linkroles.my
+
+unitelmatch.top
+
+unitelmatch.cc
+
+unitelmatch.cyou
+
+Hosting:
+
+- Cloudflare CDN
+- Cloudflare Reverse Proxy
+- Cloudflare WAF
+- Cloudflare DNS
+
+ASN
+
+AS13335
+
+The operational portals consistently utilised Cloudflare services to proxy origin infrastructure.
+
+---
+
+# Backend Infrastructure
+
+One of the most significant findings was the identification of a shared backend application.
+
+Backend Domain
+
+www.ioutrankap.cyou
+
+Observed communicating with:
+
 - linkroles.my
 - unitelmatch.top
+- unitelmatch.cc
+
+The same backend architecture is inferred for unitelmatch.cyou based on identical application behaviour and request patterns.
+
+Observed API structure:
+
+```
+/tiny-shop/v1/
+
+GET /site/config
+
+GET /member/member/index
+
+GET /shop/product/my-product
+
+GET /index/index
+```
+
+Observed request header:
+
+```
+merchant-id: 42
+```
+
+This shared backend provides strong technical evidence that the operational portals utilise the same application infrastructure.
 
 ---
 
-# Collection Methodology
+# Reverse DNS
 
-Infrastructure information was collected using publicly available sources, including:
+## occupationoasis.com
 
-- WHOIS records
-- DNS lookups
-- Reverse DNS lookups
-- Certificate Transparency logs
-- ASN information
-- Hosting provider identification
-
-No active probing or unauthorized interaction with the infrastructure was performed.
-
----
-
-# Domain: occupationoasis.com
-
-## Domain Registration
-
-| Property | Value |
-|----------|-------|
-| Creation Date | 29 Jun 2026                 |
-| Updated Date  | 29 Jun 2026                 |
-| Registrar     | Amazon Registrar, Inc.      |
-| WHOIS Privacy | Enabled (`Whoisprivacy: 1`) |
-
-### Assessment
-
-The domain was registered through Amazon Registrar and WHOIS privacy protection was enabled at the time of collection.
-
----
-
-## Hosting Infrastructure
-
-| Property | Value |
-|----------|-------|
-| Hosting Provider | Amazon Web Services (AWS)                           |
-| DNS Provider     | Amazon Route 53                                     |
-| ASN              | AS16509                                             |
-| CDN              | Amazon CloudFront (observed)                        |
-| IPv4             | 18.239.36.77                                        |
-| WWW Addresses    | 65.8.180.42, 65.8.180.52, 65.8.180.92, 65.8.180.104 |
-
----
-
-## Reverse DNS
-
-Observed hostnames:
+CloudFront edge nodes resolved to:
 
 - server-18-239-36-15.ams58.r.cloudfront.net
 - server-18-239-36-62.ams58.r.cloudfront.net
 - server-18-239-36-99.ams58.r.cloudfront.net
 
-### Observation
-
-The reverse DNS entries correspond to Amazon CloudFront edge infrastructure located in Amsterdam.
-
-The reverse lookup for `18.239.36.77` did not return a hostname during collection.
+These results are consistent with Amazon CloudFront.
 
 ---
 
-## Infrastructure Assessment
+## Cloudflare Infrastructure
 
-Observed infrastructure is consistent with an AWS-hosted website using:
+Reverse DNS for the operational portals primarily resolved to shared Cloudflare infrastructure.
 
-- Amazon Registrar
-- Amazon Route 53
-- Amazon CloudFront
-- Amazon-owned IP address space
+Examples:
 
-These observations indicate a largely Amazon-managed deployment.
+- alina.ns.cloudflare.com
+- Cloudflare shared IP ranges
+- Shared IPv6 infrastructure
 
----
-
-# Domain: linkroles.my
-
-## Domain Registration
-
-| Property | Value |
-|----------|-------|
-| Creation Date | 19 Jul 2026                           |
-| Updated Date  | 19 Jul 2026                           |
-| Registrar     | Gname.com Pte. Ltd.                   |
-| WHOIS Privacy | Enabled (Registrant details redacted) |
-
-### Assessment
-
-WHOIS information was extensively redacted, limiting attribution based on registration records.
+The true origin servers remain concealed behind Cloudflare.
 
 ---
 
-## Hosting Infrastructure
+# Infrastructure Comparison
 
-| Property | Value |
-|----------|-------|
-| Hosting Provider | Cloudflare (observed edge infrastructure) |
-| DNS Provider     | Cloudflare                                |
-| ASN              | AS13335                                   |
-| IPv4             | 188.114.97.0                              |
-| IPv6             | 2a06:98c1:3120::0, 2a06:98c1:3121::0      |
-
----
-
-## Reverse DNS
-
-Observed results:
-
-- 188.114.97.0      → no descriptive hostname returned
-- 188.114.96.0      → no descriptive hostname returned
-- 2a06:98c1:3120::0 → no descriptive hostname returned
-- 2a06:98c1:3121::0 → no descriptive hostname returned
-- 108.162.192.61    → alina.ns.cloudflare.com
-
-### Observation
-
-Most Cloudflare edge addresses did not resolve to descriptive reverse DNS hostnames. One observed address resolved to the authoritative Cloudflare name server `alina.ns.cloudflare.com`.
-
-This is consistent with Cloudflare-managed infrastructure.
+| Feature | OccupationOasis | LinkRoles | UnitelMatch.top | UnitelMatch.cc | UnitelMatch.cyou |
+|----------|:---------------:|:---------:|:---------------:|:--------------:|:----------------:|
+| Amazon Infrastructure | ✓ | ✗ | ✗ | ✗ | ✗ |
+| Cloudflare CDN | ✗ | ✓ | ✓ | ✓ | ✓ |
+| Cloudflare WAF | ✗ | ✓ | ✓ | ✓ | ✓ |
+| Shared Backend | ✗ | ✓ | ✓ | ✓ | Inferred |
+| Vue.js SPA | ✓ | ✓ | ✓ | ✓ | ✓ |
+| HTTP/3 | ✗ | ✓ | ✓ | ✓ | ✓ |
+| Shared Merchant ID | ✗ | ✓ | ✓ | ✓ | Inferred |
 
 ---
 
-## Infrastructure Assessment
+# Infrastructure Relationships
 
-The observed infrastructure indicates that Cloudflare provides:
+```text
+Recruitment Website
 
-- Authoritative DNS
-- Reverse proxy / edge infrastructure
-- TLS certificate management (supported by Certificate Analysis)
+occupationoasis.com
 
-The origin infrastructure behind Cloudflare could not be identified using the collected evidence.
+        │
 
----
+Recruiter Contact
 
-# Domain: unitelmatch.top
+        │
 
-## Domain Registration
+────────────────────────────────────
 
-| Property | Value |
-|----------|-------|
-| Creation Date | 23 Jul 2026                           |
-| Updated Date  | 23 Jul 2026                           |
-| Registrar     | GLOBAL ASSET DOMAINS INC.             |
-| WHOIS Privacy | Enabled (Registrant details redacted) |
+Operational Portals
 
-### Assessment
+linkroles.my
 
-WHOIS information was extensively redacted, preventing identification of the registrant through publicly available records.
+        │
 
----
+unitelmatch.top
 
-## Hosting Infrastructure
+        │
 
-| Property | Value |
-|----------|-------|
-| Hosting Provider | Cloudflare (observed edge infrastructure) |
-| DNS Provider     | Cloudflare                                |
-| ASN              | AS13335                                   |
-| IPv4             | 188.114.96.0                              |
-| IPv6             | 2a06:98c1:3120::0, 2a06:98c1:3121::0      |
+unitelmatch.cc
 
----
+        │
 
-## Reverse DNS
+unitelmatch.cyou
 
-Observed results:
+        │
 
-- 104.21.22.200  → no descriptive hostname returned
-- 172.67.206.231 → no descriptive hostname returned
+────────────────────────────────────
 
-### Observation
+Shared Backend
 
-No descriptive reverse DNS hostnames were returned for the observed edge addresses during collection.
+www.ioutrankap.cyou
 
-This is consistent with traffic being routed through Cloudflare's edge network rather than exposing origin infrastructure.
+        │
+
+tiny-shop/v1/
+
+merchant-id: 42
+```
 
 ---
 
-## Infrastructure Assessment
+# Analytical Assessment
 
-The observed infrastructure is technically similar to that of `linkroles.my`, including:
+The investigation identified two distinct infrastructure groups.
+
+### Recruitment Infrastructure
+
+The recruitment website utilised Amazon Web Services, including Route53 and CloudFront, and functioned independently from the later operational portals.
+
+### Operational Infrastructure
+
+The operational portals demonstrated a consistent technical architecture characterised by:
 
 - Cloudflare DNS
-- Cloudflare edge network
-- AS13335
-- IPv6 support
-- WHOIS privacy protection
+- Cloudflare CDN
+- Cloudflare WAF
+- Vue.js single-page applications
+- Shared backend API
+- Common API request patterns
+- Shared merchant identifier (`merchant-id: 42`)
 
-These similarities are documented as technical observations. Additional evidence would be required to determine whether the domains are operationally related.
+These similarities strongly support the conclusion that the portals formed part of the same observed application ecosystem.
 
----
-
-# Comparative Infrastructure Analysis
-
-| Feature | occupationoasis.com | linkroles.my | unitelmatch.top |
-|---------|---------------------|--------------|-----------------|
-| Registrar     | Amazon Registrar              | Gname.com  | GLOBAL ASSET DOMAINS INC. |
-| WHOIS Privacy | Yes                           | Yes        | Yes                       |
-| DNS Provider  | Amazon Route 53               | Cloudflare | Cloudflare                |
-| CDN / Edge    | Amazon CloudFront             | Cloudflare | Cloudflare                |
-| ASN           | AS16509                       | AS13335    | AS13335                   |
-| IPv6          | No                            | Yes        | Yes                       |
-| Reverse DNS   | CloudFront hostnames observed | Limited    | Limited                   |
+The investigation documents these technical relationships as observed evidence. While they support infrastructure correlation, they do not independently establish ownership or attribution.
 
 ---
 
-# Infrastructure Observations
+# Screenshots
 
-The following observations are supported by the collected evidence:
+Include the following evidence:
 
-1. **Different Registration Providers**
-   - `occupationoasis.com` was registered through Amazon Registrar.
-   - `linkroles.my` and `unitelmatch.top` use different registrars.
+### Domain Registration
 
-2. **WHOIS Privacy**
-   - All three domains had WHOIS privacy or redacted registration details enabled at the time of collection.
+- WHOIS results for all five domains
 
-3. **Cloudflare Usage**
-   - Both `linkroles.my` and `unitelmatch.top` use Cloudflare DNS and Cloudflare's network (AS13335).
+### Reverse DNS
 
-4. **AWS Usage**
-   - `occupationoasis.com` uses Amazon Route 53, Amazon CloudFront, and Amazon-owned IP address space.
+- CloudFront reverse DNS results
+- Cloudflare reverse DNS lookups
 
-5. **Reverse DNS**
-   - Reverse DNS entries for `occupationoasis.com` clearly identify CloudFront infrastructure.
-   - Reverse DNS lookups for the Cloudflare-protected domains returned limited information, consistent with Cloudflare's edge architecture.
+### Censys
 
-These observations describe the infrastructure as observed during the investigation and do not independently establish ownership or operational relationships.
+- CloudFront observations
+- Cloudflare web property observations
+
+### Backend Analysis
+
+- Browser Developer Tools (Network tab)
+- API requests to `www.ioutrankap.cyou`
+- Request headers showing `merchant-id: 42`
+
+### Infrastructure
+
+- Cloudflare edge node information
+- Backend API request sequence
+- Application architecture diagram
+
+---
+
+# Related Documents
+
+- osint/dns_analysis.md
+- osint/passive_dns.md
+- osint/certificate_analysis.md
+- osint/technology_stack.md
+- osint/domain_relationships.md
+- osint/application_architecture.md
+- analysis/Indicators_of_Compromise.md
+
+---
+
+# CHANGELOG
+
+## Version 1.2
+
+- Added analysis for `unitelmatch.cc`.
+- Added analysis for `unitelmatch.cyou`.
+- Documented the shared backend (`www.ioutrankap.cyou`).
+- Added infrastructure evolution timeline.
+- Added hosting provider comparison.
+- Expanded reverse DNS analysis.
+- Included application-layer infrastructure relationships.
+- Distinguished recruitment infrastructure from operational infrastructure.
 
 ---
 
@@ -289,13 +408,16 @@ These observations describe the infrastructure as observed during the investigat
 
 # Related Documents
 
-- [Domain_Analysis.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Domain_Analysis.md)
-- [DNS_Analysis.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/DNS_Analysis.md)
-- [Passive_DNS.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Passive_DNS.md)
+- [Application_Architecture.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Application_Architecture.md)
 - [Certificate_Analysis.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Certificate_Analysis.md)
-- [Technology_Stack.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Technology_Stack.md)
-- [Reputation_Analysis.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Reputation_Analysis.md)
+- [Domain_Analysis.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Domain_Analysis.md)
+- [Domain_Relationships.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Domain_Relationships.md)
+- [DNS_Analysis.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/DNS_Analysis.md)
 - [Findings.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/docs/Findings.md)
+- [Passive_DNS.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Passive_DNS.md)
+- [Reputation_Analysis.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Reputation_Analysis.md)
+- [Technology_Stack.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Technology_Stack.md)
+- [Indicators_of_Compromise.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/Analysis/Indicators_of_Compromise.md)
 
 ---
 
