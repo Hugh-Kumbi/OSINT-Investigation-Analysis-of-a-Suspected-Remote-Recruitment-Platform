@@ -23,24 +23,24 @@ The analysis is based on Certificate Transparency (crt.sh), Censys, browser obse
 # Domains Analysed
 
 | Domain | Observed Role |
-|----------|---------------|
-| occupationoasis.com | Recruitment website |
-| linkroles.my | First operational portal |
-| unitelmatch.top | Second operational portal |
-| unitelmatch.cc | Third operational portal |
-| unitelmatch.cyou | Backup operational portal |
+|--------|---------------|
+| occupationoasis.com | Recruitment website       |
+| linkroles.my        | First operational portal  |
+| unitelmatch.top     | Second operational portal |
+| unitelmatch.cc      | Third operational portal  |
+| unitelmatch.cyou    | Backup operational portal |
 
 ---
 
 # Certificate Summary
 
 | Domain | Certificate Authority | Certificate Type | Validity | Observations |
-|---------|----------------------|------------------|----------|--------------|
-| occupationoasis.com | Amazon RSA 2048 M01 | AWS Managed | ~7 months | AWS infrastructure |
-| linkroles.my | Google Trust Services (WE1/WR1) | Cloudflare Managed | ~3 months | Dual certificates |
-| unitelmatch.top | Google Trust Services (WE1/WR1) | Cloudflare Managed | ~3 months | Dual certificates |
-| unitelmatch.cc | Google Trust Services (WE1/WR1) | Cloudflare Managed | ~3 months | Dual certificates |
-| unitelmatch.cyou | Google Trust Services (WE1/WR1) | Cloudflare Managed | ~3 months | Dual certificates |
+|--------|-----------------------|------------------|----------|--------------|
+| occupationoasis.com | Amazon RSA 2048 M01               | AWS Managed        | ~7 months | AWS infrastructure |
+| linkroles.my        | Google Trust Services (WE1/WR1)   | Cloudflare Managed | ~3 months | Dual certificates  |
+| unitelmatch.top     | Google Trust Services (WE1/WR1)   | Cloudflare Managed | ~3 months | Dual certificates  |
+| unitelmatch.cc      | Google Trust Services (WE1/WR1)   | Cloudflare Managed | ~3 months | Dual certificates  |
+| unitelmatch.cyou    | Google Trust Services (WE1/WR1)   | Cloudflare Managed | ~3 months | Dual certificates  |
 
 ---
 
@@ -241,14 +241,14 @@ Google Trust Services
 # Certificate Comparison
 
 | Feature | OccupationOasis | LinkRoles | UnitelMatch.top | UnitelMatch.cc | UnitelMatch.cyou |
-|----------|:---------------:|:---------:|:---------------:|:--------------:|:----------------:|
-| AWS Certificate | ✓ | ✗ | ✗ | ✗ | ✗ |
+|---------|-----------------|-----------|-----------------|----------------|------------------|
+| AWS Certificate       | ✓ | ✗ | ✗ | ✗ | ✗ |
 | Google Trust Services | ✗ | ✓ | ✓ | ✓ | ✓ |
 | Let's Encrypt History | ✓ | ✗ | ✓ | ✗ | ✗ |
-| Dual Certificates | ✗ | ✓ | ✓ | ✓ | ✓ |
-| Wildcard SAN | ✓ | ✓ | ✓ | ✗ | ✗ |
-| HTTP/3 | ✗ | ✓ | ✓ | ✓ | ✓ |
-| Cloudflare Managed | ✗ | ✓ | ✓ | ✓ | ✓ |
+| Dual Certificates     | ✗ | ✓ | ✓ | ✓ | ✓ |
+| Wildcard SAN          | ✓ | ✓ | ✓ | ✗ | ✗ |
+| HTTP/3                | ✗ | ✓ | ✓ | ✓ | ✓ |
+| Cloudflare Managed    | ✗ | ✓ | ✓ | ✓ | ✓ |
 
 ---
 
@@ -338,17 +338,6 @@ Include:
 
 ---
 
-# Related Documents
-
-- osint/infrastructure.md
-- osint/dns_analysis.md
-- osint/passive_dns.md
-- osint/technology_stack.md
-- osint/domain_relationships.md
-- analysis/Indicators_of_Compromise.md
-
----
-
 # CHANGELOG
 
 ## Version 1.2
@@ -373,21 +362,10 @@ Include:
 
 ---
 
-# Confidence Assessment
-
-| Finding | Confidence |
-|---------|------------|
-| Wildcard certificates observed for all three domains                      | High |
-| occupationoasis.com currently uses an Amazon-issued certificate           | High |
-| linkroles.my uses Google Trust Services and Cloudflare certificates       | High |
-| unitelmatch.top uses Google Trust Services and Let's Encrypt certificates | High |
-| Certificate issuance dates documented                                     | High |
-
----
-
 # Related Documents
 
 - [Domain_Analysis.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Domain_Analysis.md)
+- [Domain_Relationships.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Domain_Relationships.md)
 - [DNS_Analysis.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/DNS_Analysis.md)
 - [Passive_DNS.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Passive_DNS.md)
 - [Infrastructure_Analysis.md](https://github.com/Hugh-Kumbi/Operation-Phantom-Store/blob/main/OSINT/Infrastructure_Analysis.md)
