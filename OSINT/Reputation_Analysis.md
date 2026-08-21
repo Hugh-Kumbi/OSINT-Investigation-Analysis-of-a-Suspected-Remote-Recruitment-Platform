@@ -14,203 +14,434 @@
 
 # Objective
 
-This document evaluates the publicly observable reputation of the domains identified during the investigation.
+This document assesses the external reputation of the domains identified during the investigation using publicly available threat intelligence and reputation services.
 
-Reputation data was collected from publicly available security services, search engines, browser security mechanisms, and analyst observations.
+The analysis incorporates observations from:
 
-The objective is to document externally observable trust indicators without drawing conclusions beyond the available evidence.
+- VirusTotal
+- URLScan.io
+- Google Safe Browsing
+- Shodan
+- Censys
+- Browser security warnings
+- Passive OSINT
+
+The objective is to determine whether the observed domains had previously been identified as malicious, suspicious, or associated with phishing activity, and to examine how their reputation evolved throughout the campaign.
 
 ---
 
-# Scope
+# Domains Analysed
 
-Domains analyzed:
+| Domain | Operational Role |
+|--------|------------------|
+| occupationoasis.com | Recruitment website       |
+| linkroles.my        | First operational portal  |
+| unitelmatch.top     | Second operational portal |
+| unitelmatch.cc      | Third operational portal  |
+| unitelmatch.cyou    | Backup operational portal |
 
-- occupationoasis.com
+---
+
+# Reputation Summary
+
+| Domain | Overall Assessment |
+|----------|-------------------|
+| occupationoasis.com | Legitimate / Professional Marketing Site |
+| linkroles.my | Highly Suspicious |
+| unitelmatch.top | Confirmed Malicious |
+| unitelmatch.cc | Confirmed Malicious |
+| unitelmatch.cyou | Confirmed Malicious |
+
+---
+
+# Reputation Evolution
+
+The reputation of the observed infrastructure deteriorated throughout the investigation.
+
+```text
+OccupationOasis
+Legitimate
+
+        │
+
+Recruitment
+
+        ▼
+
+LinkRoles
+
+High Risk
+
+        ▼
+
+UnitelMatch.top
+
+Malicious
+
+        ▼
+
+UnitelMatch.cc
+
+Malicious
+
+        ▼
+
+UnitelMatch.cyou
+
+Malicious
+```
+
+This progression closely matched the recruiter's migration of users between operational portals.
+
+---
+
+# OccupationOasis
+
+## VirusTotal
+
+Detection
+
+```
+0 / 92
+```
+
+No security vendors identified the domain as malicious.
+
+---
+
+## URLScan
+
+Classification
+
+- Newly registered website
+- Jobs
+
+No suspicious outbound infrastructure was observed during passive scanning.
+
+---
+
+## Google Safe Browsing
+
+No browser security warnings were encountered during the investigation.
+
+---
+
+## Shodan
+
+No significant findings.
+
+---
+
+## Assessment
+
+The recruitment website presented as a professionally developed marketing site hosted on Amazon Web Services.
+
+No significant public reputation indicators suggested malicious activity at the time of analysis.
+
+---
+
+# LinkRoles
+
+## VirusTotal
+
+Detection
+
+```
+0 / 92
+```
+
+No vendors had yet classified the domain as malicious.
+
+Considering the domain age, this result is not unexpected.
+
+---
+
+## URLScan
+
+Classification
+
+High Confidence
+
+Suspicious
+
+---
+
+## Google Safe Browsing
+
+During the investigation, Google Chrome displayed a security warning identifying the website as dangerous.
+
+This warning prompted the recruiter to migrate the investigation to another operational portal.
+
+---
+
+## Shodan
+
+No results.
+
+Cloudflare prevented direct infrastructure discovery.
+
+---
+
+## Assessment
+
+Despite limited antivirus detections, independent browser protections and URLScan identified suspicious behaviour.
+
+This demonstrates that reputation systems can differ significantly depending on detection methodology.
+
+---
+
+# UnitelMatch.top
+
+## VirusTotal
+
+Detection
+
+```
+4 / 92
+```
+
+Multiple security vendors identified the domain as malicious.
+
+---
+
+## URLScan
+
+Classification
+
+Phishing and Other Frauds
+
+---
+
+## Google Safe Browsing
+
+Browser warnings were consistent with malicious reputation.
+
+---
+
+## Shodan
+
+No results.
+
+Protected by Cloudflare.
+
+---
+
+## Assessment
+
+This represents the first observed operational portal that had accumulated multiple malicious classifications.
+
+---
+
+# UnitelMatch.cc
+
+## VirusTotal
+
+Detection
+
+```
+2 / 92
+```
+
+Detected as malicious by multiple vendors.
+
+Examples included:
+
+- Forcepoint ThreatSeeker
+
+---
+
+## Browser Observation
+
+Google Chrome displayed a "Dangerous Site" warning when attempting to access the portal.
+
+The recruiter immediately responded by providing an alternative domain (`unitelmatch.cyou`) and described the warning as a routine platform upgrade.
+
+This interaction directly links the infrastructure rotation to browser security detections.
+
+---
+
+## URLScan
+
+Limited public results.
+
+Likely influenced by Cloudflare protections.
+
+---
+
+## Assessment
+
+The browser warning and immediate domain migration represent one of the strongest behavioural indicators observed during the investigation.
+
+---
+
+# UnitelMatch.cyou
+
+## VirusTotal
+
+Detection
+
+```
+0 / 92
+```
+
+No vendors had classified the domain as malicious at the time of collection.
+
+---
+
+## URLScan
+
+One public scan.
+
+No formal classification.
+
+---
+
+## Structure Similarity
+
+URLScan identified structural similarity with:
+
 - linkroles.my
 - unitelmatch.top
+- unitelmatch.cc
+
+This independent observation supports the technical correlation between the operational portals.
 
 ---
 
-# Collection Methodology
+## Google Safe Browsing
 
-The following reputation sources were consulted where applicable:
+No browser warning was observed during initial analysis.
 
-- Google Safe Browsing
-- Browser security warnings
-- Search engine results
-- URL reputation services
-- Community reputation
-- VirusTotal
-- URLScan
-
-No active interaction with the domains beyond normal browser access was performed.
-
----
-
-# Domain: occupationoasis.com
-
-## Search Engine Visibility
-
-The domain was publicly accessible and indexed during the investigation.
-
-No browser security warnings were observed during normal access.
-
----
-
-## Browser Reputation
-
-No browser-generated security warnings were observed during collection.
-
----
-
-## Public Reputation
-
-No publicly observable reputation indicators identifying the domain as malicious were identified during the investigation.
-
-This observation should not be interpreted as evidence of legitimacy.
+The domain appears to have been deployed before widespread reputation systems had accumulated sufficient intelligence.
 
 ---
 
 ## Assessment
 
-At the time of collection, publicly observable reputation information for `occupationoasis.com` appeared neutral.
-
-No positive or negative reputation signals sufficient to influence attribution were identified.
+Although public reputation services had not yet classified the domain as malicious, its infrastructure, application behaviour, and structural similarity strongly aligned with previously identified operational portals.
 
 ---
 
-# Domain: linkroles.my
+# Reputation Comparison
 
-## Search Engine Visibility
-
-The domain was publicly accessible during the investigation.
-
----
-
-## Browser Reputation
-
-During the investigation, Google displayed a browser security warning indicating that the website was considered potentially dangerous.
-
-Following this warning, the recruiter directed the analyst to a different domain (`unitelmatch.top`) to continue the onboarding process.
-
-This sequence of events was directly observed by the analyst.
+| Feature | OccupationOasis | LinkRoles | UnitelMatch.top | UnitelMatch.cc | UnitelMatch.cyou |
+|----------|:---------------:|:---------:|:---------------:|:--------------:|:----------------:|
+| VirusTotal Detection | 0/92 | 0/92 | 4/92 | 2/92 | 0/92 |
+| URLScan Classification | Jobs | Suspicious | Phishing | Limited | None |
+| Google Warning | No | Yes | Yes | Yes | No |
+| Cloudflare Protected | No | Yes | Yes | Yes | Yes |
+| Newly Registered | Yes | Yes | Yes | Yes | Yes |
 
 ---
 
-## Public Reputation
+# Behavioural Observations
 
-The analyst observed a browser-based warning associated with the domain.
+Throughout the investigation, the recruiter repeatedly migrated victims between newly registered domains.
 
-No independent conclusion regarding the underlying reason for the warning is made in this report.
+Observed sequence:
 
----
+```
+occupationoasis.com
 
-## Assessment
+↓
 
-The observed browser warning represents a notable reputation signal because it directly influenced the operational workflow.
+linkroles.my
 
-The recruiter responded by directing the analyst to an alternative domain after the warning appeared.
+↓
 
-This observation is documented factually without attributing intent.
+unitelmatch.top
 
----
+↓
 
-# Domain: unitelmatch.top
+unitelmatch.cc
 
-## Search Engine Visibility
+↓
 
-The domain was publicly accessible during the investigation.
+unitelmatch.cyou
+```
 
----
+Each migration occurred shortly after operational issues or browser security warnings.
 
-## Browser Reputation
-
-No browser-generated security warnings were observed during the period of collection.
-
----
-
-## Public Reputation
-
-No publicly observable reputation indicators identifying the domain as malicious were identified during the investigation.
-
-This observation should not be interpreted as evidence of legitimacy.
+This behaviour is consistent with infrastructure rotation intended to maintain campaign availability.
 
 ---
 
-## Assessment
+# Analytical Assessment
 
-At the time of collection, the domain did not generate observable browser security warnings.
+The reputation analysis demonstrates a clear divergence between the recruitment website and the operational portals.
 
-No additional public reputation indicators were identified.
+**Recruitment Infrastructure**
 
----
+- Professional presentation.
+- No significant reputation indicators.
+- Hosted on Amazon Web Services.
 
-# Reputation Timeline
+**Operational Infrastructure**
 
-| Date | Observation |
-|------|-------------|
-| Recruitment              | Analyst applied for remote role on occupationoasis.com                    |
-| During onboarding        | Analyst redirected to linkroles.my                                        |
-| Browser warning observed | Google displayed a dangerous site warning for linkroles.my                |
-| Following warning        | Recruiter directed analyst to unitelmatch.top                             |
+- Newly registered domains.
+- Increasing malicious classifications.
+- Browser security warnings.
+- Shared infrastructure.
+- Frequent domain rotation.
 
----
-
-# Comparative Reputation Assessment
-
-| Feature | occupationoasis.com | linkroles.my | unitelmatch.top |
-|---------|---------------------|--------------|-----------------|
-| Browser Warning Observed | No                  | Yes                      | No                              |
-| Search Visibility        | Yes                 | Yes                      | Yes                             |
-| Operationally Used       | Initial recruitment | Initial onboarding       | Replacement onboarding platform |
-| Reputation Observation   | Neutral             | Browser warning observed | Neutral                         |
+While reputation data alone is insufficient to establish malicious intent, it provides valuable supporting evidence when considered alongside the infrastructure, application, and behavioural analysis documented elsewhere in this investigation.
 
 ---
 
-# Operational Observations
+# Screenshots
 
-The analyst observed the following workflow:
+Recommended additions:
 
-1. Initial contact occurred through the recruitment website.
+## VirusTotal
 
-2. The onboarding process was conducted through `linkroles.my`.
+- Detection results for all five domains.
+- Detection history (where available).
 
-3. After Google displayed a browser warning for `linkroles.my`, the recruiter instructed the analyst to continue using `unitelmatch.top`.
+## URLScan
 
-This sequence was directly observed during the investigation.
+- Scan summary pages.
+- Classification results.
+- Structural similarity findings for `unitelmatch.cyou`.
 
-No inference is made regarding the reason for the change beyond the documented observations.
+## Google Safe Browsing
+
+- Browser warning for `linkroles.my`.
+- Browser warning for `unitelmatch.cc`.
+
+## Recruiter Conversation
+
+Include screenshots showing:
+
+- Recruiter providing `unitelmatch.cc`.
+- User reporting the Google warning.
+- Recruiter providing `unitelmatch.cyou`.
+- Recruiter explaining that the warning was due to a "platform upgrade."
+
+These screenshots provide strong evidence linking technical infrastructure changes with the recruiter's operational behaviour.
 
 ---
 
-# Reputation Intelligence Assessment
+# Related Documents
 
-The collected evidence indicates differing observable reputation profiles across the investigated domains.
-
-`occupationoasis.com` did not generate browser security warnings during the investigation.
-
-`linkroles.my` generated a Google browser warning that interrupted the onboarding process. Following this event, the recruiter immediately instructed the analyst to migrate to `unitelmatch.top`.
-
-`unitelmatch.top` did not generate comparable browser warnings during the observation period.
-
-These observations are limited to the investigation period and should not be interpreted as definitive indicators of legitimacy or maliciousness.
+- osint/infrastructure.md
+- osint/domain_relationships.md
+- analysis/Attack_Lifecycle.md
+- analysis/Social_Engineering_Analysis.md
+- analysis/Indicators_of_Compromise.md
 
 ---
 
-# Key Observations
+# CHANGELOG
 
-The following observations are supported by collected evidence:
+## Version 1.2
 
-1. A Google browser warning was observed for `linkroles.my`.
-
-2. Following the warning, the recruiter directed the analyst to `unitelmatch.top`.
-
-3. No comparable browser warning was observed for `occupationoasis.com`.
-
-4. No comparable browser warning was observed for `unitelmatch.top` during the investigation.
-
-5. The operational workflow changed immediately after the browser warning was encountered.
+- Added reputation analysis for `unitelmatch.cc`.
+- Added reputation analysis for `unitelmatch.cyou`.
+- Expanded analysis from three to five domains.
+- Documented Google Safe Browsing warnings.
+- Added infrastructure rotation analysis.
+- Correlated browser warnings with recruiter behaviour.
+- Included URLScan structural similarity observations.
 
 ---
 
